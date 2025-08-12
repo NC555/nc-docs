@@ -77,10 +77,6 @@ const sidebars: SidebarsConfig = {
         {
           type: "category",
           label: "Powershell",
-          link: {
-            type: "generated-index",
-            slug: "powershell",
-          },
           items: [
             "ms-windows/powershell/powershell-creating-ssh-keys",
             "ms-windows/powershell/powershell-network-information",
@@ -90,10 +86,6 @@ const sidebars: SidebarsConfig = {
         {
           type: "category",
           label: "WSL",
-          link: {
-            type: "generated-index",
-            slug: "wsl",
-          },
           items: [
             "ms-windows/wsl/ubuntu-24.04-lts",
             "ms-windows/wsl/setup-windows-subsystem-for-linux",
@@ -114,10 +106,6 @@ const sidebars: SidebarsConfig = {
         {
           type: "category",
           label: "Home Lab",
-          link: {
-            type: "generated-index",
-            slug: "home-lab",
-          },
           items: [
             "kubernetes/home-lab/getting-started-home-lab",
             "kubernetes/home-lab/home-lab",

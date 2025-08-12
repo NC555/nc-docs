@@ -1,26 +1,30 @@
-# ./Dockerfile
-FROM node:20-alpine
+# Use Node.js v20 as recommended by dependencies
+FROM node:20-alpine AS builder
 
 WORKDIR /app
 
-WORKDIR /app
-
-# Copy package files
+# Copy only package files first to leverage Docker cache
 COPY package*.json ./
 
-# Install dependencies
-RUN npm ci --only=production
+# Ensure a clean install, and use 'ci' for reproducible builds
+RUN npm ci
 
-# Copy source code
+# Copy the rest of the source code
 COPY . .
 
+# Add a build argument to potentially disable a feature if needed
+ARG CI=true
 # Build the documentation
 RUN npm run build
 
-# Serve the built files
+# --- Final Stage ---
 FROM nginx:alpine
-COPY --from=0 /app/build /usr/share/nginx/html
-COPY nginx.conf /etc/nginx/nginx.conf
+
+# Copy the built static files from the builder stage
+COPY --from=builder /app/build /usr/share/nginx/html
+
+# Copy your custom NGINX configuration
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
