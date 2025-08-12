@@ -186,5 +186,3 @@ sftp sftp_user@localhost
 Remember to always test the configuration in a controlled environment before implementing in production, and maintain proper documentation of any changes made to the SFTP configuration.
 
 ---
-
-**[Up: Introduction](./get-started-with-a-new-linux-vps.md)** | **[Previous: Deploying Coolify](./get-started-with-a-new-linux-vps.md)** | **[Next: (Back to Introduction)](./get-started-with-a-new-linux-vps.md)**

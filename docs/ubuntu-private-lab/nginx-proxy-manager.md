@@ -6,7 +6,7 @@ This document provides a step-by-step guide on deploying Nginx Proxy Manager (NP
 
 If you don't have Docker and Docker Compose installed, follow the official Docker documentation for your operating system:
 
-- [Install docker dependencies](Install%20Docker%20Dependencies.md)
+- `Install docker dependencies`
   follow the instructions in order to install the Docker dependencies
 
 **Action:** Open the necessary ports in your firewall
@@ -200,5 +200,3 @@ This ensures proper end-to-end encryption from the client to Cloudflare and from
 3. You should now be able to log in successfully and access the NPM dashboard
 
 ---
-
-**[Up: Introduction](./get-started-with-a-new-linux-vps.md)** | **[Previous: Deploying Coolify](./get-started-with-a-new-linux-vps.md)** | **[Next: (Back to Introduction)](./get-started-with-a-new-linux-vps.md)**

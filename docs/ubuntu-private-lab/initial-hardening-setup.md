@@ -314,5 +314,3 @@ If you lose access to your server after making these changes, potential solution
 ---
 
 ---
-
-**[Up: Introduction](./get-started-with-a-new-linux-vps.md)** | **[Previous: Deploying Coolify](./get-started-with-a-new-linux-vps.md)** | **[Next: (Back to Introduction)](./get-started-with-a-new-linux-vps.md)**

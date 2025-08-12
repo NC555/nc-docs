@@ -219,7 +219,3 @@ sudo systemctl status code-server@$USER
 - [Code-Server GitHub Repository](https://github.com/coder/code-server)
 - [Code-Server Documentation](https://coder.com/docs/code-server/latest)
 - [Nginx Proxy Manager Documentation](https://nginxproxymanager.com/)
-
-<!-- Navigation -->
-<hr/>
-**[Up: Introduction](./get-started-with-a-new-linux-vps.md)** |  **[Previous: Deploying Coolify](./get-started-with-a-new-linux-vps.md)** | **[Next: (Back to Introduction)](./get-started-with-a-new-linux-vps.md)**

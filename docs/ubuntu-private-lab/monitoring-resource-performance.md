@@ -191,5 +191,3 @@ When exposing monitoring interfaces to the internet:
 Remember to integrate these monitoring solutions with your existing security infrastructure and backup systems.
 
 ---
-
-**[Up: Introduction](./get-started-with-a-new-linux-vps.md)** | **[Previous: Deploying Coolify](./get-started-with-a-new-linux-vps.md)** | **[Next: (Back to Introduction)](./get-started-with-a-new-linux-vps.md)**

@@ -249,5 +249,3 @@ sed -i '2d' data.csv && cat data.csv >> cleaned_data.csv  # Remove line 2 + appe
 ---
 
 ---
-
-**[Up: Introduction](./get-started-with-a-new-linux-vps.md)** | **[Previous: Deploying Coolify](./get-started-with-a-new-linux-vps.md)** | **[Next: (Back to Introduction)](./get-started-with-a-new-linux-vps.md)**

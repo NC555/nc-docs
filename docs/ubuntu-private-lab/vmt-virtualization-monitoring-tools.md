@@ -797,5 +797,3 @@ scrape_configs:
 This comprehensive monitoring stack provides enterprise-grade observability for containerized environments with proper configuration, deployment, and maintenance procedures.
 
 ---
-
-**[Up: Introduction](./get-started-with-a-new-linux-vps.md)** | **[Previous: Deploying Coolify](./get-started-with-a-new-linux-vps.md)** | **[Next: (Back to Introduction)](./get-started-with-a-new-linux-vps.md)**

@@ -110,7 +110,3 @@ sudo sysctl vm.swappiness=10
 Need help implementing any of these steps or calculating your specific swap requirements?
 
 ---
-
----
-
-**[Up: Introduction](./get-started-with-a-new-linux-vps.md)** | **[Previous: Deploying Coolify](./get-started-with-a-new-linux-vps.md)** | **[Next: (Back to Introduction)](./get-started-with-a-new-linux-vps.md)**
