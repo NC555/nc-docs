@@ -1,3 +1,10 @@
+---
+title: "Custom Title for Code-Server"
+description: "A custom description for the code-server setup guide."
+author: "Custom Author"
+image: "img/custom-social-share.jpg"
+---
+
 # Installing and Maintaining Code-Server on Ubuntu VPS
 
 This guide covers the installation and configuration of code-server with nginx-proxy-manager on Ubuntu VPS, including Docker network setup and troubleshooting.

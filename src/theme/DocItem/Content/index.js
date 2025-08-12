@@ -26,33 +26,68 @@ function useSyntheticTitle() {
   return metadata.title;
 }
 
-function useAuthorMetadata() {
-  const { frontMatter } = useDoc();
+function useSocialMetadata() {
+  const { metadata, frontMatter } = useDoc();
   const { siteConfig } = useDocusaurusContext();
+  const { siteUrl } = siteConfig;
 
-  // Extract default author from themeConfig.metadata
+  // Default values from docusaurus.config.ts
   const defaultAuthorMeta = siteConfig.themeConfig.metadata?.find(
     (meta) => meta.name === "author"
   );
   const defaultAuthor = defaultAuthorMeta ? defaultAuthorMeta.content : null;
+  const defaultDescription =
+    siteConfig.tagline || "A technical journey, documented.";
+  const defaultImage = siteConfig.themeConfig.image
+    ? `${siteUrl}/${siteConfig.themeConfig.image}`
+    : null;
 
-  // Determine the effective author: page frontmatter overrides default
-  const effectiveAuthor = frontMatter.author || defaultAuthor;
+  // Resolve metadata with fallback logic
+  const title = frontMatter.title || metadata.title;
+  const description =
+    frontMatter.description || metadata.description || defaultDescription;
+  const author = frontMatter.author || defaultAuthor;
+  const image = frontMatter.image
+    ? `${siteUrl}/${frontMatter.image}`
+    : defaultImage;
 
-  return effectiveAuthor;
+  return {
+    title,
+    description,
+    author,
+    image,
+  };
 }
 
 export default function DocItemContent({ children }) {
   const syntheticTitle = useSyntheticTitle();
-  const effectiveAuthor = useAuthorMetadata();
+  const socialMetadata = useSocialMetadata();
 
   return (
     <div className={clsx(ThemeClassNames.docs.docMarkdown, "markdown")}>
-      {effectiveAuthor && (
-        <Head>
-          <meta name="author" content={effectiveAuthor} />
-        </Head>
-      )}
+      <Head>
+        {/* Author Metadata */}
+        {socialMetadata.author && (
+          <meta name="author" content={socialMetadata.author} />
+        )}
+
+        {/* Open Graph Metadata */}
+        <meta property="og:title" content={socialMetadata.title} />
+        <meta property="og:description" content={socialMetadata.description} />
+        {socialMetadata.image && (
+          <meta property="og:image" content={socialMetadata.image} />
+        )}
+        <meta property="og:type" content="article" />
+
+        {/* Twitter Card Metadata */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={socialMetadata.title} />
+        <meta name="twitter:description" content={socialMetadata.description} />
+        {socialMetadata.image && (
+          <meta name="twitter:image" content={socialMetadata.image} />
+        )}
+      </Head>
+
       {syntheticTitle && (
         <header>
           <Heading as="h1">{syntheticTitle}</Heading>
