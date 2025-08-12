@@ -312,3 +312,7 @@ If you lose access to your server after making these changes, potential solution
 > **Warning**: Always test SSH access with your new user before closing the terminal where you have root access. This prevents being locked out of your server.
 
 ---
+
+---
+
+**[Up: Introduction](./get-started-with-a-new-linux-vps.md)** | **[Previous: Deploying Coolify](./get-started-with-a-new-linux-vps.md)** | **[Next: (Back to Introduction)](./get-started-with-a-new-linux-vps.md)**

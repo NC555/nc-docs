@@ -222,4 +222,4 @@ sudo systemctl status code-server@$USER
 
 <!-- Navigation -->
 <hr/>
-**[Up: Introduction](Get%20Started%20With%20a%20New%20Linux%20VPS.md)** |  **[Previous: Deploying Coolify](Deploy%20Coolify%20PAAS.md)** | **[Next: (Back to Introduction)](Get%20Started%20With%20a%20New%20Linux%20VPS.md)**
+**[Up: Introduction](./get-started-with-a-new-linux-vps.md)** |  **[Previous: Deploying Coolify](./get-started-with-a-new-linux-vps.md)** | **[Next: (Back to Introduction)](./get-started-with-a-new-linux-vps.md)**

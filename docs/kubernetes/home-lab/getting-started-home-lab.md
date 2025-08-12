@@ -174,7 +174,7 @@ Before you begin, ensure you have the following:
 3.  **SSH Key Pair:**
     1.  Generate a passphrase-less `ed25519` SSH key pair, refer to [[Linux SSH Key Generation]]
     2.  Note the paths to your private and public keys (e.g., `~/.ssh/id_ed25519` and `~/.ssh/id_ed25519.pub`).
-    3.  For more details on SSH options, refer to [`docs/ssh.md`](docs/ssh.md).
+    3.  For more details on SSH options, refer to `docs/ssh.md`.
 4.
 5.  **CLI Tools:** Install the following command-line tools. The easiest way is using [Homebrew](https://brew.sh/) (available on Linux, Mac, and Windows Subsystem for Linux):
 
@@ -465,7 +465,7 @@ This project offers extensive customization. Here are some key areas to explore 
 - **SELinux:** Learn how to work with SELinux using `udica` for container-specific policies instead of disabling it globally.
 - **Rancher Integration:** Optionally deploy Rancher Manager for multi-cluster management.
 
-For a deep dive into every configuration option, refer to the [`LLMs and Kubernetes`](../llms.md) file, which provides a line-by-line explanation of the `kube.tf` configuration.
+For a deep dive into every configuration option, refer to the `LLMs and Kubernetes` file, which provides a line-by-line explanation of the `kube.tf` configuration.
 
 ## 7. Takedown
 

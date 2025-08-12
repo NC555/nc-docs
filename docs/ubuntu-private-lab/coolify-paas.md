@@ -296,4 +296,4 @@ up -d  #'-d' for detached mode!
 
 ---
 
-**[Up: Introduction](Get%20Started%20With%20a%20New%20Linux%20VPS.md)** | **[Previous: Deploy Nginx Proxy Manager](NginX%20Proxy%20Manager.md)** | **[Next: (Install Code Server)](Install%20Code%20Server.md)**
+**[Up: Introduction](./get-started-with-a-new-linux-vps.md)** | **[Previous: Deploying Coolify](./get-started-with-a-new-linux-vps.md)** | **[Next: (Back to Introduction)](./get-started-with-a-new-linux-vps.md)**

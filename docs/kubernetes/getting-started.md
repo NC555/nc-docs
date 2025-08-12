@@ -110,7 +110,7 @@ This step initializes your project folder and creates the necessary MicroOS snap
 
 5.  **Customize `kube.tf`:** In the newly created project folder, you will find your `kube.tf` file. This file contains the Terraform configuration for your Kubernetes cluster. You **must** customize it to suit your specific needs.
 
-    - **Detailed Configuration Reference:** A complete reference of all available inputs, outputs, and module configurations can be found in the comprehensive guide: [`LLMs and Kubernetes`](./llms.md). It is highly recommended to review this document to understand each parameter's purpose and implications.
+    - **Detailed Configuration Reference:** A complete reference of all available inputs, outputs, and module configurations can be found in the comprehensive guide: `LLMs and Kubernetes`. It is highly recommended to review this document to understand each parameter's purpose and implications.
 
 ## 4. Installation
 
@@ -210,7 +210,7 @@ This project offers extensive customization. Here are some key areas to explore 
 - **SELinux:** Learn how to work with SELinux using `udica` for container-specific policies instead of disabling it globally.
 - **Rancher Integration:** Optionally deploy Rancher Manager for multi-cluster management.
 
-For a deep dive into every configuration option, refer to the [`LLMs and Kubernetes`](./llms.md) file, which provides a line-by-line explanation of the `kube.tf` configuration.
+For a deep dive into every configuration option, refer to the `LLMs and Kubernetes` file, which provides a line-by-line explanation of the `kube.tf` configuration.
 
 ## 7. Takedown
 

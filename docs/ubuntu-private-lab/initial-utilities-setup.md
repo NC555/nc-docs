@@ -30,13 +30,13 @@ sudo apt update && sudo apt upgrade -y
 **Action:** Install a set of essential utilities and tools for system management and development
 
 ```bash
-sudo apt install -y zsh tmux neofetch htop git curl jq tree zip unzip 
+sudo apt install -y zsh tmux neofetch htop git curl jq tree zip unzip
 ```
 
 **Details:**
 Each package serves a specific purpose:
 
-####  Nano (command-line text editor)
+#### Nano (command-line text editor)
 
 ```bash
 sudo apt install nano
@@ -108,8 +108,9 @@ sudo apt install -y nano
 - Usage: Download file with `curl -O [url]`, make API requests with `curl [url]`
 
 #### jq JSON processor
+
 - command-line JSON processor.
-- 
+-
 
 ## 2. Oh-My-Zsh Installation and Configuration
 
@@ -413,3 +414,7 @@ chmod +x ~/colortest.sh
 This will show you all available colors with their corresponding codes, making it easier to choose the colors you want.
 
 ---
+
+---
+
+**[Up: Introduction](./get-started-with-a-new-linux-vps.md)** | **[Previous: Deploying Coolify](./get-started-with-a-new-linux-vps.md)** | **[Next: (Back to Introduction)](./get-started-with-a-new-linux-vps.md)**

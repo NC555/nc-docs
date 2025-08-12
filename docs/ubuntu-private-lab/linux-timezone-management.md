@@ -173,3 +173,7 @@ ls -l /etc/localtime
    - Verify timezone file exists
    - Ensure NTP service is running
    - Check for error messages in system logs
+
+---
+
+**[Up: Introduction](./get-started-with-a-new-linux-vps.md)** | **[Previous: Deploying Coolify](./get-started-with-a-new-linux-vps.md)** | **[Next: (Back to Introduction)](./get-started-with-a-new-linux-vps.md)**

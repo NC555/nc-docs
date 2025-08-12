@@ -113,10 +113,10 @@ The architecture can be visualized as:
 
 The `kube-hetzner` Terraform module encapsulates the logic for deploying the cluster. Key aspects include:
 
-- **Input Variables:** The [`LLMs and Kubernetes`](./llms.md) document provides a detailed, line-by-line explanation of all input variables, their purpose, default values, and implications. These variables allow extensive customization of the cluster.
+- **Input Variables:** The `LLMs and Kubernetes` document provides a detailed, line-by-line explanation of all input variables, their purpose, default values, and implications. These variables allow extensive customization of the cluster.
 - **`locals` Block:** Used for defining local variables to simplify configuration and improve readability.
 - **`file()` Function:** Used to read content from files (e.g., SSH public keys, Helm chart values overrides).
 - **`lifecycle` Meta-argument:** Specifically `ignore_changes`, used to prevent Terraform from managing certain resource attributes after initial creation (e.g., for attributes managed by Kubernetes itself).
 - **Heredoc Syntax:** Used for multi-line string inputs, such as complex Helm chart `values_overrides`.
 
-This architectural overview provides a foundational understanding of the Kube-Hetzner project, its components, and how they are managed. For detailed configuration options, refer to [`LLMs and Kubernetes`](./llms.md) and the `terraform-docs` output in `docs/terraform.md`.
+This architectural overview provides a foundational understanding of the Kube-Hetzner project, its components, and how they are managed. For detailed configuration options, refer to `LLMs and Kubernetes` and the `terraform-docs` output in `docs/terraform.md`.

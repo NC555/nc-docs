@@ -56,3 +56,7 @@ sudo lsof -iUDP    # or customize further per needs …
 Or more simply get _(protocol/interface/address/IP/PORT)_ mapping at once using SS/netstat/lsof combinations seen here.
 
 ---
+
+---
+
+**[Up: Introduction](./get-started-with-a-new-linux-vps.md)** | **[Previous: Deploying Coolify](./get-started-with-a-new-linux-vps.md)** | **[Next: (Back to Introduction)](./get-started-with-a-new-linux-vps.md)**

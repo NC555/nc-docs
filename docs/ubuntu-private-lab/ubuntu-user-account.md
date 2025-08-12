@@ -168,3 +168,7 @@ Account status indicators:
    - Temporary disable: Use account locking
    - Permanent disable: Consider account expiration
    - Process-only access: Use shell modification
+
+---
+
+**[Up: Introduction](./get-started-with-a-new-linux-vps.md)** | **[Previous: Deploying Coolify](./get-started-with-a-new-linux-vps.md)** | **[Next: (Back to Introduction)](./get-started-with-a-new-linux-vps.md)**

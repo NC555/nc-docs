@@ -111,4 +111,6 @@ Need help implementing any of these steps or calculating your specific swap requ
 
 ---
 
-**[Up: Introduction](Get%20Started%20With%20a%20New%20Linux%20VPS.md)** | **[Previous: Install Code Server](Install%20Code%20Server.md)** | **[Next: (Back to Introduction)](Get%20Started%20With%20a%20New%20Linux%20VPS.md)**
+---
+
+**[Up: Introduction](./get-started-with-a-new-linux-vps.md)** | **[Previous: Deploying Coolify](./get-started-with-a-new-linux-vps.md)** | **[Next: (Back to Introduction)](./get-started-with-a-new-linux-vps.md)**

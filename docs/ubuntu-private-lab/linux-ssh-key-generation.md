@@ -96,3 +96,7 @@ chmod 700 /home/$USER/.ssh
 chmod 600 /home/$USER/.ssh/id_rsa
 chmod 644 /home/$USER/.ssh/id_rsa.pub
 ```
+
+---
+
+**[Up: Introduction](./get-started-with-a-new-linux-vps.md)** | **[Previous: Deploying Coolify](./get-started-with-a-new-linux-vps.md)** | **[Next: (Back to Introduction)](./get-started-with-a-new-linux-vps.md)**

@@ -199,6 +199,6 @@ This ensures proper end-to-end encryption from the client to Cloudflare and from
 2. Access `https://subdomain1.example.com` in a private/incognito window
 3. You should now be able to log in successfully and access the NPM dashboard
 
-## Conclusion
+---
 
-/data/nginx/proxy_host
+**[Up: Introduction](./get-started-with-a-new-linux-vps.md)** | **[Previous: Deploying Coolify](./get-started-with-a-new-linux-vps.md)** | **[Next: (Back to Introduction)](./get-started-with-a-new-linux-vps.md)**

@@ -246,3 +246,7 @@ As of early 2024, direct model fine-tuning with new datasets is experimental or 
 >
 > - plugin:obsidian-textgenerator-plugin:2055 async eval
 >   plugin:obsidian-textgenerator-plugin:2055:4296
+
+---
+
+**[Up: Introduction](./get-started-with-a-new-linux-vps.md)** | **[Previous: Deploying Coolify](./get-started-with-a-new-linux-vps.md)** | **[Next: (Back to Introduction)](./get-started-with-a-new-linux-vps.md)**
