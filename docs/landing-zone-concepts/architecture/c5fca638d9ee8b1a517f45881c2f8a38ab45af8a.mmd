@@ -1,0 +1,27 @@
+graph TD
+    A[Enterprise] --> B[Landing Zone]
+    B --> C[Management Account]
+    B --> D[Security Account]
+    B --> E[Shared Services Account]
+    B --> F[Application Accounts]
+    
+    C --> C1[IAM]
+    C --> C2[Billing]
+    C --> C3[Deployment Pipelines]
+    
+    D --> D1[Security Monitoring]
+    D --> D2[Log Aggregation]
+    D --> D3[Compliance Scanning]
+    
+    E --> E1[DNS Services]
+    E --> E2[Directory Services]
+    E --> E3[Shared Data Services]
+    
+    F --> F1[Production]
+    F --> F2[Development]
+    F --> F3[Testing]
+    
+    G[Network Connectivity] --- B
+    H[Identity Federation] --- B
+    I[Security Controls] --- B
+    J[Governance Policies] --- B

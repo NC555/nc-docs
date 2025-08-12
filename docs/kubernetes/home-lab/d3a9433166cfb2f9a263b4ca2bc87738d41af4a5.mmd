@@ -1,0 +1,1 @@
+graph TD; A[Browser/Client] -- 443 (HTTPS) --> B(Hetzner Load Balancer); B -- 8443 (Destination Port) --> C(Traefik Pods); C -- 80 (Rancher Service) --> D[Rancher App]

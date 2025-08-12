@@ -1,0 +1,62 @@
+graph TB
+    subgraph "External Access"
+        LB[Load Balancer/Cloud LB]
+    end
+
+    subgraph "API Management Layer"
+        KONG[Kong API Gateway]
+        KM[Kong Manager GUI]
+    end
+
+    subgraph "K8s Management"
+        RAN[Rancher Dashboard]
+        PROM[Prometheus]
+        GRAF[Grafana]
+        ALERT[AlertManager]
+    end
+
+    subgraph "Kubernetes Cluster"
+        subgraph "Infrastructure Nodes"
+            ETCD[etcd Cluster]
+            CTR[Control Plane]
+        end
+        
+        subgraph "Application Nodes Pool 1"
+            WP1[Website1 - WordPress]
+            WP2[Website2 - WordPress]
+            MARIA1[MariaDB-1]
+            MARIA2[MariaDB-2]
+        end
+        
+        subgraph "Application Nodes Pool 2"
+            ECO[Ecommerce - Payload]
+            MONGO[MongoDB]
+            WIKI[Wiki.js]
+        end
+        
+        subgraph "Application Nodes Pool 3"
+            OLLAMA[Ollama AI]
+            WEBUI[Open Web UI]
+        end
+
+        subgraph "Storage Nodes"
+            OC[OpenCloud]
+            HOMARR[Homarr Dashboard]
+        end
+
+        subgraph "Monitoring & Security"
+            CERT[Cert-Manager]
+            VAULT[HashiCorp Vault]
+            LOG[Loki]
+        end
+    end
+
+    LB --> KONG
+    KONG --> RAN
+    KONG --> WP1
+    KONG --> WP2
+    KONG --> ECO
+    KONG --> WIKI
+    KONG --> OLLAMA
+    KONG --> OC
+    KONG --> HOMARR

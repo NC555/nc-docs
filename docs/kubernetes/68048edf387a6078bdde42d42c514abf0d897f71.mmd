@@ -1,0 +1,105 @@
+graph TD
+    subgraph Hetzner_Cloud[Hetzner Cloud]
+        HC_LB[Hetzner Cloud Load Balancer]
+        HC_PN[Hetzner Private Network]
+        HC_CP_VM1[Control Plane Node 1]
+        HC_CP_VM2[Control Plane Node 2]
+        HC_CP_VM3[Control Plane Node 3]
+        HC_WK_VM1[Worker Node 1]
+        HC_WK_VM2[Worker Node 2]
+        HC_VOL[Hetzner Cloud Volumes]
+    end
+    
+    subgraph K8S_Cluster[Kubernetes Cluster]
+        K8SAPI[API Server]
+        K8S_ETCD[etcd]
+        K8S_SCHED[Scheduler]
+        K8S_CTRL[Controller Manager]
+        K8S_KUBELET_CP[Kubelet CP]
+        K8S_KUBELET_WK[Kubelet WK]
+        K8S_PROXY[Kube-Proxy]
+        K8S_CNI[CNI - Flannel/Calico/Cilium]
+        K8S_STORAGE[Storage - Longhorn/Hetzner CSI]
+        K8S_KLB[Klipper LoadBalancer]
+    end
+    
+    User --> Terraform
+    Terraform --> Hetzner_Cloud
+    Terraform --> HC_LB
+    Terraform --> HC_PN
+    Terraform --> HC_CP_VM1
+    Terraform --> HC_CP_VM2
+    Terraform --> HC_CP_VM3
+    Terraform --> HC_WK_VM1
+    Terraform --> HC_WK_VM2
+    Terraform --> HC_VOL
+    
+    HC_LB --> K8SAPI
+    HC_CP_VM1 --> K8SAPI
+    HC_CP_VM2 --> K8SAPI
+    HC_CP_VM3 --> K8SAPI
+    
+    HC_CP_VM1 --> K8S_ETCD
+    HC_CP_VM2 --> K8S_ETCD
+    HC_CP_VM3 --> K8S_ETCD
+    
+    HC_CP_VM1 --> K8S_SCHED
+    HC_CP_VM1 --> K8S_CTRL
+    
+    HC_CP_VM1 --> K8S_KUBELET_CP
+    HC_CP_VM2 --> K8S_KUBELET_CP
+    HC_CP_VM3 --> K8S_KUBELET_CP
+    
+    HC_WK_VM1 --> K8S_KUBELET_WK
+    HC_WK_VM2 --> K8S_KUBELET_WK
+    
+    HC_PN --> HC_CP_VM1
+    HC_PN --> HC_CP_VM2
+    HC_PN --> HC_CP_VM3
+    HC_PN --> HC_WK_VM1
+    HC_PN --> HC_WK_VM2
+    
+    K8S_KUBELET_CP --> K8S_PROXY
+    K8S_KUBELET_WK --> K8S_PROXY
+    
+    K8S_KUBELET_CP --> K8S_CNI
+    K8S_KUBELET_WK --> K8S_CNI
+    
+    K8S_KUBELET_CP --> K8S_STORAGE
+    K8S_KUBELET_WK --> K8S_STORAGE
+    
+    HC_VOL --> K8S_STORAGE
+    
+    K8SAPI --> K8S_KLB
+    K8S_KLB --> K8S_KUBELET_WK
+    K8S_KLB --> K8S_KUBELET_CP
+    
+    %% Control Plane Nodes - Purple background with dark text
+    style HC_CP_VM1 fill:#d8b5ff,stroke:#333,stroke-width:2px,color:#000
+    style HC_CP_VM2 fill:#d8b5ff,stroke:#333,stroke-width:2px,color:#000
+    style HC_CP_VM3 fill:#d8b5ff,stroke:#333,stroke-width:2px,color:#000
+    
+    %% Worker Nodes - Blue background with dark text
+    style HC_WK_VM1 fill:#b5d0ff,stroke:#333,stroke-width:2px,color:#000
+    style HC_WK_VM2 fill:#b5d0ff,stroke:#333,stroke-width:2px,color:#000
+    
+    %% Kubernetes Components - Green background with dark text
+    style K8SAPI fill:#b5ffb5,stroke:#333,stroke-width:2px,color:#000
+    style K8S_ETCD fill:#b5ffb5,stroke:#333,stroke-width:2px,color:#000
+    style K8S_SCHED fill:#b5ffb5,stroke:#333,stroke-width:2px,color:#000
+    style K8S_CTRL fill:#b5ffb5,stroke:#333,stroke-width:2px,color:#000
+    style K8S_KUBELET_CP fill:#b5ffb5,stroke:#333,stroke-width:2px,color:#000
+    style K8S_KUBELET_WK fill:#b5ffb5,stroke:#333,stroke-width:2px,color:#000
+    style K8S_PROXY fill:#b5ffb5,stroke:#333,stroke-width:2px,color:#000
+    style K8S_CNI fill:#b5ffb5,stroke:#333,stroke-width:2px,color:#000
+    style K8S_STORAGE fill:#b5ffb5,stroke:#333,stroke-width:2px,color:#000
+    style K8S_KLB fill:#b5ffb5,stroke:#333,stroke-width:2px,color:#000
+    
+    %% Hetzner Infrastructure - Light pink background with dark text
+    style HC_LB fill:#ffcce6,stroke:#333,stroke-width:2px,color:#000
+    style HC_PN fill:#ffcce6,stroke:#333,stroke-width:2px,color:#000
+    style HC_VOL fill:#ffcce6,stroke:#333,stroke-width:2px,color:#000
+    
+    %% Other nodes
+    style User fill:#f9f9f9,stroke:#333,stroke-width:1px,color:#000
+    style Terraform fill:#f9f9f9,stroke:#333,stroke-width:1px,color:#000
