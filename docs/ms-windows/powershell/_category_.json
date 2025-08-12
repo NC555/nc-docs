@@ -1,0 +1,8 @@
+{
+  "label": "PowerShell",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Useful PowerShell scripts and commands for Windows infrastructure."
+  }
+}

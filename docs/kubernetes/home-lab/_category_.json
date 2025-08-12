@@ -1,0 +1,8 @@
+{
+  "label": "Home Lab",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Guides for setting up a local Kubernetes home lab environment."
+  }
+}

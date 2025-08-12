@@ -1,0 +1,8 @@
+{
+  "label": "WSL",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Managing and using the Windows Subsystem for Linux."
+  }
+}
