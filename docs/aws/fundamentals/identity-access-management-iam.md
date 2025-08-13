@@ -25,45 +25,6 @@ date: 2025-08-11
 
 AWS IAM provides secure control over AWS resource access. In government and classified environments, IAM is critical for enforcing security policies, maintaining compliance, and preventing unauthorized access.
 
-```mermaid
-%%{
-  init: {
-    'theme': 'base',
-    'themeVariables': {
-      'primaryColor': '#6777ef',
-      'primaryTextColor': '#002060',
-      'primaryBorderColor': '#cdd3f7',
-      'lineColor': '#00a9eb',
-      'secondaryColor': '#e0e3fc',
-      'tertiaryColor': '#ffffff'
-    }
-  }
-}%%
-flowchart TB
-    Users[Human Users] -->|Federation| SSO[AWS SSO]
-    SSO -->|Assume Role| AR[Analyst Role]
-
-    App[Applications] -->|Instance Profile| IR[Instance Role]
-
-    AR -->|Access with MFA| S3[Classified S3 Data]
-    IR -->|Limited Access| S3
-
-    SCPs[Organization SCPs] -->|Guardrails| AR
-    SCPs -->|Guardrails| IR
-
-    PB[Permissions Boundary] -->|Limits| Admin[Admin Role]
-
-    style Users fill:#ffffff,stroke:#cdd3f7
-    style SSO fill:#00a9eb,stroke:#cdd3f7,color:#ffffff
-    style AR fill:#00a9eb,stroke:#cdd3f7,color:#ffffff
-    style App fill:#ffffff,stroke:#cdd3f7
-    style IR fill:#00a9eb,stroke:#cdd3f7,color:#ffffff
-    style S3 fill:#6777ef,stroke:#cdd3f7,color:#ffffff
-    style SCPs fill:#6777ef,stroke:#cdd3f7,color:#ffffff
-    style PB fill:#6777ef,stroke:#cdd3f7,color:#ffffff
-    style Admin fill:#00a9eb,stroke:#cdd3f7,color:#ffffff
-```
-
 ## Core IAM Concepts
 
 ```mermaid
@@ -278,44 +239,7 @@ graph TD
 
 ## Example: Classified Workload IAM Architecture
 
-```mermaid
-%%{
-  init: {
-    'theme': 'base',
-    'themeVariables': {
-      'primaryColor': '#6777ef',
-      'primaryTextColor': '#002060',
-      'primaryBorderColor': '#cdd3f7',
-      'lineColor': '#00a9eb',
-      'secondaryColor': '#e0e3fc',
-      'tertiaryColor': '#ffffff'
-    }
-  }
-}%%
-flowchart TB
-    Users[Human Users] -->|Federation| SSO[AWS SSO]
-    SSO -->|Assume Role| AR[Analyst Role]
-
-    App[Applications] -->|Instance Profile| IR[Instance Role]
-
-    AR -->|Access with MFA| S3[Classified S3 Data]
-    IR -->|Limited Access| S3
-
-    SCPs[Organization SCPs] -->|Guardrails| AR
-    SCPs -->|Guardrails| IR
-
-    PB[Permissions Boundary] -->|Limits| Admin[Admin Role]
-
-    style Users fill:#ffffff,stroke:#cdd3f7
-    style SSO fill:#00a9eb,stroke:#cdd3f7,color:#ffffff
-    style AR fill:#00a9eb,stroke:#cdd3f7,color:#ffffff
-    style App fill:#ffffff,stroke:#cdd3f7
-    style IR fill:#00a9eb,stroke:#cdd3f7,color:#ffffff
-    style S3 fill:#6777ef,stroke:#cdd3f7,color:#ffffff
-    style SCPs fill:#6777ef,stroke:#cdd3f7,color:#ffffff
-    style PB fill:#6777ef,stroke:#cdd3f7,color:#ffffff
-    style Admin fill:#00a9eb,stroke:#cdd3f7,color:#ffffff
-```
+<img style={{ width: '100%', overflowX: 'auto' }} src="/img/aws/aws-iam-control-policy.svg" alt="AWS Advanced PAAS Architecture Diagram" />
 
 A classified workload processing sensitive data would include:
 
