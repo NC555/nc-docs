@@ -19,13 +19,12 @@ main objectives of this project
 
 ## Todo List
 
-1. [Linux Initial Hardening Setup](ubuntu-private-lab/initial-hardening-setup)
-
-2. [Linux Initial Utilities Setup](ubuntu-private-lab/initial-utilities-setup)
-3. [Mapping Sftp Connection](ubuntu-private-lab/mapping-sftp-connection)
-4. [Linux Memory Swap Space](ubuntu-private-lab/memory-swap-space)
-5. [Docker Setup](ubuntu-private-lab/docker-setup)
-6. [Nginx Proxy Manager](ubuntu-private-lab/nginx-proxy-manager)
-7. [Deploy Coolify PAAS](ubuntu-private-lab/coolify-paas)
+1. [Linux Initial Hardening Setup](./initial-hardening-setup)
+2. [Linux Initial Utilities Setup](./initial-utilities-setup)
+3. [Mapping Sftp Connection](./mapping-sftp-connection)
+4. [Linux Memory Swap Space](./memory-swap-space)
+5. [Docker Setup](./docker-setup)
+6. [Nginx Proxy Manager](./nginx-proxy-manager)
+7. [Deploy Coolify PAAS](./coolify-paas)
 
 This guide is structured to be followed sequentially, but feel free to navigate to specific sections as needed once you have a foundational setup.
