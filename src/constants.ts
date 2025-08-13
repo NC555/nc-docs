@@ -17,7 +17,7 @@ export const TIKTOK_URL = "https://www.tiktok.com/@roo.code";
 export const PERSONAL_BLOG = "https://nc555.online/";
 
 // GitHub links
-export const GITHUB_MAIN_REPO_URL = "https://github.com/NC555";
+export const GITHUB_MAIN_REPO_URL = "https://github.com/NC555/nc-docs/";
 export const GITHUB_ISSUES_MAIN_URL = "";
 export const GITHUB_FEATURES_URL = "";
 

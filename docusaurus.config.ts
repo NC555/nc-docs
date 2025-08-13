@@ -55,7 +55,7 @@ const config: Config = {
         docs: {
           sidebarPath: "./sidebars.ts",
           routeBasePath: "/",
-          editUrl: `${GITHUB_REPO_URL}/edit/main/`,
+          editUrl: `${GITHUB_REPO_URL}/nc-docs/blob/master/`,
           showLastUpdateTime: true,
         },
         blog: false, // Disable blog feature
@@ -145,60 +145,6 @@ const config: Config = {
         {
           type: "search",
           position: "left",
-        },
-        {
-          type: "docSidebar",
-          sidebarId: "tutorialSidebar",
-          position: "left",
-          label: "Docs",
-        },
-        {
-          type: "doc",
-          docId: "landing-zone-concepts/index",
-          position: "left",
-          label: "Landing Zone",
-        },
-        {
-          type: "doc",
-          docId: "ms-windows/index",
-          position: "left",
-          label: "MS Windows",
-        },
-        {
-          type: "doc",
-          docId: "kubernetes/kubernetes-index",
-          position: "left",
-          label: "Kubernetes",
-        },
-        {
-          type: "doc",
-          docId: "ansible/index",
-          position: "left",
-          label: "Ansible",
-        },
-        {
-          type: "doc",
-          docId: "git/index",
-          position: "left",
-          label: "Git",
-        },
-        {
-          type: "doc",
-          docId: "aws/aws-index",
-          position: "left",
-          label: "AWS",
-        },
-        {
-          type: "doc",
-          docId: "heap-knowledge-base/index",
-          position: "left",
-          label: "Knowledge Base",
-        },
-        {
-          type: "doc",
-          docId: "cyber-security/index",
-          position: "left",
-          label: "Cyber Security",
         },
       ],
     },

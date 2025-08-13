@@ -1,3 +1,8 @@
+---
+title: Getting started with Ubuntu
+description: This documentation series guides you through the process of setting up a secure, efficient, and versatile Ubuntu Virtual Private Server (VPS)
+---
+
 # Getting started with Ubuntu
 
 ## Introduction
