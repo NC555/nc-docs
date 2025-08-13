@@ -25,7 +25,6 @@ const sidebars: SidebarsConfig = {
         "ubuntu-private-lab/executable-shell-scripts",
         "ubuntu-private-lab/file-directory-management",
         "ubuntu-private-lab/ha-proxy-load-balancer",
-        "ubuntu-private-lab/index",
         "ubuntu-private-lab/initial-hardening-setup",
         "ubuntu-private-lab/initial-utilities-setup",
         "ubuntu-private-lab/linux-ssh-key-generation",
@@ -51,7 +50,6 @@ const sidebars: SidebarsConfig = {
         id: "landing-zone-concepts/index",
       },
       items: [
-        "landing-zone-concepts/index",
         {
           type: "category",
           label: "Architecture",
@@ -86,6 +84,10 @@ const sidebars: SidebarsConfig = {
         {
           type: "category",
           label: "Powershell",
+          link: {
+            type: "doc",
+            id: "ms-windows/powershell/index",
+          },
           items: [
             "ms-windows/powershell/powershell-creating-ssh-keys",
             "ms-windows/powershell/powershell-network-information",
@@ -95,8 +97,11 @@ const sidebars: SidebarsConfig = {
         {
           type: "category",
           label: "WSL",
+          link: {
+            type: "doc",
+            id: "ms-windows/wsl/index",
+          },
           items: [
-            "ms-windows/wsl/index",
             "ms-windows/wsl/ubuntu-24.04-lts",
             "ms-windows/wsl/setup-windows-subsystem-for-linux",
             "ms-windows/wsl/setup-wsl-putty-connection",
@@ -135,7 +140,6 @@ const sidebars: SidebarsConfig = {
         id: "ansible/index",
       },
       items: [
-        "ansible/index",
         "ansible/ansible-core-concepts",
         "ansible/ansible-ubuntu-hardining-palybook",
         "ansible/set-discovered-dhcp-ip",
@@ -148,11 +152,7 @@ const sidebars: SidebarsConfig = {
         type: "doc",
         id: "git/index",
       },
-      items: [
-        "git/index",
-        "git/git-new-branch-in-repo",
-        "git/starting-a-new-git-repo",
-      ],
+      items: ["git/git-new-branch-in-repo", "git/starting-a-new-git-repo"],
     },
     {
       type: "category",
@@ -166,7 +166,6 @@ const sidebars: SidebarsConfig = {
           type: "category",
           label: "Fundamentals",
           items: [
-            "aws/fundamentals/index",
             "aws/fundamentals/fundamentals-global-infrastructure",
             "aws/fundamentals/identity-access-management-iam",
             "aws/fundamentals/network-security-architecture",
@@ -192,7 +191,6 @@ const sidebars: SidebarsConfig = {
             id: "aws/architecture/index",
           },
           items: [
-            "aws/architecture/index",
             "aws/architecture/multi-azs-secured-networking-hybrid",
             "aws/architecture/aws-advance-pass-architecture",
           ],
@@ -207,7 +205,6 @@ const sidebars: SidebarsConfig = {
         id: "heap-knowledge-base/index",
       },
       items: [
-        "heap-knowledge-base/index",
         "heap-knowledge-base/api-gateways",
         "heap-knowledge-base/api-security",
         "heap-knowledge-base/apis",
@@ -267,7 +264,6 @@ const sidebars: SidebarsConfig = {
         id: "cyber-security/index",
       },
       items: [
-        "cyber-security/index",
         "cyber-security/information-security-and-cyber-fundamentals",
         "cyber-security/information-security-architecture",
         "cyber-security/critical-infrastructure-security",
