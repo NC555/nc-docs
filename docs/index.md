@@ -52,7 +52,7 @@ Start with our foundational guides:
 Follow our cloud adoption path:
 
 1. [AWS Fundamentals](aws/fundamentals/) - Understand cloud infrastructure basics
-2. [Landing Zone Concepts](landing-zone-concepts/) - Plan your cloud architecture
+2. [Landing Zone Concepts](landing-zone-concepts) - Plan your cloud architecture
 3. [Multi-Cloud Setup](ms-windows/terraform-multi-cloud-setup) - Implement infrastructure as code
 
 ### Security Focus?
@@ -150,11 +150,18 @@ Join our growing community of infrastructure professionals:
 
 Ready to dive in? Choose your path:
 
-- **Beginners**: Start with [Ubuntu Private Lab](ubuntu-private-lab/) basics
-- **Cloud Adopters**: Explore [AWS Fundamentals](aws/fundamentals/)
-- **Security Professionals**: Begin with [Cybersecurity Frameworks](cyber-security/)
-- **DevOps Engineers**: Jump into [Kubernetes](kubernetes/) or [Ansible](ansible/)
-- **Windows Users**: Check out [PowerShell](ms-windows/powershell/) and [WSL](ms-windows/wsl/) guides
+- **Beginners**: Start with [Ubuntu Private Lab](./ubuntu-private-lab/index.md) basics
+- **Cloud & AWS**:
+  - Explore [AWS Fundamentals](./aws/fundamentals/index.md)
+  - Understand [AWS Architecture](./aws/architecture/index.md)
+  - Plan your [Landing Zone Concepts](./landing-zone-concepts/index.md)
+- **Security Professionals**: Begin with [Cybersecurity Frameworks](./cyber-security/index.md)
+- **Automation & DevOps**:
+  - Jump into [Ansible](./ansible/index.md)
+  - Explore [Kubernetes](kubernetes/index.md)
+- **Windows Users**: Check out [PowerShell](ms-windows/powershell/index.md) and [WSL](./ms-windows/wsl/index.md)
+- **Version Control**: Master [Git Workflows](./git/index.md)
+- **Knowledge Base**: Dive into the [Heap Knowledge Base](./heap-knowledge-base/index.md)
 
 ---
 

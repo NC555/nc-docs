@@ -46,7 +46,12 @@ const sidebars: SidebarsConfig = {
     {
       type: "category",
       label: "Landing Zone Concepts",
+      link: {
+        type: "doc",
+        id: "landing-zone-concepts/index",
+      },
       items: [
+        "landing-zone-concepts/index",
         {
           type: "category",
           label: "Architecture",
@@ -68,6 +73,10 @@ const sidebars: SidebarsConfig = {
     {
       type: "category",
       label: "MS Windows",
+      link: {
+        type: "doc",
+        id: "ms-windows/index",
+      },
       items: [
         "ms-windows/ansible-installation",
         "ms-windows/ansible",
@@ -87,6 +96,7 @@ const sidebars: SidebarsConfig = {
           type: "category",
           label: "WSL",
           items: [
+            "ms-windows/wsl/index",
             "ms-windows/wsl/ubuntu-24.04-lts",
             "ms-windows/wsl/setup-windows-subsystem-for-linux",
             "ms-windows/wsl/setup-wsl-putty-connection",
@@ -98,6 +108,10 @@ const sidebars: SidebarsConfig = {
     {
       type: "category",
       label: "Kubernetes",
+      link: {
+        type: "doc",
+        id: "kubernetes/kubernetes-index",
+      },
       items: [
         "kubernetes/architecture-components",
         "kubernetes/architecture-diagram",
@@ -116,7 +130,12 @@ const sidebars: SidebarsConfig = {
     {
       type: "category",
       label: "Ansible",
+      link: {
+        type: "doc",
+        id: "ansible/index",
+      },
       items: [
+        "ansible/index",
         "ansible/ansible-core-concepts",
         "ansible/ansible-ubuntu-hardining-palybook",
         "ansible/set-discovered-dhcp-ip",
@@ -125,16 +144,29 @@ const sidebars: SidebarsConfig = {
     {
       type: "category",
       label: "Git",
-      items: ["git/git-new-branch-in-repo", "git/starting-a-new-git-repo"],
+      link: {
+        type: "doc",
+        id: "git/index",
+      },
+      items: [
+        "git/index",
+        "git/git-new-branch-in-repo",
+        "git/starting-a-new-git-repo",
+      ],
     },
     {
       type: "category",
       label: "AWS",
+      link: {
+        type: "doc",
+        id: "aws/aws-index",
+      },
       items: [
         {
           type: "category",
           label: "Fundamentals",
           items: [
+            "aws/fundamentals/index",
             "aws/fundamentals/fundamentals-global-infrastructure",
             "aws/fundamentals/identity-access-management-iam",
             "aws/fundamentals/network-security-architecture",
@@ -155,7 +187,12 @@ const sidebars: SidebarsConfig = {
         {
           type: "category",
           label: "Architecture",
+          link: {
+            type: "doc",
+            id: "aws/architecture/index",
+          },
           items: [
+            "aws/architecture/index",
             "aws/architecture/multi-azs-secured-networking-hybrid",
             "aws/architecture/aws-advance-pass-architecture",
           ],
@@ -165,7 +202,12 @@ const sidebars: SidebarsConfig = {
     {
       type: "category",
       label: "Knowledge Base",
+      link: {
+        type: "doc",
+        id: "heap-knowledge-base/index",
+      },
       items: [
+        "heap-knowledge-base/index",
         "heap-knowledge-base/api-gateways",
         "heap-knowledge-base/api-security",
         "heap-knowledge-base/apis",
@@ -220,7 +262,12 @@ const sidebars: SidebarsConfig = {
     {
       type: "category",
       label: "Cyber Security",
+      link: {
+        type: "doc",
+        id: "cyber-security/index",
+      },
       items: [
+        "cyber-security/index",
         "cyber-security/information-security-and-cyber-fundamentals",
         "cyber-security/information-security-architecture",
         "cyber-security/critical-infrastructure-security",
