@@ -359,7 +359,7 @@ const sidebars: SidebarsConfig = {
           items: [
             {
               type: "doc",
-              id: "aws/srvices/ec2",
+              id: "aws/services/ec2",
               label: "Elastic Compute Cloud (EC2)",
             },
             {
