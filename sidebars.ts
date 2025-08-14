@@ -11,6 +11,199 @@ const sidebars: SidebarsConfig = {
     "index",
     {
       type: "category",
+      label: "AWS",
+      link: {
+        type: "doc",
+        id: "aws/index",
+      },
+      items: [
+        {
+          type: "category",
+          label: "Services",
+          items: [
+            {
+              type: "doc",
+              id: "aws/services/ec2",
+              label: "Amazon EC2",
+            },
+            {
+              type: "doc",
+              id: "aws/services/lambda",
+              label: "AWS Lambda",
+            },
+            {
+              type: "doc",
+              id: "aws/services/elb",
+              label: "ELB",
+            },
+            {
+              type: "doc",
+              id: "aws/services/ami",
+              label: "AMI",
+            },
+            {
+              type: "doc",
+              id: "aws/services/ecs",
+              label: "Amazon ECS",
+            },
+            {
+              type: "doc",
+              id: "aws/services/eks",
+              label: "Amazon EKS",
+            },
+            {
+              type: "doc",
+              id: "aws/services/ecr",
+              label: "Amazon ECR",
+            },
+            {
+              type: "doc",
+              id: "aws/services/fargate",
+              label: "Fargate",
+            },
+            {
+              type: "doc",
+              id: "aws/services/elastic-beanstalk",
+              label: "Elastic Beanstalk",
+            },
+            {
+              type: "doc",
+              id: "aws/services/batch",
+              label: "AWS Batch",
+            },
+            {
+              type: "doc",
+              id: "aws/services/lightsail",
+              label: "Lightsail",
+            },
+            {
+              type: "doc",
+              id: "aws/services/outposts",
+              label: "Outposts",
+            },
+            {
+              type: "doc",
+              id: "aws/services/sns",
+              label: "Amazon SNS",
+            },
+            {
+              type: "doc",
+              id: "aws/services/event-bridge",
+              label: "Amazon EventBridge",
+            },
+            {
+              type: "doc",
+              id: "aws/services/messaging-and-queuing",
+              label: "EventBridge Vs SQS Vs SNS",
+            },
+            {
+              type: "doc",
+              id: "aws/services/vms-containers-challenges",
+              label: "VMs & Containers challenges",
+            },
+          ],
+        },
+        {
+          type: "category",
+          label: "Fundamentals",
+          items: [
+            {
+              type: "doc",
+              id: "aws/fundamentals/fundamentals-global-infrastructure",
+              label: "Fundamentals Global Infrastructure",
+            },
+            {
+              type: "doc",
+              id: "aws/fundamentals/identity-access-management-iam",
+              label: "Identity Access Management Iam",
+            },
+            {
+              type: "doc",
+              id: "aws/fundamentals/network-security-architecture",
+              label: "Network Security Architecture",
+            },
+            {
+              type: "doc",
+              id: "aws/fundamentals/data-protection-encryption",
+              label: "Data Protection Encryption",
+            },
+            {
+              type: "doc",
+              id: "aws/fundamentals/compute-application-security",
+              label: "Compute Application Security",
+            },
+            {
+              type: "doc",
+              id: "aws/fundamentals/management-governance",
+              label: "Management Governance",
+            },
+            {
+              type: "doc",
+              id: "aws/fundamentals/compliance-regulatory-adherence",
+              label: "Compliance Regulatory Adherence",
+            },
+            {
+              type: "doc",
+              id: "aws/fundamentals/hybrid-cloud-connectivity",
+              label: "Hybrid Cloud Connectivity",
+            },
+            {
+              type: "doc",
+              id: "aws/fundamentals/disaster-recovery-business-continuity",
+              label: "Disaster Recovery Business Continuity",
+            },
+            {
+              type: "doc",
+              id: "aws/fundamentals/devsecops-automation",
+              label: "Devsecops Automation",
+            },
+            {
+              type: "doc",
+              id: "aws/fundamentals/cost-management-optimization",
+              label: "Cost Management Optimization",
+            },
+            {
+              type: "doc",
+              id: "aws/fundamentals/monitoring-detection-response",
+              label: "Monitoring Detection Response",
+            },
+            {
+              type: "doc",
+              id: "aws/fundamentals/architecture-systems_engineering-principles",
+              label: "Architecture Systems Engineering Principles",
+            },
+            {
+              type: "doc",
+              id: "aws/fundamentals/government-specific-aws-project-aspects",
+              label: "Government Specific Aws Project Aspects",
+            },
+            {
+              type: "doc",
+              id: "aws/fundamentals/advanced-aws-topics-emerging-technologies",
+              label: "Advanced Aws Topics Emerging Technologies",
+            },
+          ],
+        },
+        {
+          type: "category",
+          label: "Architecture",
+          items: [
+            {
+              type: "doc",
+              id: "aws/architecture/multi-azs-secured-networking-hybrid",
+              label: "Multi Azs Secured Networking Hybrid",
+            },
+            {
+              type: "doc",
+              id: "aws/architecture/aws-advance-pass-architecture",
+              label: "Aws Advance Pass Architecture",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      type: "category",
       label: "Ubuntu Private Lab",
       link: {
         type: "doc",
@@ -342,139 +535,6 @@ const sidebars: SidebarsConfig = {
           type: "doc",
           id: "git/starting-a-new-git-repo",
           label: "Starting A New Git Repo",
-        },
-      ],
-    },
-    {
-      type: "category",
-      label: "AWS",
-      link: {
-        type: "doc",
-        id: "aws/index",
-      },
-      items: [
-        {
-          type: "category",
-          label: "Fundamentals",
-          items: [
-            {
-              type: "doc",
-              id: "aws/fundamentals/fundamentals-global-infrastructure",
-              label: "Fundamentals Global Infrastructure",
-            },
-            {
-              type: "doc",
-              id: "aws/fundamentals/identity-access-management-iam",
-              label: "Identity Access Management Iam",
-            },
-            {
-              type: "doc",
-              id: "aws/fundamentals/network-security-architecture",
-              label: "Network Security Architecture",
-            },
-            {
-              type: "doc",
-              id: "aws/fundamentals/data-protection-encryption",
-              label: "Data Protection Encryption",
-            },
-            {
-              type: "doc",
-              id: "aws/fundamentals/compute-application-security",
-              label: "Compute Application Security",
-            },
-            {
-              type: "doc",
-              id: "aws/fundamentals/management-governance",
-              label: "Management Governance",
-            },
-            {
-              type: "doc",
-              id: "aws/fundamentals/compliance-regulatory-adherence",
-              label: "Compliance Regulatory Adherence",
-            },
-            {
-              type: "doc",
-              id: "aws/fundamentals/hybrid-cloud-connectivity",
-              label: "Hybrid Cloud Connectivity",
-            },
-            {
-              type: "doc",
-              id: "aws/fundamentals/disaster-recovery-business-continuity",
-              label: "Disaster Recovery Business Continuity",
-            },
-            {
-              type: "doc",
-              id: "aws/fundamentals/devsecops-automation",
-              label: "Devsecops Automation",
-            },
-            {
-              type: "doc",
-              id: "aws/fundamentals/cost-management-optimization",
-              label: "Cost Management Optimization",
-            },
-            {
-              type: "doc",
-              id: "aws/fundamentals/monitoring-detection-response",
-              label: "Monitoring Detection Response",
-            },
-            {
-              type: "doc",
-              id: "aws/fundamentals/architecture-systems_engineering-principles",
-              label: "Architecture Systems Engineering Principles",
-            },
-            {
-              type: "doc",
-              id: "aws/fundamentals/government-specific-aws-project-aspects",
-              label: "Government Specific Aws Project Aspects",
-            },
-            {
-              type: "doc",
-              id: "aws/fundamentals/advanced-aws-topics-emerging-technologies",
-              label: "Advanced Aws Topics Emerging Technologies",
-            },
-          ],
-        },
-        {
-          type: "category",
-          label: "Architecture",
-          items: [
-            {
-              type: "doc",
-              id: "aws/architecture/multi-azs-secured-networking-hybrid",
-              label: "Multi Azs Secured Networking Hybrid",
-            },
-            {
-              type: "doc",
-              id: "aws/architecture/aws-advance-pass-architecture",
-              label: "Aws Advance Pass Architecture",
-            },
-          ],
-        },
-        {
-          type: "category",
-          label: "Services",
-          items: [
-            {
-              type: "doc",
-              id: "aws/services/ec2",
-              label: "Elastic Compute Cloud",
-            },
-            {
-              type: "doc",
-              id: "aws/services/elb",
-              label: "Elastic Load Balancing",
-            },
-            {
-              type: "doc",
-              id: "aws/services/ami",
-              label: "Amazon Machine Images",
-            },
-            {
-              type: "doc",
-              id: "aws/services/messaging-and-queuing",
-              label: "Messaging and Queuing",
-            },
-          ],
         },
       ],
     },

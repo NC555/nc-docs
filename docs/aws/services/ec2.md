@@ -1,7 +1,7 @@
 ---
 title: "Amazon Elastic Compute Cloud (EC2) "
 description: "Amazon EC2 offers a broad range of instance types, each tailored to meet specific use case requirements."
-tags: ["aws", "cloud_compute", "vps", "ec2"]
+tags: ["aws", "compute", "vps", "ec2"]
 author: "Nati Cabti"
 date: "2025-08-11"
 ---

@@ -1,55 +1,27 @@
-# Messaging and Queuing
+---
+title: "EventBridge Vs SQS Vs SNS"
+description: "Amazon EventBridge, SNS, and SQS are all AWS messaging and event services, but they serve different purposes and use cases"
+tags:
+  ["aws", "event_bridge", "sqs", "sns", "messaging", "queues", "microservices"]
+author: "Nati Cabti"
+date: "2025-08-11"
+---
 
-Amazon EventBridge, Amazon SNS, and Amazon SQS are AWS services that help different parts of an application communicate effectively in the cloud. These services support building event-driven and message-based systems. Together, they help create scalable, reliable applications that can handle high traffic and can enhance communication between components.
+# EventBridge Vs SQS Vs SNS
 
-## EventBridge
+Amazon EventBridge, SNS, and SQS are all AWS messaging and event services, but they serve different purposes and use cases
 
-<div class="aws__ImageCentered">
-<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/aws-logo-event-bridge.png" alt="AWS EventBridge LOGO" />
-</div>
+#### EventBridge
 
-EventBridge is a serverless service that helps connect different parts of an application using events, helping to build scalable, event-driven systems. With EventBridge, you route events from sources like custom apps, AWS services, and third-party software to other applications. EventBridge simplifies the process of receiving, filtering, transforming, and delivering events, so you can quickly build reliable applications.
+Amazon EventBridge is an event bus service designed for event-driven architectures. It acts as a central hub that receives events from various sources (AWS services, custom applications, SaaS providers) and routes them to multiple targets based on rules. **EventBridge is ideal for building loosely coupled, serverless applications where you need to react to events happening across your system.** It supports event filtering, transformation, and can integrate with over 90 AWS services as both sources and targets.
 
-<img style={{ width: '100%', overflowX: 'auto' }} src="/img/aws/aws-ques-messaging-event-bridge.png" alt="AWS EventBridge LOGO" />
+## SNS
+
+Amazon SNS (Simple Notification Service) is a pub/sub messaging service that delivers messages from publishers to subscribers. It's designed for fan-out scenarios where you want to send the same message to multiple recipients simultaneously. SNS supports various delivery protocols including email, SMS, HTTP/HTTPS endpoints, and SQS queues. **It's particularly useful for notifications, alerts, and broadcasting messages to multiple consumers.**
 
 ## Amazon SQS
 
-<div class="aws__ImageCentered">
-<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/aws-logo-sqs.png" alt="Amazon SQS LOGO" />
-</div>
-
-#### Amazon SQS Use Case Scenario
-
-**Scenario :** A customer support team consists of a support agent and a technical specialist. The support agent is responsible for receiving customer issues, and the technical specialist works on resolving them.
-
-<img style={{ width: '100%', overflowX: 'auto' }} src="/img/aws/aws-ques-messaging-sqs-scenario.png" alt="Amazon SQS Scenario" />
-
-**Challenge :**
-However, what happens if the support agent creates a ticket but the technical specialist is busy working on another issue or unavailable? The agent would have to wait until the specialist is free to accept the new ticket, causing delays in resolving customer issues and extending wait times for customers
-<img style={{ width: '100%', overflowX: 'auto' }} src="/img/aws/aws-ques-messaging-sqs-scenario-challenge.png" alt="Amazon SQS Challenge" />
-
-**Solution :** To improve efficiency, they implement a queue system using Amazon SQS. The support agent adds customer issues to the queue, creating a backlog. Even if the specialist is busy, the agent can continue adding new issues. The specialist checks the queue, resolves issues, and updates the agent
-<img style={{ width: '100%', overflowX: 'auto' }} src="/img/aws/aws-ques-messaging-sqs-scenario-solution.png" alt="Amazon SQS Solution" />
-
-## Amazon SNS
-
-<div class="aws__ImageCentered">
-<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/aws-logo-sns.png" alt="Amazon SNS LOGO" />
-</div>
-Amazon SNS is a publish-subscribe service that publishers use to send messages to subscribers through SNS topics. In Amazon SNS, subscribers can include web servers, email addresses, Lambda functions, and various other endpoints. You will learn about Lambda in more detail later.
-
-#### Amazon SNS Use Case Scenario
-
-A company sending a single email to all customers with updates on various topics, such as new products, special offers, and upcoming events. Customers want to receive only the updates they’re interested in. The current email update is causing customer dissatisfaction and lower engagement.
-
-1.  **Segment the communication :** The company decides to divide the communication into three separate topics, including one for new products, one for special offers, and one for events. Each topic will focus on a specific area of interest.
-2.  **Let customers choose topics :**
-
-- A customer might subscribe only to new product updates.
-- Another customer might opt only for event notifications.
-- A third customer might choose to subscribe to new product updates and special offers.
-
-3. **Send tailored notifications :** With Amazon SNS, the company can send personalized notifications to subscribers based on their specific interests. Amazon SNS makes sure that these notifications are promptly delivered to the right audience, improving the efficiency and relevance of the communication.
+Amazon SQS (Simple Queue Service) is a message queuing service that provides reliable, scalable message queues for decoupling application components. SQS stores messages in queues until consumers retrieve and process them. **It's perfect for asynchronous processing, workload distribution, and ensuring messages aren't lost even if consumers are temporarily unavailable.** SQS offers both standard queues (best-effort ordering, at-least-once delivery) and FIFO queues (strict ordering, exactly-once processing).
 
 ## Comparsion EventBridge, Amazon SNS, and Amazon SQS
 
