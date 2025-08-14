@@ -10,7 +10,7 @@ date: "2025-08-11"
 
 AMIs are pre-built virtual machine images that have the basic components for what is needed to start an instance
 
-<img style={{ width: '100%', overflowX: 'auto' }} src="img/aws/aws-ami.png" alt="AWS AMI Components" />
+<img style={{ width: '100%', overflowX: 'auto' }} src="/img/aws/aws-ami.png" alt="AWS AMI Components" />
 
 ## Ways to use AMIs
 

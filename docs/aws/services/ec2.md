@@ -8,9 +8,9 @@ date: "2025-08-11"
 
 # Amazon Elastic Compute Cloud (EC2)
 
-<img style={{ width: '100%', overflowX: 'auto' }} src="/img/aws/aws-ec2.png" alt="AWS EC2 LOGO" />
-
 Amazon EC2 is more flexible, cost-effective, and faster than managing on-premises servers. It offers on-demand compute capacity that can be quickly launched, scaled, and terminated, with costs based only on active usage.
+
+<img style={{ width: '100%', overflowX: 'auto' }} src="/img/aws/aws-logo-ec2.png" alt="AWS EC2 LOGO" />
 
 ## How Amazon EC2 works
 
@@ -46,7 +46,7 @@ Storage optimized instances are designed for workloads that require high perform
 Amazon EC2 requires you to perform all of the necessary security configuration and management tasks.
 When you deploy an EC2 instance, you are responsible for configuring security, managing the guest operating system (OS), applying updates, and setting up firewalls (security groups).
 
-<img style={{ width: '100%', overflowX: 'auto' }} src="/static/img/aws/aws-ec2-shared-responsibility.png" alt="EC2 Shared Responsibility Model" />
+<img style={{ width: '100%', overflowX: 'auto' }} src="/img/aws/aws-ec2-shared-responsibility.png" alt="EC2 Shared Responsibility Model" />
 
 ## EC2 Pricing
 
@@ -75,7 +75,7 @@ Reserve an entire physical server for your exclusive use. This option offers ful
 
 Pay for instances running on hardware dedicated solely to your account. This option provides isolation from other AWS customers.
 
-<img style={{ width: '100%', overflowX: 'auto' }} src="/static/img/aws/aws-ec2-dedicated.png" alt="EC2 Dedicated Instances" />
+<img style={{ width: '100%', overflowX: 'auto' }} src="/img/aws/aws-ec2-dedicated.png" alt="EC2 Dedicated Instances" />
 
 ### Scaling Amazon EC2
 
@@ -83,10 +83,10 @@ Pay for instances running on hardware dedicated solely to your account. This opt
 
 Scalability refers to the ability of a system to handle an increased load by adding resources. You can scale up by adding more power to existing machines, or you can scale out by adding more machines. Scalability focuses on long-term capacity planning to make sure that the system can grow and accommodate more users or workloads as needed.
 
-<img style={{ width: '100%', overflowX: 'auto' }} src="/static/img/aws/aws-ec2-scalability.png" alt="EC2 Dedicated Instances" />
+<img style={{ width: '100%', overflowX: 'auto' }} src="/img/aws/aws-ec2-scalability.png" alt="EC2 Dedicated Instances" />
 
 ### Elasticity
 
 Elasticity is the ability to automatically scale resources up or down in response to real-time demand. A system can then rapidly adjust its resources, scaling out during periods of high demand and scaling in when the demand decreases. Elasticity provides cost efficiency and optimal resource usage at any given moment.
 
-<img style={{ width: '100%', overflowX: 'auto' }} src="/static/img/aws/aws-ec2-elasticity.jpeg" alt="EC2 Dedicated Instances" />
+<img style={{ width: '100%', overflowX: 'auto' }} src="/img/aws/aws-ec2-elasticity.jpeg" alt="EC2 Dedicated Instances" />

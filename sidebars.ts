@@ -355,22 +355,6 @@ const sidebars: SidebarsConfig = {
       items: [
         {
           type: "category",
-          label: "Services",
-          items: [
-            {
-              type: "doc",
-              id: "aws/services/ec2",
-              label: "Elastic Compute Cloud (EC2)",
-            },
-            {
-              type: "doc",
-              id: "aws/srvices/ami",
-              label: "Amazon Machine Images AMI",
-            },
-          ],
-        },
-        {
-          type: "category",
           label: "Fundamentals",
           items: [
             {
