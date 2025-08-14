@@ -8,9 +8,11 @@ date: "2025-08-11"
 
 # Amazon Elastic Compute Cloud (EC2)
 
-Amazon EC2 is more flexible, cost-effective, and faster than managing on-premises servers. It offers on-demand compute capacity that can be quickly launched, scaled, and terminated, with costs based only on active usage.
+<div class="aws__ImageCentered">
+<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/aws-logo-ec2.png" alt="AWS EC2 LOGO" />
+</div>
 
-<img style={{ width: '100%', overflowX: 'auto' }} src="/img/aws/aws-logo-ec2.png" alt="AWS EC2 LOGO" />
+Amazon EC2 is more flexible, cost-effective, and faster than managing on-premises servers. It offers on-demand compute capacity that can be quickly launched, scaled, and terminated, with costs based only on active usage.
 
 ## How Amazon EC2 works
 

@@ -8,9 +8,11 @@ date: "2025-08-11"
 
 # Elastic Load Balancing (ELB)
 
-Elastic Load Balancing (ELB) automatically distributes incoming application traffic across multiple resources, such as EC2 instances, to optimize performance and reliability.
+<div class="aws__ImageCentered">
+<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/aws-logo-elb.png" alt="AWS ELB LOGO" />
+</div>
 
-<img style={{ width: '100%', overflowX: 'auto' }} src="/img/aws/aws-logo-elb.png" alt="AWS ELB LOGO" />
+Elastic Load Balancing (ELB) automatically distributes incoming application traffic across multiple resources, such as EC2 instances, to optimize performance and reliability.
 
 ## ELB and Amazon EC2
 
@@ -26,26 +28,29 @@ Although ELB and Amazon EC2 Auto Scaling are distinct services, they work in tan
 
 ## Routing methods
 
-### Round Robin
+##### Round Robin
 
 Distributes traffic evenly across all available servers in a cyclic manner.
 
-<img style={{ width: '100%', overflowX: 'auto' }} src="/img/aws/aws-elb-routing-round-robin.jpg" alt="ELB Routing Round Robin" />
+<img style={{ width: '200px', overflowX: 'auto' }} src="/img/aws/aws-elb-routing-round-robin.jpg" alt="ELB Routing Round Robin" />
 
 ### Least Connections
 
 Routes traffic to the server with the fewest active connections, maintaining a balanced load.
-<img style={{ width: '100%', overflowX: 'auto' }} src="/img/aws/aws-elb-routing-least-connection.jpg" alt="ELB Routing Least Connections" />
+
+<img style={{ width: '200px', overflowX: 'auto' }} src="/img/aws/aws-elb-routing-least-connection.jpg" alt="ELB Routing Least Connections" />
 
 ### IP Hash
 
 Uses the client’s IP address to consistently route traffic to the same server.
-<img style={{ width: '100%', overflowX: 'auto' }} src="/img/aws/aws-elb-routing-ip-hash.jpg" alt="ELB Routing IP Hash" />
+
+<img style={{ width: '200px', overflowX: 'auto' }} src="/img/aws/aws-elb-routing-ip-hash.jpg" alt="ELB Routing IP Hash" />
 
 ### Least Response Time
 
 Directs traffic to the server with the fastest response time, minimizing latency.
-<img style={{ width: '100%', overflowX: 'auto' }} src="/img/aws/aws-elb-routing-least-response-time.jpg" alt="ELB Routing Least Response Time" />
+
+<img style={{ width: '200px', overflowX: 'auto' }} src="/img/aws/aws-elb-routing-least-response-time.jpg" alt="ELB Routing Least Response Time" />
 
 ## Elastic Load Balancing
 

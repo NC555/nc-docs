@@ -2268,6 +2268,7 @@ html {
 /* Footer Layout -  style */
 .footer__main {
   display: flex;
+  justify-content: center;
   gap: 4rem;
   margin-bottom: 2rem;
 }
@@ -2278,6 +2279,7 @@ html {
 }
 
 .footer__logo-container {
+  text-align: center;
   margin-bottom: 1rem;
   /* Align logo with column titles - move it up to match their baseline */
   margin-top: -8px;
@@ -2395,6 +2397,7 @@ html {
 }
 
 .footer__tagline {
+  text-align: center;
   color: hsl(var(--foreground) / 0.7);
   font-size: 0.9rem;
   line-height: 1.5;
@@ -2434,6 +2437,7 @@ html {
   }
 
   .footer__logo-container {
+    text-align: center;
     margin-top: 0;
     /* Reset negative margin on mobile */
     margin-bottom: 0.5rem;
@@ -2524,4 +2528,12 @@ html {
 /* Ensure consistent spacing for all tutorial video links */
 .menu__list-item:has(> a[href^="https://www.youtube.com/watch"]) {
   margin-bottom: 0 !important;
+}
+
+
+.aws__ImageCentered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }

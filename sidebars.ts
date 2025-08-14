@@ -450,6 +450,32 @@ const sidebars: SidebarsConfig = {
             },
           ],
         },
+        {
+          type: "category",
+          label: "Services",
+          items: [
+            {
+              type: "doc",
+              id: "aws/services/ec2",
+              label: "Elastic Compute Cloud",
+            },
+            {
+              type: "doc",
+              id: "aws/services/elb",
+              label: "Elastic Load Balancing",
+            },
+            {
+              type: "doc",
+              id: "aws/services/ami",
+              label: "Amazon Machine Images",
+            },
+            {
+              type: "doc",
+              id: "aws/services/messaging-and-queuing",
+              label: "Messaging and Queuing",
+            },
+          ],
+        },
       ],
     },
     {
