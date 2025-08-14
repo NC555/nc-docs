@@ -16,3 +16,9 @@ AWS Outposts is a fully managed hybrid cloud solution that extends AWS infrastru
 
 > **Good for:**
 > Low-latency applications, data processing in remote locations, migrating and modernizing legacy applications, and meeting regulatory compliance or data residency requirements
+
+---
+
+### Additional Resources
+
+- [What is AWS Outposts?](https://docs.aws.amazon.com/outposts/latest/server-userguide/what-is-outposts.html)

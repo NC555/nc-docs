@@ -77,10 +77,12 @@ ansible webservers -m ping
 ### Common Issues
 
 1. **Command not found error**:
+
    - Ensure Ansible is installed correctly
    - Check if the installation path is in your PATH variable
 
 2. **SSH connection issues**:
+
    - Verify SSH keys are set up correctly
    - Check if the target hosts are reachable
 
@@ -113,7 +115,9 @@ sudo apt remove ansible
 pip3 uninstall ansible
 ```
 
-## Additional Resources
+---
+
+### Additional Resources
 
 - [Official Ansible Documentation](https://docs.ansible.com/)
 - [Ansible GitHub Repository](https://github.com/ansible/ansible)

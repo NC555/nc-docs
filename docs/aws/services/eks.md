@@ -24,6 +24,8 @@ This is best for enterprises needing full control over infrastructure. It offers
 
 This is great for teams wanting Kubernetes flexibility without managing servers. It combines Kubernetes power with serverless simplicity, helping to scale applications quickly across various use cases.
 
-## Additional Resources
+---
+
+### Additional Resources
 
 - [Amazon Elastic Kubernetes Service](https://aws.amazon.com/eks/)

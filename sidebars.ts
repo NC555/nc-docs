@@ -88,6 +88,11 @@ const sidebars: SidebarsConfig = {
             },
             {
               type: "doc",
+              id: "aws/services/cloud-formation",
+              label: "CloudFormation",
+            },
+            {
+              type: "doc",
               id: "aws/services/event-bridge",
               label: "Amazon EventBridge",
             },

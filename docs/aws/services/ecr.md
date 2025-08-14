@@ -14,6 +14,8 @@ date: "2025-08-11"
 
 Amazon Elastic Container Registry (Amazon ECR) is where you can store, manage, and deploy container images. It supports container images that follow the Open Container Initiative (OCI) standards. You can push, pull, and manage images in your Amazon ECR repositories using standard container tooling and command line interfaces (CLIs).
 
-## Additional Resources
+---
+
+### Additional Resources
 
 - [Amazon Elastic Container Registry](https://aws.amazon.com/ecr/?c=cn&sec=srvm)

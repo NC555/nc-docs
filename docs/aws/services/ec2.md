@@ -93,7 +93,9 @@ Elasticity is the ability to automatically scale resources up or down in respons
 
 <img style={{ width: '100%', overflowX: 'auto' }} src="/img/aws/aws-ec2-elasticity.jpeg" alt="EC2 Dedicated Instances" />
 
-## Additional Resources
+---
+
+### Additional Resources
 
 - [AWS Compute Services](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/compute-services.html)
 - [Amazon EC2 Instance Types](https://aws.amazon.com/ec2/instance-types/)

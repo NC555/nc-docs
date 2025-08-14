@@ -24,6 +24,8 @@ Ideal for small-to-medium businesses that need full control over infrastructure.
 
 Perfect for startups or small teams building web applications with variable traffic. It's a serverless option—no server management required—so teams can focus on development while Amazon ECS handles scaling and orchestration.
 
-## Additional Resources
+---
+
+### Additional Resources
 
 - [Amazon Elastic Container Service](https://aws.amazon.com/ecs/)
