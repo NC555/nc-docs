@@ -359,13 +359,13 @@ const sidebars: SidebarsConfig = {
           items: [
             {
               type: "doc",
-              id: "aws/services/ec2",
-              label: "EC2 Elastic Compute Cloud",
+              id: "aws/srvices/ec2",
+              label: "Elastic Compute Cloud (EC2)",
             },
             {
               type: "doc",
-              id: "aws/services/ami",
-              label: "AMI Amazon Machine Images",
+              id: "aws/srvices/ami",
+              label: "Amazon Machine Images AMI",
             },
           ],
         },

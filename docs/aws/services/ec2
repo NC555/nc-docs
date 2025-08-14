@@ -1,12 +1,12 @@
 ---
-title: "AWS EC2"
+title: "Amazon Elastic Compute Cloud (EC2) "
 description: "Amazon EC2 offers a broad range of instance types, each tailored to meet specific use case requirements."
 tags: ["aws", "cloud_compute", "vps", "ec2"]
 author: "Nati Cabti"
 date: "2025-08-11"
 ---
 
-# Amazon EC2
+# Amazon Elastic Compute Cloud (EC2)
 
 <img style={{ width: '100%', overflowX: 'auto' }} src="/img/aws/aws-ec2.png" alt="AWS EC2 LOGO" />
 
@@ -76,3 +76,17 @@ Reserve an entire physical server for your exclusive use. This option offers ful
 Pay for instances running on hardware dedicated solely to your account. This option provides isolation from other AWS customers.
 
 <img style={{ width: '100%', overflowX: 'auto' }} src="/static/img/aws/aws-ec2-dedicated.png" alt="EC2 Dedicated Instances" />
+
+### Scaling Amazon EC2
+
+### Scalability
+
+Scalability refers to the ability of a system to handle an increased load by adding resources. You can scale up by adding more power to existing machines, or you can scale out by adding more machines. Scalability focuses on long-term capacity planning to make sure that the system can grow and accommodate more users or workloads as needed.
+
+<img style={{ width: '100%', overflowX: 'auto' }} src="/static/img/aws/aws-ec2-scalability.png" alt="EC2 Dedicated Instances" />
+
+### Elasticity
+
+Elasticity is the ability to automatically scale resources up or down in response to real-time demand. A system can then rapidly adjust its resources, scaling out during periods of high demand and scaling in when the demand decreases. Elasticity provides cost efficiency and optimal resource usage at any given moment.
+
+<img style={{ width: '100%', overflowX: 'auto' }} src="/static/img/aws/aws-ec2-elasticity.jpeg" alt="EC2 Dedicated Instances" />
