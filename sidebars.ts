@@ -355,6 +355,22 @@ const sidebars: SidebarsConfig = {
       items: [
         {
           type: "category",
+          label: "Services",
+          items: [
+            {
+              type: "doc",
+              id: "aws/services/ec2",
+              label: "EC2 Elastic Compute Cloud",
+            },
+            {
+              type: "doc",
+              id: "aws/services/ami",
+              label: "AMI Amazon Machine Images",
+            },
+          ],
+        },
+        {
+          type: "category",
           label: "Fundamentals",
           items: [
             {
@@ -437,10 +453,6 @@ const sidebars: SidebarsConfig = {
         {
           type: "category",
           label: "Architecture",
-          link: {
-            type: "doc",
-            id: "aws/architecture/index",
-          },
           items: [
             {
               type: "doc",

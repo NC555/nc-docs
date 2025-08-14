@@ -232,3 +232,7 @@ graph TD
 ## Conclusion
 
 Understanding AWS's global infrastructure is essential for architects working with government entities. Proper implementation of Regions, AZs, and Edge Locations ensures solutions meet stringent compliance, security, and operational requirements while maximizing cloud benefits.
+
+## Resources
+
+[Regions and Availability Zones](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/)

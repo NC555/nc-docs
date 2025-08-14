@@ -67,3 +67,7 @@ For **data protection**, the candidate should describe the controls for both dat
 For securing the cloud deployment, the candidate should mention the use of network security controls like **Virtual Private Clouds (VPCs)** to create logically isolated networks. They should also describe the use of **security groups** and **Network ACLs** to implement fine-grained firewall rules. They should also bring up the importance of **vulnerability management**, including regular scanning of virtual machine images and container images for known vulnerabilities.
 
 Finally, a strong candidate will mention the role of monitoring and logging. They should describe the use of a **Cloud Security Posture Management (CSPM)** solution to continuously monitor for misconfigurations and compliance violations. They should also mention the importance of a centralized logging solution, such as a cloud-native **SIEM**, to collect and analyze logs from across the cloud environment for threat detection and incident response.
+
+## Resources
+
+[Shared Responsibility Model](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/)
