@@ -16,3 +16,7 @@ AWS Batch is a fully managed service that you can use to run batch computing wor
 
 > **Good for:**
 > Processing large-scale, parallel workloads in areas like scientific computing, financial risk analysis, media transcoding, big data processing, machine learning training, and genomics research
+
+## Additional Resources
+
+- [AWS Batch](https://aws.amazon.com/batch/)

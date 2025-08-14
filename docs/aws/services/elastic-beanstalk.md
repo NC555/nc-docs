@@ -16,3 +16,7 @@ Elastic Beanstalk is a fully managed service that streamlines the deployment, ma
 
 > **Good for:**
 > Deploying and managing web applications, RESTful APIs, mobile backend services, and microservices architectures, with automated scaling and simplified infrastructure management
+
+## Additional Resources
+
+- [AWS Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/)
