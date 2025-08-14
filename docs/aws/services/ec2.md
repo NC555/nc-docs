@@ -92,3 +92,8 @@ Scalability refers to the ability of a system to handle an increased load by add
 Elasticity is the ability to automatically scale resources up or down in response to real-time demand. A system can then rapidly adjust its resources, scaling out during periods of high demand and scaling in when the demand decreases. Elasticity provides cost efficiency and optimal resource usage at any given moment.
 
 <img style={{ width: '100%', overflowX: 'auto' }} src="/img/aws/aws-ec2-elasticity.jpeg" alt="EC2 Dedicated Instances" />
+
+## Additional Resources
+
+- [AWS Compute Services](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/compute-services.html)
+- [Amazon EC2 Instance Types](https://aws.amazon.com/ec2/instance-types/)
