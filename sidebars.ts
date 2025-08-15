@@ -19,6 +19,27 @@ const sidebars: SidebarsConfig = {
       items: [
         {
           type: "category",
+          label: "Global Infrastructure",
+          items: [
+            {
+              type: "doc",
+              id: "aws/services/regions",
+              label: "Regions",
+            },
+            {
+              type: "doc",
+              id: "aws/services/availability-zones",
+              label: "Availability Zones",
+            },
+            {
+              type: "doc",
+              id: "aws/services/edge-locations",
+              label: "Edge Locations",
+            },
+          ],
+        },
+        {
+          type: "category",
           label: "Services",
           items: [
             {
@@ -90,16 +111,6 @@ const sidebars: SidebarsConfig = {
               type: "doc",
               id: "aws/services/cloud-formation",
               label: "CloudFormation",
-            },
-            {
-              type: "doc",
-              id: "aws/services/regions",
-              label: "Regions",
-            },
-            {
-              type: "doc",
-              id: "aws/services/availability-zones",
-              label: "Availability Zones",
             },
             {
               type: "doc",

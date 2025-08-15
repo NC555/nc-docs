@@ -1,7 +1,7 @@
 ---
 title: "Availability Zones"
 description: "Amazon SNS is a publish-subscribe service that publishers use to send messages to subscribers through SNS topics"
-tags: ["aws", "infrastructure", "availability_zones", "queues", "microservices"]
+tags: ["aws", "infrastructure", "availability_zones"]
 author: "Nati Cabti"
 date: "2025-08-11"
 ---

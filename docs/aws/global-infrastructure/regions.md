@@ -1,7 +1,7 @@
 ---
 title: "AWS Regions"
 description: "Amazon SNS is a publish-subscribe service that publishers use to send messages to subscribers through SNS topics"
-tags: ["aws", "infrastructure", "regions", "queues", "microservices"]
+tags: ["aws", "infrastructure", "regions"]
 author: "Nati Cabti"
 date: "2025-08-11"
 ---
