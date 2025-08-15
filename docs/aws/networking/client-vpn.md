@@ -1,6 +1,6 @@
 ---
-title: "AWS Direct Connect"
-description: "Direct Connect is a service that makes it possible for you to establish a dedicated private connection between your network and VPC in the AWS Cloud."
+title: "AWS Client VPN"
+description: "AWS Client VPN is a networking service you can use to connect your remote workers and on-premises networks to the cloud. It is a fully managed, elastic VPN service that automatically scales up or down based on user demand. "
 tags:
   [
     "aws",
@@ -15,26 +15,23 @@ author: "Nati Cabti"
 date: "2025-08-11"
 ---
 
-# AWS Direct Connect
+# AWS Client VPN
 
 <div class="aws__ImageCentered">
-<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/aws-logo-client-vpn.png" alt="Amazon VPC" />
+<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/aws-logo-client-vpn.png" alt=" AWS Client VPN Connection" />
 </div>
 
-Direct Connect is a service that makes it possible for you to establish a dedicated private connection between your network and VPC in the AWS Cloud.
+AWS Client VPN is a networking service you can use to connect your remote workers and on-premises networks to the cloud.
 
-> Benefits: AWS Direct Connect reduces network costs and increases amount of bandwidth.
+- **Elastic VPN service :** fully managed, automatically scales up or down based on user demand.
+- **Cloud VPN solution :**, you don’t need to install and manage hardware or try to estimate how many remote users to support at one time
 
-## Direct Connect Use Case
+> Benefits: A AWS Client VPN provides advanced authentication, remote access. It is elastic and fully managed.
 
-- **Latency-sensitive applications**
-  Direct Connect bypasses the internet and provides a consistent, low-latency network experience. This makes it ideal real-time applications that require high performance.
+Use case: It can be used to quickly scale remote-worker access.
 
-- **Large-scale data migration or transfer**
-  Direct Connect helps ensure smooth and reliable data transfers at massive scale for real-time analysis, rapid data backup, or broadcast media processing.
-
-- **Hybrid cloud architectures**
-  You can use Direct Connect to link your AWS and on-premises networks to build applications that span environments without compromising performance.
+- provides secure access to AWS resources and on-premises networks from anywhere
+- OpenVPN-based client, and it works with global Regions by using the AWS global network.
 
 <div class="aws__ImageCentered" >
 <img style={{ background: '#f6f9fd', width: '500px', overflowX: 'auto' }} src="/img/aws/aws-networking-vpn-connection.png" alt="VPN Connection" />

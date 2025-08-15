@@ -23,8 +23,8 @@ const sidebars: SidebarsConfig = {
           items: [
             {
               type: "doc",
-              id: "aws/networking/vpc",
-              label: "VPC",
+              id: "aws/networking/virtual-private-cloud",
+              label: "Virtual Private Cloud",
             },
             {
               type: "doc",
@@ -33,9 +33,10 @@ const sidebars: SidebarsConfig = {
             },
             {
               type: "doc",
-              id: "aws/networking/internet-gateway",
-              label: "Internet Gateway",
+              id: "aws/networking/virtual-private-network",
+              label: "Virtual Private Network",
             },
+
             {
               type: "doc",
               id: "aws/networking/virtual-private-gateway",
