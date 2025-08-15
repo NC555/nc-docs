@@ -235,4 +235,6 @@ Understanding AWS's global infrastructure is essential for architects working wi
 
 ## Resources
 
-[Regions and Availability Zones](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/)
+- [AWS Global Infrastructure](https://aws.amazon.com/about-aws/global-infrastructure/)
+- [Regions and Availability Zones](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/)
+- [AWS for the Edge](https://aws.amazon.com/edge/)

@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { GraphCanvas, GraphCanvasRef, useSelection } from "reagraph";
 import { useGraphData } from "./utils/useGraphData";
 import styles from "./styles.module.css";
-import { darkTheme } from "./theme";
+import { theme as darkTheme } from "./theme";
 
 const GraphView = () => {
   const graphRef = useRef<GraphCanvasRef | null>(null);

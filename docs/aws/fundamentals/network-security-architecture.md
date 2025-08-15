@@ -28,6 +28,11 @@ Here's the refactored content with concise descriptions and Mermaid diagrams to 
 
 # Section 03: Network Security Architecture
 
+
+## Networking components
+
+
+
 ## VPC Fundamentals and Segmentation
 
 AWS Virtual Private Cloud (VPC) provides isolated networks in the AWS cloud with customizable IP ranges, subnets, and routing.

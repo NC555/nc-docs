@@ -1,10 +1,8 @@
-export default function handler(req, res) {
-  if (req.method === "POST") {
-    // Process the POST request
-    res.status(200).json({ name: "Graph data" });
-  } else {
-    // Handle any other HTTP method
-    res.setHeader("Allow", ["POST"]);
-    res.status(405).end(`Method ${req.method} Not Allowed`);
-  }
+import React from "react";
+
+export default function ApiGraph() {
+  // This page is not meant to be rendered directly.
+  // It's an API endpoint that is not compatible with Docusaurus's static build process.
+  // Returning null to prevent build errors.
+  return null;
 }

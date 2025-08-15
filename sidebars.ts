@@ -93,6 +93,16 @@ const sidebars: SidebarsConfig = {
             },
             {
               type: "doc",
+              id: "aws/services/regions",
+              label: "Regions",
+            },
+            {
+              type: "doc",
+              id: "aws/services/availability-zones",
+              label: "Availability Zones",
+            },
+            {
+              type: "doc",
               id: "aws/services/event-bridge",
               label: "Amazon EventBridge",
             },

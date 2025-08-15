@@ -1,7 +1,5 @@
 ---
-
-tags: #wsl2 #wsl_ubuntu
-
+tags: [wsl2, wsl_ubuntu]
 ---
 
 # Installing Ubuntu 24.04 LTS on WSL2
