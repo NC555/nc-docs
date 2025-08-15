@@ -2543,3 +2543,29 @@ html {
   justify-content: center;
   gap: 10px;
 }
+
+
+
+
+.aws__DoubleLogosWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 20px;
+}
+
+.aws__DoubleLogosWrapper img {
+  margin: 0;
+}
+
+
+.aws__ImageAligned {
+  display: flex;
+  flex-direction: column;
+  /* Stack image and span vertically */
+  align-items: center;
+  /* Center horizontally */
+  text-align: center;
+  /* Center the text */
+}

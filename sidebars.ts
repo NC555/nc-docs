@@ -19,6 +19,52 @@ const sidebars: SidebarsConfig = {
       items: [
         {
           type: "category",
+          label: "Networking",
+          items: [
+            {
+              type: "doc",
+              id: "aws/networking/vpc",
+              label: "VPC",
+            },
+            {
+              type: "doc",
+              id: "aws/networking/subnet",
+              label: "Subnet",
+            },
+            {
+              type: "doc",
+              id: "aws/networking/internet-gateway",
+              label: "Internet Gateway",
+            },
+            {
+              type: "doc",
+              id: "aws/networking/virtual-private-gateway",
+              label: "Virtual Private Gateway",
+            },
+            {
+              type: "doc",
+              id: "aws/networking/client-vpn",
+              label: "Client VPN",
+            },
+            {
+              type: "doc",
+              id: "aws/networking/site-to-site-vpn",
+              label: "Site-to-Site VPN",
+            },
+            {
+              type: "doc",
+              id: "aws/networking/private-link",
+              label: "PrivateLink",
+            },
+            {
+              type: "doc",
+              id: "aws/networking/direct-connect",
+              label: "Direct Connect",
+            },
+          ],
+        },
+        {
+          type: "category",
           label: "Global Infrastructure",
           items: [
             {
@@ -109,8 +155,13 @@ const sidebars: SidebarsConfig = {
             },
             {
               type: "doc",
-              id: "aws/services/cloud-formation",
+              id: "aws/services/cloudformation",
               label: "CloudFormation",
+            },
+            {
+              type: "doc",
+              id: "aws/services/cloudfront",
+              label: "CloudFront",
             },
             {
               type: "doc",

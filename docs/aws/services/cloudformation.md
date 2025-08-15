@@ -9,7 +9,7 @@ date: "2025-08-11"
 # CloudFormation
 
 <div class="aws__ImageCentered">
-<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/aws-logo-cloud-formation.png" alt="AWS CloudFormation" />
+<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/aws-logo-cloudformation.png" alt="AWS CloudFormation" />
 </div>
 
 CloudFormation is a service that helps you model and set up your AWS resources so that you can spend less time managing those resources and more time focusing on your applications that run in AWS.
