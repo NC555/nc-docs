@@ -23,17 +23,17 @@ const sidebars: SidebarsConfig = {
           items: [
             {
               type: "doc",
-              id: "aws/services/regions",
+              id: "aws/global-infrastructure/regions",
               label: "Regions",
             },
             {
               type: "doc",
-              id: "aws/services/availability-zones",
+              id: "aws/global-infrastructure/availability-zones",
               label: "Availability Zones",
             },
             {
               type: "doc",
-              id: "aws/services/edge-locations",
+              id: "aws/global-infrastructure/edge-locations",
               label: "Edge Locations",
             },
           ],
