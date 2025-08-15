@@ -217,12 +217,17 @@ const sidebars: SidebarsConfig = {
             {
               type: "doc",
               id: "aws/architecture/multi-azs-secured-networking-hybrid",
-              label: "Multi Azs Secured Networking Hybrid",
+              label: `Multi Azs Secured\n Networking Hybrid`,
             },
             {
               type: "doc",
-              id: "aws/architecture/aws-advance-pass-architecture",
-              label: "Aws Advance Pass Architecture",
+              id: "aws/architecture/cloudfront-edge-network-architecture",
+              label: "CloudFront Edge Network Architecture",
+            },
+            {
+              type: "doc",
+              id: "aws/architecture/advance-pass-architecture",
+              label: "Advance Pass Architecture",
             },
           ],
         },

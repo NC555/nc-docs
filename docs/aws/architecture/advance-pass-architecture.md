@@ -22,7 +22,7 @@ The AWS Advanced PAAS Architecture is a comprehensive AWS solution that effectiv
 
 ## Architecture Diagram
 
-<img style={{ width: '1400px', overflowX: 'auto' }} src="/img/aws/aws-pass-enhanced-security.svg" alt="AWS Advanced PAAS Architecture Diagram" />
+<img style={{ overflowX: 'scroll' }} src="/img/aws/aws-pass-enhanced-security.svg" alt="AWS Advanced PAAS Architecture Diagram" />
 
 ## Overall Architecture Components
 

@@ -558,6 +558,10 @@ pre {
   border-right: 1px solid hsl(var(--border) / 0.1) !important;
 }
 
+.theme-doc-sidebar-item-link {
+  white-space: pre-line;
+}
+
 /* Clean TOC */
 .theme-doc-toc-desktop {
   background: transparent !important;
@@ -1843,15 +1847,17 @@ main[class*="docMainContainer"] {
 }
 
 /* Tables with  styling */
+
+
 .theme-doc-markdown table {
   width: 100%;
+  max-width: 80vw;
   margin: 2rem 0;
   border-collapse: separate;
   border-spacing: 0;
   border: 1px solid hsl(var(--border) / 0.5);
   border-radius: calc(var(--radius) + 4px);
-  overflow-x: scroll;
-  overflow-y: scroll;
+  overflow-x: auto;
   max-height: 700px;
   background: hsl(var(--background) / 0.3);
   backdrop-filter: blur(16px);

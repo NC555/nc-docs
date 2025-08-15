@@ -22,7 +22,7 @@ Multi AZs Secured VPC is a comprehensive AWS architecture that effectively illus
 
 ## Multi AZs Secured VPC Diagram Hybrid
 
-<img src="/img/aws/az-secured-networking-hybrid.svg" alt="Auto-approve toolbar collapsed state" width="600" />
+<img style={{ overflowX: 'scroll' }} src="/img/aws/az-secured-networking-hybrid.svg" alt="AWS Advanced PAAS Architecture Diagram" />
 
 ## Overall Architecture Components
 
