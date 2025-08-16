@@ -1,8 +1,10 @@
 ---
-tags: -linux
-  -ls
-  -listing
-  -commands
+tags: [
+    -linux
+    -ls
+    -listing
+    -commands,
+  ]
 ---
 
 # Linux `ls` Command Manual

@@ -1,6 +1,5 @@
 ---
-tags: -network
-  -ip
+tags: [-network, -ip]
 ---
 
 # Linux Network Information
