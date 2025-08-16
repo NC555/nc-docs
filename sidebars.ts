@@ -287,6 +287,37 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: "category",
+      label: "Linux",
+      items: [
+        {
+          type: "doc",
+          id: "linux/os-system-details",
+          label: "OS Details",
+        },
+        {
+          type: "doc",
+          id: "linux/file-management-permissions",
+          label: "Linux File Permissions",
+        },
+        {
+          type: "doc",
+          id: "linux/ls-command-manual",
+          label: "List (ls) Command Manual",
+        },
+        {
+          type: "doc",
+          id: "linux/network-information",
+          label: "Network Information",
+        },
+        {
+          type: "doc",
+          id: "linux/tree-command-manual",
+          label: "Tree Command Manual",
+        },
+      ],
+    },
+    {
+      type: "category",
       label: "Ubuntu Private Lab",
       link: {
         type: "doc",

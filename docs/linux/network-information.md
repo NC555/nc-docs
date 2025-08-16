@@ -1,6 +1,8 @@
-***
-tags: #network #ip
-***
+---
+tags: -network
+  -ip
+---
+
 # Linux Network Information
 
 This document provides commands to retrieve your public IP address and detailed network information on Linux systems.
