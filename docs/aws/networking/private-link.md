@@ -18,7 +18,7 @@ date: "2025-08-11"
 # AWS PrivateLink
 
 <div class="aws__ImageCentered">
-<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/aws-logo-private-link.png" alt="AWS PrivateLink Logo" />
+<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/aws-logo-privatelink.png" alt="AWS PrivateLink Logo" />
 </div>
 
 AWS PrivateLink is a highly available, scalable technology that you can use to privately connect your VPC to services and resources as if they were in your [**VPC**](./vpc.md).

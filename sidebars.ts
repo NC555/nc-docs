@@ -28,29 +28,58 @@ const sidebars: SidebarsConfig = {
             },
             {
               type: "doc",
+              id: "aws/networking/internet-gateway",
+              label: "Internet Gateway",
+            },
+            {
+              type: "doc",
               id: "aws/networking/subnet",
               label: "Subnet",
             },
             {
-              type: "doc",
-              id: "aws/networking/virtual-private-network",
+              type: "category",
               label: "Virtual Private Network",
+              link: {
+                type: "doc",
+                id: "aws/networking/vpn/virtual-private-network",
+              },
+              items: [
+                {
+                  type: "doc",
+                  id: "aws/networking/vpn/virtual-private-network-gateway",
+                  label: "VPN Gateway",
+                },
+                {
+                  type: "doc",
+                  id: "aws/networking/vpn/client-vpn",
+                  label: "Client VPN",
+                },
+                {
+                  type: "doc",
+                  id: "aws/networking/vpn/site-to-site-vpn",
+                  label: "Site-to-Site VPN",
+                },
+              ],
             },
-
             {
-              type: "doc",
-              id: "aws/networking/virtual-private-gateway",
-              label: "Virtual Private Gateway",
-            },
-            {
-              type: "doc",
-              id: "aws/networking/client-vpn",
-              label: "Client VPN",
-            },
-            {
-              type: "doc",
-              id: "aws/networking/site-to-site-vpn",
-              label: "Site-to-Site VPN",
+              type: "category",
+              label: "VPC Traffic",
+              link: {
+                type: "doc",
+                id: "aws/networking/vpc-network/traffic",
+              },
+              items: [
+                {
+                  type: "doc",
+                  id: "aws/networking/vpc-network/access-control-list",
+                  label: "Access Control List",
+                },
+                {
+                  type: "doc",
+                  id: "aws/networking/vpc-network/security-groups",
+                  label: "Security Groups",
+                },
+              ],
             },
             {
               type: "doc",
@@ -61,6 +90,27 @@ const sidebars: SidebarsConfig = {
               type: "doc",
               id: "aws/networking/direct-connect",
               label: "Direct Connect",
+            },
+            {
+              type: "category",
+              label: "Gateway Services",
+              items: [
+                {
+                  type: "doc",
+                  id: "aws/networking/gateway-services/transit-gateway",
+                  label: "AWS Transit Gateway",
+                },
+                {
+                  type: "doc",
+                  id: "aws/networking/gateway-services/network-address-transalation-gateway",
+                  label: "Network Address Translation Gateway",
+                },
+                {
+                  type: "doc",
+                  id: "aws/networking/gateway-services/amazon-api-gateway",
+                  label: "Amazon API Gateway",
+                },
+              ],
             },
           ],
         },
@@ -87,96 +137,96 @@ const sidebars: SidebarsConfig = {
         },
         {
           type: "category",
-          label: "Services",
+          label: "Cloud Compute",
           items: [
             {
               type: "doc",
-              id: "aws/services/ec2",
+              id: "aws/cloud-compute/ec2",
               label: "Amazon EC2",
             },
             {
               type: "doc",
-              id: "aws/services/lambda",
+              id: "aws/cloud-compute/lambda",
               label: "AWS Lambda",
             },
             {
               type: "doc",
-              id: "aws/services/elb",
+              id: "aws/cloud-compute/elb",
               label: "ELB",
             },
             {
               type: "doc",
-              id: "aws/services/ami",
+              id: "aws/cloud-compute/ami",
               label: "AMI",
             },
             {
               type: "doc",
-              id: "aws/services/ecs",
+              id: "aws/cloud-compute/ecs",
               label: "Amazon ECS",
             },
             {
               type: "doc",
-              id: "aws/services/eks",
+              id: "aws/cloud-compute/eks",
               label: "Amazon EKS",
             },
             {
               type: "doc",
-              id: "aws/services/ecr",
+              id: "aws/cloud-compute/ecr",
               label: "Amazon ECR",
             },
             {
               type: "doc",
-              id: "aws/services/fargate",
+              id: "aws/cloud-compute/fargate",
               label: "Fargate",
             },
             {
               type: "doc",
-              id: "aws/services/elastic-beanstalk",
+              id: "aws/cloud-compute/elastic-beanstalk",
               label: "Elastic Beanstalk",
             },
             {
               type: "doc",
-              id: "aws/services/batch",
+              id: "aws/cloud-compute/batch",
               label: "AWS Batch",
             },
             {
               type: "doc",
-              id: "aws/services/lightsail",
+              id: "aws/cloud-compute/lightsail",
               label: "Lightsail",
             },
             {
               type: "doc",
-              id: "aws/services/outposts",
+              id: "aws/cloud-compute/outposts",
               label: "Outposts",
             },
             {
               type: "doc",
-              id: "aws/services/sns",
+              id: "aws/cloud-compute/sns",
               label: "Amazon SNS",
             },
             {
               type: "doc",
-              id: "aws/services/cloudformation",
+              id: "aws/cloud-compute/cloudformation",
               label: "CloudFormation",
             },
             {
               type: "doc",
-              id: "aws/services/cloudfront",
+              id: "aws/cloud-compute/cloudfront",
               label: "CloudFront",
             },
             {
               type: "doc",
-              id: "aws/services/event-bridge",
+              id: "aws/cloud-compute/event-bridge",
               label: "Amazon EventBridge",
             },
             {
               type: "doc",
-              id: "aws/services/messaging-and-queuing",
+              id: "aws/cloud-compute/messaging-and-queuing",
               label: "EventBridge Vs SQS Vs SNS",
             },
             {
               type: "doc",
-              id: "aws/services/vms-containers-challenges",
+              id: "aws/cloud-compute/vms-containers-challenges",
               label: "VMs & Containers challenges",
             },
           ],

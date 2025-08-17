@@ -21,6 +21,10 @@ date: "2025-08-11"
 
 AWS Subnets are essentially segments of your [VPC](./vpc.md), allowing you to divide your VPC into smaller, manageable sections. A subnet is a range of IP addresses in your VPC.
 
+:::tip
+Subnet is a section of a VPC for grouping resources based on security or operational needs
+:::
+
 - Subnets are used to logically isolate resources within a VPC
 - Each subnet is associated with a specific range of IP addresses, and resources within that subnet use these addresses.
 
@@ -29,6 +33,6 @@ AWS Subnets are essentially segments of your [VPC](./vpc.md), allowing you to di
 - **Public Subnets:** are designed to isolate resources that shouldn't be directly exposed to the public internet. In diagrams, they are illustrated with solid boxes.
 - **Private Subnets:** Public subnets are designed to provide direct internet access to resources placed inside them. To allow access, they are connected with an internet gateway. You will learn more about internet gateways in a later lesson. In diagrams, public subnets are drawn with dashed boxes.
 
-<div class="aws__ImageCentered">
-<img style={{ background: '#f6f9fd', width: '500px', overflowX: 'auto' }} src="/img/aws/aws-networking-public-private-subnet-diagram.png" alt="Availability Zones" />
+<div class="aws__ImageStart">
+<img style={{ background: '#f6f9fd', width: '300px', overflowX: 'auto' }} src="/img/aws/aws-networking-subnet-groups-diagram.png" alt="Availability Zones" />
 </div>

@@ -1,9 +1,28 @@
 {
-    "markdown.editor.filePaste.copyIntoWorkspace": "mediaFiles",
-    "markdown.copyFiles.destination": {
-      "**/*": "/static/img/${documentBaseName}/${documentBaseName}.${fileName/(.*)\\.(.*)/$2/}"
-    },
-    "files.associations": {
-      "*.mdx": "markdown"
-    }
+  "markdown.editor.filePaste.copyIntoWorkspace": "mediaFiles",
+  "files.exclude": {
+    "**/.docusaurus/**": true,
+    "**/.roo/**": true,
+    "**/.ruru/**": true,
+    "**/build/**": true,
+    "**/docs/ansible/**": true,
+    "**/docs/cyber-security/**": true,
+    "**/docs/git/**": true,
+    "**/docs/heap-knowledge-base/**": true,
+    "**/docs/kubernetes/**": true,
+    "**/docs/landing-zone-concepts/**": true,
+    "**/docs/ms-windows/**": true,
+    "**/docs/ubuntu-private-lab/**": true,
+    "**/docs/linux/**": true,
+    "**/.rooignore/**": true,
+    "**/.roomodes/**": true,
+    "**/node_modules/**": true,
+    "**/static/downloads/**": true,
+  },
+  "markdown.copyFiles.destination": {
+    "**/*": "/static/img/${documentBaseName}/${documentBaseName}.${fileName/(.*)\\.(.*)/$2/}"
+  },
+  "files.associations": {
+    "*.mdx": "markdown"
   }
+}

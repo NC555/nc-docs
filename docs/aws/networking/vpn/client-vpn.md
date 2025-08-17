@@ -6,7 +6,7 @@ tags:
     "aws",
     "infrastructure",
     "connection",
-    "client_vpn",
+    "vpn",
     "networking",
     "secured_connection",
     "shared connection",
@@ -18,7 +18,7 @@ date: "2025-08-11"
 # AWS Client VPN
 
 <div class="aws__ImageCentered">
-<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/aws-logo-client-vpn.png" alt=" AWS Client VPN Connection" />
+<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/aws-logo-clinet-vpn.png" alt=" AWS Client VPN Connection" />
 </div>
 
 AWS Client VPN is a networking service you can use to connect your remote workers and on-premises networks to the cloud.
@@ -26,7 +26,9 @@ AWS Client VPN is a networking service you can use to connect your remote worker
 - **Elastic VPN service :** fully managed, automatically scales up or down based on user demand.
 - **Cloud VPN solution :**, you don’t need to install and manage hardware or try to estimate how many remote users to support at one time
 
-> Benefits: A AWS Client VPN provides advanced authentication, remote access. It is elastic and fully managed.
+:::note
+A AWS Client VPN provides advanced authentication, remote access. It is elastic and fully managed.
+:::
 
 Use case: It can be used to quickly scale remote-worker access.
 
@@ -34,7 +36,7 @@ Use case: It can be used to quickly scale remote-worker access.
 - OpenVPN-based client, and it works with global Regions by using the AWS global network.
 
 <div class="aws__ImageCentered" >
-<img style={{ background: '#f6f9fd', width: '500px', overflowX: 'auto' }} src="/img/aws/aws-networking-vpn-connection.png" alt="VPN Connection" />
+<img style={{ background: '#f6f9fd', width: '500px', overflowX: 'auto' }} src="/img/aws/aws-client-vpn-connection.png" alt="Client VPN Connection" />
 </div>
 
 ### Additional Resources

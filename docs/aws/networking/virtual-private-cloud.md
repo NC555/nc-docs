@@ -6,10 +6,10 @@ author: "Nati Cabti"
 date: "2025-08-11"
 ---
 
-# Amazon Virtual Private Cloud VPC
+# Amazon Virtual Private Cloud (VPC)
 
 <div class="aws__ImageCentered">
-<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/aws-logo-vpc.png" alt="Amazon VPC" />
+<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/aws-logo-virtual-private-cloud.png" alt="Amazon VPC" />
 </div>
 
 Amazon Virtual Private Cloud VPC lets you provision a logically isolated section of the AWS Cloud where you can launch AWS resources in a virtual network that you define.

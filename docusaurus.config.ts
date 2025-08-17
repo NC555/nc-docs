@@ -60,7 +60,7 @@ const config: Config = {
         },
         blog: false, // Disable blog feature
         theme: {
-          customCss: "./src/css/custom.css",
+          customCss: require.resolve("./src/css/custom.css"),
         },
         sitemap: false, // Disable the built-in sitemap plugin to avoid conflicts
       } satisfies Preset.Options,
