@@ -10,11 +10,11 @@ date: "2025-08-11"
 
 <div class="aws__DoubleLogosWrapper">
     <div class="aws__ImageAligned">
-      <img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/aws-logo-subnet-public.png" alt="Public Subnet" />
+      <img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/logo/subnet-public.png" alt="Public Subnet" />
       <span>Public Subnet</span>
     </div>
     <div class="aws__ImageAligned">
-      <img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/aws-logo-subnet-private.png" alt="Private Subnet" />      
+      <img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/logo/subnet-private.png" alt="Private Subnet" />      
       <span>Private Subnet</span>
     </div>
 </div>
@@ -34,5 +34,5 @@ Subnet is a section of a VPC for grouping resources based on security or operati
 - **Private Subnets:** Public subnets are designed to provide direct internet access to resources placed inside them. To allow access, they are connected with an internet gateway. You will learn more about internet gateways in a later lesson. In diagrams, public subnets are drawn with dashed boxes.
 
 <div class="aws__ImageStart">
-<img style={{ background: '#f6f9fd', width: '300px', overflowX: 'auto' }} src="/img/aws/aws-networking-subnet-groups-diagram.png" alt="Availability Zones" />
+<img style={{ background: '#f6f9fd', width: '300px', overflowX: 'auto' }} src="/img/aws/networking-subnet-groups-diagram.png" alt="Availability Zones" />
 </div>

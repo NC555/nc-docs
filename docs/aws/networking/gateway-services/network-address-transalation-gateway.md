@@ -19,7 +19,7 @@ date: "2025-08-11"
 # Network Address Translation (NAT) Gateway
 
 <div class="aws__ImageCentered">
-<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/aws-logo-nat-gateway.png" alt="AWS NAT Gateway" />
+<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/logo/nat-gateway.png" alt="AWS NAT Gateway" />
 </div>
 A NAT gateway is a NAT service that enables secure outbound internet connectivity for instances in private subnets.
 - **Managed Service:** Fully managed by AWS with built-in redundancy and high availability
@@ -37,7 +37,7 @@ Use case: You can use a NAT gateway so that instances in a private subnet can co
 - Provides better performance and availability compared to NAT instances
 
 <div class="aws__ImageStart" >
-<img style={{ background: '#f6f9fd', width: '300px', overflowX: 'auto' }} src="/img/aws/aws-nat-gateway-concept.png" alt="NAT Gateway Architecture" />
+<img style={{ background: '#f6f9fd', width: '300px', overflowX: 'auto' }} src="/img/aws/nat-gateway-concept.png" alt="NAT Gateway Architecture" />
 </div>
 
 ### Additional Resources

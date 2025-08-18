@@ -21,7 +21,7 @@ date: "2025-08-11"
 # AWS Global Accelerator
 
 <div class="aws__ImageCentered">
-<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/aws-logo-global-accelarator.png" alt="AWS Global Accelerator" />
+<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/logo/global-accelarator.png" alt="AWS Global Accelerator" />
 </div>
 
 AWS Global Accelerator is a networking service that uses the AWS global network to improve application availability, performance, and security. It provides intelligent traffic routing and fast failover capabilities to ensure optimal application performance across the globe.
@@ -42,7 +42,7 @@ Think of Global Accelerator like creating express lanes on the internet highway 
 :::
 
 <div class="aws__ImageCentered" >
-<img style={{ background: '#f6f9fd', width: '500px', overflowX: 'auto' }} src="/img/aws/aws-global-accelerator-architecture.png" alt="Global Accelerator Architecture" />
+<img style={{ background: '#f6f9fd', width: '500px', overflowX: 'auto' }} src="/img/aws/global-accelerator-architecture.png" alt="Global Accelerator Architecture" />
 </div>
 
 ## How Global Accelerator Works

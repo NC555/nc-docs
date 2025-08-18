@@ -239,7 +239,7 @@ graph TD
 
 ## Example: Classified Workload IAM Architecture
 
-<img style={{ width: '100%', overflowX: 'auto' }} src="/img/aws/aws-iam-control-policy.svg" alt="AWS Advanced PAAS Architecture Diagram" />
+<img style={{ width: '100%', overflowX: 'auto' }} src="/img/aws/iam-control-policy.svg" alt="AWS Advanced PAAS Architecture Diagram" />
 
 A classified workload processing sensitive data would include:
 

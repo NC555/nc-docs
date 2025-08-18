@@ -9,7 +9,7 @@ date: "2025-08-11"
 # Amazon ECS
 
 <div class="aws__ImageCentered">
-<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/aws-logo-ecs.png" alt="AWS ECS LOGO" />
+<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/logo/ecs.png" alt="AWS ECS LOGO" />
 </div>
 
 Amazon Elastic Container Service (Amazon ECS) is a scalable container orchestration service for running and managing containers on AWS, like Docker containers. Docker is a software platform for building, testing, and deploying applications quickly.

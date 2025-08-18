@@ -18,7 +18,7 @@ date: "2025-08-11"
 # AWS Client VPN
 
 <div class="aws__ImageCentered">
-<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/aws-logo-clinet-vpn.png" alt=" AWS Client VPN Connection" />
+<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/logo/clinet-vpn.png" alt=" AWS Client VPN Connection" />
 </div>
 
 AWS Client VPN is a networking service you can use to connect your remote workers and on-premises networks to the cloud.
@@ -36,7 +36,7 @@ Use case: It can be used to quickly scale remote-worker access.
 - OpenVPN-based client, and it works with global Regions by using the AWS global network.
 
 <div class="aws__ImageCentered" >
-<img style={{ background: '#f6f9fd', width: '500px', overflowX: 'auto' }} src="/img/aws/aws-client-vpn-connection.png" alt="Client VPN Connection" />
+<img style={{ background: '#f6f9fd', width: '500px', overflowX: 'auto' }} src="/img/aws/client-vpn-connection.png" alt="Client VPN Connection" />
 </div>
 
 ### Additional Resources

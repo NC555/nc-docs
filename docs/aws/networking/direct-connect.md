@@ -18,7 +18,7 @@ date: "2025-08-11"
 # AWS Direct Connect
 
 <div class="aws__ImageCentered">
-<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/aws-logo-directconnect.png" alt="AWS Direct Connect Logo" />
+<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/logo/directconnect.png" alt="AWS Direct Connect Logo" />
 </div>
 
 Direct Connect is a service that makes it possible for you to establish a dedicated private connection between your network and VPC in the AWS Cloud.
@@ -33,7 +33,7 @@ Direct Connect is a service that makes it possible for you to establish a dedica
 You can use Direct Connect to link your AWS and on-premises networks to build applications that span environments without compromising performance.
 
 <div class="aws__ImageCentered" >
-<img style={{ background: '#f6f9fd', width: '500px', overflowX: 'auto' }} src="/img/aws/aws-networking-direct-connect-concept.png" alt="VPN Connection" />
+<img style={{ background: '#f6f9fd', width: '500px', overflowX: 'auto' }} src="/img/aws/networking-direct-connect-concept.png" alt="VPN Connection" />
 </div>
 
 ### Additional Resources

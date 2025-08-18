@@ -9,7 +9,7 @@ date: "2025-08-11"
 # Fargate
 
 <div class="aws__ImageCentered">
-<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/aws-logo-fargate.png" alt="Amazon FARGATE LOGO" />
+<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/logo/fargate.png" alt="Amazon FARGATE LOGO" />
 </div>
 
 AWS Fargate is a serverless compute engine for containers. It works with both Amazon ECS and Amazon EKS. Fargate is a container hosting platform, unlike Amazon ECS and Amazon EKS, which are both container orchestration services.

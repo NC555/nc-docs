@@ -20,7 +20,7 @@ date: "2025-08-11"
 # Network ACLs
 
 <div class="aws__ImageCentered">
-<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/aws-logo-network-acl.png" alt="AWS Network ACL" />
+<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/logo/network-acl.png" alt="AWS Network ACL" />
 </div>
 A network ACL is a virtual firewall that controls inbound and outbound traffic at the subnet level.
 - **Subnet-Level Protection:** Acts as a security layer that filters traffic entering and leaving subnets within your VPC
@@ -38,7 +38,7 @@ Think of a network ACL like airport passport control - just as officers check tr
 :::
 
 <div class="aws__ImageCentered" >
-<img style={{ background: '#f6f9fd', width: '500px', overflowX: 'auto' }} src="/img/aws/aws-network-acl-architecture.png.png" alt="Network ACL Architecture" />
+<img style={{ background: '#f6f9fd', width: '500px', overflowX: 'auto' }} src="/img/aws/network-acl-architecture.png.png" alt="Network ACL Architecture" />
 </div>
 
 ## Default vs Custom Network ACLs

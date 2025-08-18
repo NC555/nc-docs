@@ -19,7 +19,7 @@ date: "2025-08-11"
 # AWS Transit Gateway
 
 <div class="aws__ImageCentered">
-<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/aws-logo-transit-gateway.png" alt="AWS Transit Gateway" />
+<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/logo/transit-gateway.png" alt="AWS Transit Gateway" />
 </div>
 AWS Transit Gateway is used to connect your Amazon VPCs and on-premises networks through a central hub.
 - **Central Hub Architecture:** Acts as a cloud router that simplifies your network by eliminating complex peering relationships
@@ -36,7 +36,7 @@ Use case: It can be used to connect multiple VPCs across different AWS accounts 
 - Provides centralized monitoring and management through AWS CloudWatch and VPC Flow Logs
 
 <div class="aws__ImageStart" >
-<img style={{ background: '#f6f9fd', width: '300px', overflowX: 'auto' }} src="/img/aws/aws-transit-gateway-overview.png" alt="Transit Gateway Architecture" />
+<img style={{ background: '#f6f9fd', width: '300px', overflowX: 'auto' }} src="/img/aws/transit-gateway-overview.png" alt="Transit Gateway Architecture" />
 </div>
 
 ### Additional Resources

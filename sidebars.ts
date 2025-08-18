@@ -19,6 +19,31 @@ const sidebars: SidebarsConfig = {
       items: [
         {
           type: "category",
+          label: "Storage",
+          link: {
+            type: "doc",
+            id: "aws/storage/index",
+          },
+          items: [
+            {
+              type: "doc",
+              id: "aws/storage/elastic-block-store",
+              label: "Elastic Block Store",
+            },
+            {
+              type: "doc",
+              id: "aws/storage/simple-storage-service",
+              label: "Simple Storage Service S3",
+            },
+            {
+              type: "doc",
+              id: "aws/storage/s3-classes",
+              label: "S3 Storage Classes",
+            },
+          ],
+        },
+        {
+          type: "category",
           label: "Networking",
           items: [
             {

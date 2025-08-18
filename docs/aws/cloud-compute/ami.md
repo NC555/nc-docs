@@ -9,7 +9,7 @@ date: "2025-08-11"
 # AMI Amazon Machine Images
 
 <div class="aws__ImageCentered">
-<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/aws-logo-ami.png" alt="AWS AMI Components" />
+<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/logo/ami.png" alt="AWS AMI Components" />
 </div>
 
 AMIs are pre-built virtual machine images that have the basic components for what is needed to start an instance
@@ -22,7 +22,7 @@ AMIs can be used in three ways.
 - **Pre-configured AWS AMI**: For common operating systems and software.
 - **Purchase AMIs**: AWS Marketplace, where third-party vendors offer specialized software designed for specific use cases.
 
-<img style={{ width: '100%', overflowX: 'auto' }} src="/img/aws/aws-ami.png" alt="AWS AMI Components" />
+<img style={{ width: '100%', overflowX: 'auto' }} src="/img/aws/ami.png" alt="AWS AMI Components" />
 
 ## AMI repeatability
 

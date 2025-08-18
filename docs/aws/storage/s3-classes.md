@@ -19,7 +19,7 @@ date: "2025-08-11"
 # Amazon S3 Storage Classes
 
 <div class="aws__ImageCentered">
-<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/aws-logo-s3.png" alt="Amazon S3" />
+<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/logo/s3.png" alt="Amazon S3" />
 </div>
 
 Amazon S3 offers multiple storage classes designed for different use cases, from frequently accessed data to long-term archival. Each storage class is optimized for specific access patterns, performance requirements, and cost considerations.
@@ -44,15 +44,15 @@ All S3 storage classes share these fundamental characteristics:
 
 | Storage Class                     | Logo                                                                                                           | Key Attributes                                                                                | Primary Use Cases                                                                                |
 | --------------------------------- | -------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
-| **S3 Standard**                   | <img src="/img/aws/aws-logo-s3-standard.png" alt="S3 Standard" width="96"/>                                    | - General-purpose storage<br/>- High performance and low latency<br/>- Default storage class  | - Cloud applications<br/>- Dynamic websites<br/>- Content distribution<br/>- Big data analytics  |
-| **S3 Intelligent-Tiering**        | <img src="/img/aws/aws-logo-s3-intelligent-tiering.png" alt="S3 Intelligent-Tiering" width="96"/>              | - Automatic cost optimization<br/>- Monitors access patterns<br/>- Three access tiers         | - Unknown access patterns<br/>- Changing access patterns<br/>- Automatic cost savings            |
-| **S3 Standard-IA**                | <img src="/img/aws/aws-logo-s3-infrequent-access.png" alt="S3 Standard-IA" width="96"/>                        | - Lower storage costs<br/>- Rapid access when needed<br/>- Retrieval fees apply               | - Long-term backups<br/>- Disaster recovery files<br/>- Infrequently accessed data               |
-| **S3 One Zone-IA**                | <img src="/img/aws/aws-logo-s3-one-zone-infrequent-access.png" alt="S3 One Zone-IA" width="96"/>               | - Single Availability Zone<br/>- Lower cost than Standard-IA<br/>- Less availability          | - Secondary backups<br/>- Easily recreatable data<br/>- Cost-sensitive workloads                 |
-| **S3 Express One Zone**           | <img src="/img/aws/aws-logo-s3-express-one-zone.png" alt="S3 Express One Zone" width="96"/>                    | - Single-digit millisecond latency<br/>- 10x faster data access<br/>- 80% lower request costs | - Latency-sensitive applications<br/>- Frequently accessed data<br/>- High-performance workloads |
-| **S3 Glacier Instant Retrieval**  | <img src="/img/aws/aws-logo-s3-glacier-instant-retrival.png" alt="S3 Glacier Instant Retrieval" width="96"/>   | - Millisecond retrieval<br/>- 68% cost savings vs Standard-IA<br/>- Archive storage           | - Rarely accessed archives<br/>- Medical images<br/>- News media assets                          |
-| **S3 Glacier Flexible Retrieval** | <img src="/img/aws/aws-logo-s3-glacier-flexible-retrival.png" alt="S3 Glacier Flexible Retrieval" width="96"/> | - 1-5 minute expedited retrieval<br/>- Accessed 1-2 times per year<br/>- Low-cost archival    | - Backup and disaster recovery<br/>- Offsite data storage<br/>- Long-term archives               |
-| **S3 Glacier Deep Archive**       | <img src="/img/aws/aws-logo-s3-glacier-deep-archive.png" alt="S3 Glacier Deep Archive" width="96"/>            | - Lowest-cost storage class<br/>- 12-hour retrieval time<br/>- 7-10 year retention            | - Regulatory compliance<br/>- Digital preservation<br/>- Long-term retention                     |
-| **S3 Outposts**                   | <img src="/img/aws/aws-logo-s3-outposts.png" alt="S3 Outposts" width="96"/>                                    | - On-premises object storage<br/>- Local data residency<br/>- S3 APIs and features            | - Data residency requirements<br/>- Low-latency access<br/>- Hybrid cloud architectures          |
+| **S3 Standard**                   | <img src="/img/aws/logo/s3-standard.png" alt="S3 Standard" width="96"/>                                    | - General-purpose storage<br/>- High performance and low latency<br/>- Default storage class  | - Cloud applications<br/>- Dynamic websites<br/>- Content distribution<br/>- Big data analytics  |
+| **S3 Intelligent-Tiering**        | <img src="/img/aws/logo/s3-intelligent-tiering.png" alt="S3 Intelligent-Tiering" width="96"/>              | - Automatic cost optimization<br/>- Monitors access patterns<br/>- Three access tiers         | - Unknown access patterns<br/>- Changing access patterns<br/>- Automatic cost savings            |
+| **S3 Standard-IA**                | <img src="/img/aws/logo/s3-infrequent-access.png" alt="S3 Standard-IA" width="96"/>                        | - Lower storage costs<br/>- Rapid access when needed<br/>- Retrieval fees apply               | - Long-term backups<br/>- Disaster recovery files<br/>- Infrequently accessed data               |
+| **S3 One Zone-IA**                | <img src="/img/aws/logo/s3-one-zone-infrequent-access.png" alt="S3 One Zone-IA" width="96"/>               | - Single Availability Zone<br/>- Lower cost than Standard-IA<br/>- Less availability          | - Secondary backups<br/>- Easily recreatable data<br/>- Cost-sensitive workloads                 |
+| **S3 Express One Zone**           | <img src="/img/aws/logo/s3-express-one-zone.png" alt="S3 Express One Zone" width="96"/>                    | - Single-digit millisecond latency<br/>- 10x faster data access<br/>- 80% lower request costs | - Latency-sensitive applications<br/>- Frequently accessed data<br/>- High-performance workloads |
+| **S3 Glacier Instant Retrieval**  | <img src="/img/aws/logo/s3-glacier-instant-retrival.png" alt="S3 Glacier Instant Retrieval" width="96"/>   | - Millisecond retrieval<br/>- 68% cost savings vs Standard-IA<br/>- Archive storage           | - Rarely accessed archives<br/>- Medical images<br/>- News media assets                          |
+| **S3 Glacier Flexible Retrieval** | <img src="/img/aws/logo/s3-glacier-flexible-retrival.png" alt="S3 Glacier Flexible Retrieval" width="96"/> | - 1-5 minute expedited retrieval<br/>- Accessed 1-2 times per year<br/>- Low-cost archival    | - Backup and disaster recovery<br/>- Offsite data storage<br/>- Long-term archives               |
+| **S3 Glacier Deep Archive**       | <img src="/img/aws/logo/s3-glacier-deep-archive.png" alt="S3 Glacier Deep Archive" width="96"/>            | - Lowest-cost storage class<br/>- 12-hour retrieval time<br/>- 7-10 year retention            | - Regulatory compliance<br/>- Digital preservation<br/>- Long-term retention                     |
+| **S3 Outposts**                   | <img src="/img/aws/logo/s3-outposts.png" alt="S3 Outposts" width="96"/>                                    | - On-premises object storage<br/>- Local data residency<br/>- S3 APIs and features            | - Data residency requirements<br/>- Low-latency access<br/>- Hybrid cloud architectures          |
 
 ## Choosing the Right Storage Class
 
@@ -78,7 +78,7 @@ To avoid manually managing your object storage tier configurations, you can use 
 ### S3 Lifecycle configuration Example
 
 <div class="aws__ImageStart">
-<img style={{ width: '500px', overflowX: 'auto' }} src="/img/aws/aws-s3-lifecycle-concept.png" alt="S3 Lifecycle Concept" />
+<img style={{ width: '500px', overflowX: 'auto' }} src="/img/aws/s3-lifecycle-concept.png" alt="S3 Lifecycle Concept" />
 </div>
 - **After 30 days :** After 30 days without being accessed, the object is moved from the Amazon S3 Standard storage class to the Amazon S3 Standard-IA storage class.
 - **After 60 days :** After the object has been in the S3 Standard-IA storage class for 60 days without being accessed, it's moved to the Amazon S3 Glacier Instant Retrieval storage class.

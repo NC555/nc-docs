@@ -16,7 +16,7 @@ This architecture demonstrates how AWS [CloudFront's](../services/cloudfront.md)
 The diagram below illustrates the complete content delivery flow, from the end-user request to the origin server hosted in an AWS GovCloud region, detailing the hierarchical caching process.
 
 <div class="aws__ImageCentered">
-<img style={{ background: '#00040b' ,width: '100%', overflowX: 'auto' }} src="/img/aws/aws-cloudfront-edge-network-architecture1.png" alt="AWS CloudFront Edge Network Architecture" />
+<img style={{ background: '#00040b' ,width: '100%', overflowX: 'auto' }} src="/img/aws/cloudfront-edge-network-architecture1.png" alt="AWS CloudFront Edge Network Architecture" />
 </div>
 
 ## Architecture Components

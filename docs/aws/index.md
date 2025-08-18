@@ -8,7 +8,7 @@ author: Nati Cabti
 # Welcome to the AWS Documentation
 
 <div class="aws__ImageCentered">
-<img style={{ width: '140px', overflowX: 'auto' }} src="/img/aws/aws-logo.png" alt="Edge Locations" />
+<img style={{ width: '140px', overflowX: 'auto' }} src="/img/aws/logo.png" alt="Edge Locations" />
 </div>
 This section provides a comprehensive overview of Amazon Web Services (AWS), the world's most comprehensive and broadly adopted cloud platform. AWS offers a vast array of services that enable organizations of all sizes to build scalable, reliable, and secure applications.
 

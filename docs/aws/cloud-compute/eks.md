@@ -9,7 +9,7 @@ date: "2025-08-11"
 # Amazon EKS
 
 <div class="aws__ImageCentered">
-<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/aws-logo-eks.png" alt="AWS EKS LOGO" />
+<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/logo/eks.png" alt="AWS EKS LOGO" />
 </div>
 
 Amazon Elastic Kubernetes Service (Amazon EKS) is a fully managed service for running Kubernetes on AWS. It simplifies deploying, managing, and scaling containerized applications using open-source Kubernetes, with ongoing support and updates from the broader community.

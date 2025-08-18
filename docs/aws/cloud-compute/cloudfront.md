@@ -9,8 +9,8 @@ date: "2025-08-11"
 # CloudFront
 
 <div class="aws__ImageCentered">
-  <img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/aws-logo-cloudfront.png" alt="Amazon CloudFront Logo"/>
-  <img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/aws-logo-cloudfront1.png" alt="Amazon CloudFront Logo"/>
+  <img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/logo/cloudfront.png" alt="Amazon CloudFront Logo"/>
+  <img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/logo/cloudfront1.png" alt="Amazon CloudFront Logo"/>
 
 </div>
 

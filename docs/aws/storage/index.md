@@ -34,7 +34,7 @@ Block storage provides persistent, low-latency block-level storage volumes that 
 **Amazon Elastic Block Store (EBS):** A managed service that provides persistent block storage volumes for EC2 instances. EBS volumes persist independently of EC2 instances and can be attached, detached, and reattached as needed.
 
 <div class="aws__ImageCentered" >
-<img style={{ background: '#f6f9fd', width: '500px', overflowX: 'auto' }} src="/img/aws/aws-block-storage-architecture.png" alt="AWS Block Storage Architecture" />
+<img style={{ background: '#f6f9fd', width: '500px', overflowX: 'auto' }} src="/img/aws/block-storage-architecture.png" alt="AWS Block Storage Architecture" />
 </div>
 
 ## Object Storage
@@ -58,7 +58,7 @@ AWS file storage services provide shared file systems accessible over networks, 
 **Amazon FSx:** A fully managed file storage service for popular file systems like Windows, Lustre, and NetApp ONTAP. FSx provides high-performance file systems optimized for specific workloads such as high-performance computing, media processing, and enterprise applications.
 
 <div class="aws__ImageCentered" >
-<img style={{ background: '#f6f9fd', width: '500px', overflowX: 'auto' }} src="/img/aws/aws-storage-types-comparison.png" alt="AWS Storage Types Comparison" />
+<img style={{ background: '#f6f9fd', width: '500px', overflowX: 'auto' }} src="/img/aws/storage-types-comparison.png" alt="AWS Storage Types Comparison" />
 </div>
 
 ## Additional Storage Services
@@ -76,19 +76,19 @@ The AWS shared responsibility model groups storage services into three categorie
 **Fully Managed Services:** For fully managed storage services. Examples include Amazon S3 and Amazon EFS.
 
 <div class="aws__ImageStart" >
-<img style={{ background: '#f6f9fd', width: '300px', overflowX: 'auto', marginTop:'0' }} src="/img/aws/aws-shared-responsibility-model-fully-managed.png" alt="AWS Fully Managed Services" />
+<img style={{ background: '#f6f9fd', width: '300px', overflowX: 'auto', marginTop:'0' }} src="/img/aws/shared-responsibility-model-fully-managed.png" alt="AWS Fully Managed Services" />
 </div>
 
 **Managed Services:** For managed storage services, AWS manages the underlying storage infrastructure, hardware redundancy, and volume replication. Customers are responsible for data backup strategies, encryption configuration, volume performance optimization, and capacity planning. Amazon EBS falls into this category.
 
 <div class="aws__ImageStart" >
-<img style={{ background: '#f6f9fd', width: '300px', overflowX: 'auto' , marginTop:'0'}} src="/img/aws/aws-shared-responsibility-model-managed-services.png" alt="AWS Fully Managed Services" />
+<img style={{ background: '#f6f9fd', width: '300px', overflowX: 'auto' , marginTop:'0'}} src="/img/aws/shared-responsibility-model-managed-services.png" alt="AWS Fully Managed Services" />
 </div>
 
 **Unmanaged Services:** For unmanaged storage services, customers take full responsibility for data management, backup and recovery, encryption, performance optimization, and durability. AWS only maintains the underlying physical hardware and network infrastructure. EC2 instance store is an example of unmanaged storage.
 
 <div class="aws__ImageStart" >
-<img style={{ background: '#f6f9fd', width: '300px', overflowX: 'auto', marginTop:'0' }} src="/img/aws/aws-shared-responsibility-model-unmanaged-services.png" alt="AWS Fully Managed Services" />
+<img style={{ background: '#f6f9fd', width: '300px', overflowX: 'auto', marginTop:'0' }} src="/img/aws/shared-responsibility-model-unmanaged-services.png" alt="AWS Fully Managed Services" />
 </div>
 
 Understanding these responsibility boundaries helps ensure proper security, compliance, and operational practices when implementing AWS storage solutions.

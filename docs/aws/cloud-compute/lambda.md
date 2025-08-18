@@ -9,7 +9,7 @@ date: "2025-08-11"
 # Amazon Lambda
 
 <div class="aws__ImageCentered">
-<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/aws-logo-lambda.png" alt="Amazon Lambda" />
+<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/logo/lambda.png" alt="Amazon Lambda" />
 </div>
 
 AWS Lambda is a serverless compute service provided by Amazon Web Services (AWS) that allows users to run code without provisioning or managing servers. It operates on an "event-driven" model, meaning your code (packaged as a "function") is executed in response to various triggers or events.

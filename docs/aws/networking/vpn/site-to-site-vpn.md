@@ -18,7 +18,7 @@ date: "2025-08-11"
 # AWS Site-to-Site VPN
 
 <div class="aws__ImageCentered">
-<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/aws-logo-site-2-site-vpn.png" alt="Amazon VPC" />
+<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/logo/site-2-site-vpn.png" alt="Amazon VPC" />
 </div>
 
 Site-to-Site VPN creates a secure connection between your data center or branch offices and your AWS Cloud resources.
@@ -29,7 +29,7 @@ Site-to-Site VPN creates a secure connection between your data center or branch 
 
 <div class="aws__ImageCentered" >
 <img style={{ background: '#f6f9fd', width: '500px', overflowX: 'auto' }}
-src="/img/aws/aws-networking-vpn-site-to-site-connection.png" alt="VPN Connection" />
+src="/img/aws/networking-vpn-site-to-site-connection.png" alt="VPN Connection" />
 </div>
 
 ### Additional Resources

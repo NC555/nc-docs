@@ -41,3 +41,6 @@ TEMP/
 # drafts
 temp.txt
 temp.ps1
+
+# ignore learining materials
+.aws-certified-solutions-architect-associate-saa-c03

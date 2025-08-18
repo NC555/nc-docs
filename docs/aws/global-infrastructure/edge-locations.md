@@ -9,7 +9,7 @@ date: "2025-08-11"
 # Edge Locations
 
 <div class="aws__ImageCentered">
-<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/aws-logo-edge-locations.png" alt="Edge Locations" />
+<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/logo/edge-locations.png" alt="Edge Locations" />
 </div>
 
 Edge locations offer multiple services to run closer to end users, including AWS networking services like Amazon CloudFront. CloudFront is a content delivery network (CDN) and caching system that you learn more about later in this training.

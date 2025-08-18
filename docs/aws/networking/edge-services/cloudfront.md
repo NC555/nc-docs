@@ -20,7 +20,7 @@ date: "2025-08-11"
 # Amazon CloudFront
 
 <div class="aws__ImageCentered">
-<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/aws-logo-cloudfront1.png" alt="Amazon CloudFront" />
+<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/logo/cloudfront1.png" alt="Amazon CloudFront" />
 </div>
 
 Amazon CloudFront is a content delivery network (CDN) service that delivers your content with faster loading times, cost savings, and reliability. CloudFront stores copies of your content at edge locations closer to your users, ensuring optimal performance regardless of geographic location.

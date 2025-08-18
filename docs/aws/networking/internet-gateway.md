@@ -9,7 +9,7 @@ date: "2025-08-11"
 # Internet Gateway
 
 <div class="aws__ImageCentered">
-<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/aws-logo-internet-gateway.png" alt="Amazon VPC" />
+<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/logo/internet-gateway.png" alt="Amazon VPC" />
 </div>
 
 To allow public traffic from the internet to access your [**VPC**](./vpc.md), you attach an internet gateway to the VPC.
@@ -19,7 +19,7 @@ To allow public traffic from the internet to access your [**VPC**](./vpc.md), yo
 - Internet Gateway connects to public subnets only
 
 <div class="aws__ImageStart" >
-<img style={{ background: '#f6f9fd', width: '500px', overflowX: 'auto' }} src="/img/aws/aws-networking-vpc-internet-gateway.png" alt="Internet Gateway" />
+<img style={{ background: '#f6f9fd', width: '500px', overflowX: 'auto' }} src="/img/aws/networking-vpc-internet-gateway.png" alt="Internet Gateway" />
 </div>
 
 ### AWS Services accessible through Internet Gateway

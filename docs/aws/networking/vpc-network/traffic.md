@@ -22,7 +22,7 @@ date: "2025-08-11"
 Network traffic in a VPC refers to the movement of data packets traveling across a network within your Amazon Virtual Private Cloud.
 
 <div class="aws__ImageCentered" >
-<img style={{ background: '#f6f9fd', width: '700px', overflowX: 'auto' }} src="/img/aws/aws-vpc-network-traffic.png" alt="VPC Network Traffic Flow" />
+<img style={{ background: '#f6f9fd', width: '700px', overflowX: 'auto' }} src="/img/aws/vpc-network-traffic.png" alt="VPC Network Traffic Flow" />
 </div>
 
 - **Data Packet Flow:** When a customer requests data from an application hosted in the AWS Cloud, this request is sent as a packet
@@ -64,7 +64,7 @@ With both network ACLs and security groups, you can configure custom rules for t
 ### VPC Traffic Shared Responsibility Model
 
 <div class="aws__ImageCentered" >
-<img style={{ background: '#f6f9fd', width: '700px', overflowX: 'auto' }} src="/img/aws/aws-vpc-trafficing-shared-responsibility-model.png" alt="VPC Network Traffic Flow" />
+<img style={{ background: '#f6f9fd', width: '700px', overflowX: 'auto' }} src="/img/aws/vpc-trafficing-shared-responsibility-model.png" alt="VPC Network Traffic Flow" />
 </div>
 
 ### Additional Resources

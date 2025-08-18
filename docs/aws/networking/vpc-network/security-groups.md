@@ -23,7 +23,7 @@ date: "2025-08-11"
 A security group is a virtual firewall that controls inbound and outbound traffic at the resource level. After a packet has entered a subnet, it must have its permissions evaluated for resources within the subnet, such as Amazon EC2 instances.
 
 <div class="aws__ImageStart" >
-<img style={{ background: '#f6f9fd', width: '300px', overflowX: 'auto' }} src="/img/aws/aws-security-group-diagram.png" alt="Security Group Architecture" />
+<img style={{ background: '#f6f9fd', width: '300px', overflowX: 'auto' }} src="/img/aws/security-group-diagram.png" alt="Security Group Architecture" />
 </div>
 
 - **Resource-Level Protection:** Acts as a security layer that filters traffic for specific AWS resources like EC2 instances
@@ -41,7 +41,7 @@ Think of a security group like an apartment building's door attendant - just as 
 :::
 
 <div class="aws__ImageStart" >
-<img style={{ background: '#f6f9fd', width: '700px', overflowX: 'auto' }} src="/img/aws/aws-security-group-architecture.png" alt="Security Group Architecture" />
+<img style={{ background: '#f6f9fd', width: '700px', overflowX: 'auto' }} src="/img/aws/security-group-architecture.png" alt="Security Group Architecture" />
 </div>
 
 ## Default Security Group Behavior

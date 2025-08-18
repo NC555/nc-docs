@@ -9,7 +9,7 @@ date: "2025-08-11"
 # Elastic Beanstalk
 
 <div class="aws__ImageCentered">
-<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/aws-logo-batch.png" alt="AWS Batch LOGO" />
+<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/logo/batch.png" alt="AWS Batch LOGO" />
 </div>
 
 AWS Batch is a fully managed service that you can use to run batch computing workloads on AWS. It automatically schedules, manages, and scales compute resources for batch jobs, optimizing resource allocation based on job requirements.

@@ -9,7 +9,7 @@ date: "2025-08-11"
 # Virtual Private Netwrok Gateway
 
 <div class="aws__ImageAligned">
-<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/aws-logo-virtual-private-network-gatweway.png" alt="Virtual Private Netwrok Gateway" />
+<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/logo/virtual-private-network-gatweway.png" alt="Virtual Private Netwrok Gateway" />
 </div>
 
 To allow public traffic from the internet to access your [VPC](../virtual-private-cloud), you attach an internet gateway to the VPC.
@@ -17,5 +17,5 @@ To allow public traffic from the internet to access your [VPC](../virtual-privat
 An internet gateway is a connection between a VPC and the internet. You can think of an internet gateway as being similar to a doorway that customers use to enter the coffee shop. Without an internet gateway, no one can access the resources within your VPC.
 
 <div class="aws__ImageCentered" >
-<img style={{ background: '#f6f9fd', width: '500px', overflowX: 'auto' }} src="/img/aws/aws-networking-virtual-private-gateway.png" alt="Virtual Private Gateway" />
+<img style={{ background: '#f6f9fd', width: '500px', overflowX: 'auto' }} src="/img/aws/networking-virtual-private-gateway.png" alt="Virtual Private Gateway" />
 </div>

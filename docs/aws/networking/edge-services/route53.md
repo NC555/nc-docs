@@ -20,7 +20,7 @@ date: "2025-08-11"
 # Amazon Route 53
 
 <div class="aws__ImageCentered">
-<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/aws-logo-route53.png" alt="Amazon Route 53" />
+<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/logo/route53.png" alt="Amazon Route 53" />
 </div>
 
 Amazon Route 53 is a highly available and scalable cloud DNS service that provides a reliable and cost-effective way to route end users to internet applications. Route 53 connects user requests to infrastructure running in AWS and can also route users to infrastructure outside of AWS.

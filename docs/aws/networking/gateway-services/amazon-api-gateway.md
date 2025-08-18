@@ -20,7 +20,7 @@ date: "2025-08-11"
 # Amazon API Gateway
 
 <div class="aws__ImageCentered">
-<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/aws-logo-amazon-api-gateway.png" alt="Amazon API Gateway" />
+<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/logo/amazon-api-gateway.png" alt="Amazon API Gateway" />
 </div>
 Amazon API Gateway is an AWS service for creating, publishing, maintaining, monitoring, and securing APIs at any scale.
 - **Fully Managed Service:** No infrastructure to manage, automatic scaling, and built-in monitoring
@@ -38,7 +38,7 @@ Use case: An API defines how different software systems can interact and communi
 - Supports multiple deployment stages for development, testing, and production environments
 
 <div class="aws__ImageCentered" >
-<img style={{ background: '#f6f9fd', width: '500px', overflowX: 'auto' }} src="/img/aws/aws-api-gateway-architecture.png" alt="API Gateway Architecture" />
+<img style={{ background: '#f6f9fd', width: '500px', overflowX: 'auto' }} src="/img/aws/api-gateway-architecture.png" alt="API Gateway Architecture" />
 </div>
 
 ### Additional Resources

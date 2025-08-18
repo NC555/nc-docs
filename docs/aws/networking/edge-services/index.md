@@ -20,7 +20,7 @@ date: "2025-08-11"
 # Edge Networking Services
 
 <div class="aws__ImageCentered">
-<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/aws-logo-global-networking.png" alt="AWS Global Networking Logo" />
+<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/logo/global-networking.png" alt="AWS Global Networking Logo" />
   <span>Global Networking</span>
 </div>
 

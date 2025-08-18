@@ -9,7 +9,7 @@ date: "2025-08-11"
 # Amazon SNS
 
 <div class="aws__ImageCentered">
-<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/aws-logo-sns.png" alt="Amazon SNS LOGO" />
+<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/logo/sns.png" alt="Amazon SNS LOGO" />
 </div>
 Amazon SNS is a publish-subscribe service that publishers use to send messages to subscribers through SNS topics. In Amazon SNS, subscribers can include web servers, email addresses, Lambda functions, and various other endpoints. You will learn about Lambda in more detail later.
 
