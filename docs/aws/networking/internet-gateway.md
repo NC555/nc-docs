@@ -28,7 +28,7 @@ To allow public traffic from the internet to access your [**VPC**](./vpc.md), yo
 
   - [EC2](../cloud-compute/ec2.md) instances with public IPs
   - [ELB](../cloud-compute/elb.md) Elastic Load Balancing
-  - NAT Gateways
+  - [NAT](./gateway-services/network-address-transalation-gateway.md) Gateways
   - Application Load Balancers (ALB)
   - Network Load Balancers (NLB)
   - Classic Load Balancers

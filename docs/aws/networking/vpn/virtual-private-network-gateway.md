@@ -8,8 +8,8 @@ date: "2025-08-11"
 
 # Virtual Private Netwrok Gateway
 
-<div class="aws__ImageCentered">
-<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/aws-logo-virtual-private-network.png" alt="Amazon VPC" />
+<div class="aws__ImageAligned">
+<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/aws-logo-virtual-private-network-gatweway.png" alt="Virtual Private Netwrok Gateway" />
 </div>
 
 To allow public traffic from the internet to access your [VPC](../virtual-private-cloud), you attach an internet gateway to the VPC.

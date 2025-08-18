@@ -63,36 +63,6 @@ const sidebars: SidebarsConfig = {
             },
             {
               type: "category",
-              label: "VPC Traffic",
-              link: {
-                type: "doc",
-                id: "aws/networking/vpc-network/traffic",
-              },
-              items: [
-                {
-                  type: "doc",
-                  id: "aws/networking/vpc-network/access-control-list",
-                  label: "Access Control List",
-                },
-                {
-                  type: "doc",
-                  id: "aws/networking/vpc-network/security-groups",
-                  label: "Security Groups",
-                },
-              ],
-            },
-            {
-              type: "doc",
-              id: "aws/networking/private-link",
-              label: "PrivateLink",
-            },
-            {
-              type: "doc",
-              id: "aws/networking/direct-connect",
-              label: "Direct Connect",
-            },
-            {
-              type: "category",
               label: "Gateway Services",
               items: [
                 {
@@ -111,6 +81,77 @@ const sidebars: SidebarsConfig = {
                   label: "Amazon API Gateway",
                 },
               ],
+            },
+            {
+              type: "category",
+              label: "VPC Traffic",
+              link: {
+                type: "doc",
+                id: "aws/networking/vpc-network/traffic",
+              },
+              items: [
+                {
+                  type: "doc",
+                  id: "aws/networking/vpc-network/access-control-list",
+                  label: "Access Control List",
+                },
+                {
+                  type: "doc",
+                  id: "aws/networking/vpc-network/security-groups",
+                  label: "Security Groups",
+                },
+              ],
+            },
+
+            {
+              type: "category",
+              label: "Edge Services",
+              link: {
+                type: "doc",
+                id: "aws/networking/edge-services/index",
+              },
+              items: [
+                {
+                  type: "doc",
+                  id: "aws/networking/edge-services/route53",
+                  label: "Route 53",
+                },
+                {
+                  type: "doc",
+                  id: "aws/networking/edge-services/cloudfront",
+                  label: "CloudFront",
+                },
+                {
+                  type: "doc",
+                  id: "aws/networking/edge-services/global-accelerator",
+                  label: "Access Control List",
+                },
+              ],
+            },
+            {
+              type: "category",
+              label: "Storage",
+              link: {
+                type: "doc",
+                id: "aws/storage/index",
+              },
+              items: [
+                {
+                  type: "doc",
+                  id: "aws/storage/s3-classes",
+                  label: "S3 Classes",
+                },
+              ],
+            },
+            {
+              type: "doc",
+              id: "aws/networking/private-link",
+              label: "PrivateLink",
+            },
+            {
+              type: "doc",
+              id: "aws/networking/direct-connect",
+              label: "Direct Connect",
             },
           ],
         },

@@ -16,7 +16,7 @@ AWS Virtual Private Network (AWS VPN) establishes a secure and private tunnel fr
 <div class="aws__DoubleLogosWrapper">
     <div class="aws__ImageAligned">
       <img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/aws-logo-virtual-private-network-gatweway.png" alt="Public Subnet" />
-      <span>[Virtual Private Network](./virtual-private-network.md) <br/>Gateway</span>
+      <span>[Virtual Private Network Gateway](./virtual-private-network-gateway.md)<br/></span>
     </div>
 </div>
 
