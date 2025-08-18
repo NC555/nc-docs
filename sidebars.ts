@@ -70,6 +70,21 @@ const sidebars: SidebarsConfig = {
               id: "aws/storage/elastic-disaster-recovery",
               label: "Elastic Disaster Recovery DRS",
             },
+            {
+              type: "doc",
+              id: "aws/storage/relational-database-service",
+              label: "Relational Database Service",
+            },
+            {
+              type: "doc",
+              id: "aws/storage/amazon-aurora",
+              label: "Amazon Aurora",
+            },
+            {
+              type: "doc",
+              id: "aws/storage/amazon-dynamodb",
+              label: "Amazon DynamoDB",
+            },
           ],
         },
         {
