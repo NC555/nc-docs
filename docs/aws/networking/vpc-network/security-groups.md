@@ -72,7 +72,7 @@ While both security groups and network ACLs provide network security, they opera
 
 **Security groups** operate at the resource level with stateful filtering, while **network ACLs** operate at the subnet level with stateless filtering. Security groups have a default-deny inbound policy, whereas the default network ACL allows all traffic. This layered approach provides defense in depth for your VPC resources.
 
-### Additional Resources
+## Additional Resources
 
 - [Security Groups Documentation](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_SecurityGroups.html)
 - [Security Group Rules Reference](https://docs.aws.amazon.com/vpc/latest/userguide/security-group-rules-reference.html)

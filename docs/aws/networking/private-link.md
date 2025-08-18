@@ -35,6 +35,6 @@ Instead, you control the specific API endpoints, sites, services, and resources 
 <img style={{ background: '#f6f9fd', width: '500px', overflowX: 'auto' }} src="/img/aws/networking-privatelink-concepts.png" alt="VPN Connection" />
 </div>
 
-### Additional Resources
+## Additional Resources
 
 - [AWS PrivateLink concepts](https://docs.aws.amazon.com/vpc/latest/privatelink/concepts.html)

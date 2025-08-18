@@ -85,7 +85,7 @@ Think of Global Accelerator like creating express lanes on the internet highway 
 
 **Simplified Management:** Static anycast IP addresses eliminate the need for complex DNS configurations and reduce the time-to-live (TTL) issues associated with DNS-based failover solutions.
 
-### Additional Resources
+## Additional Resources
 
 - [Global Accelerator Documentation](https://docs.aws.amazon.com/global-accelerator/)
 - [Global Accelerator Developer Guide](https://docs.aws.amazon.com/global-accelerator/latest/dg/)

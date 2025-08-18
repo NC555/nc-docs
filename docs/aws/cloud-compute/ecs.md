@@ -26,6 +26,6 @@ Perfect for startups or small teams building web applications with variable traf
 
 ---
 
-### Additional Resources
+## Additional Resources
 
 - [Amazon Elastic Container Service](https://aws.amazon.com/ecs/)

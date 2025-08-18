@@ -55,7 +55,7 @@ Recall the previous example of a traveler who wants to enter into a different co
 
 > This stateless nature means that you must configure rules for both inbound and outbound traffic separately, even for the same connection.
 
-### Additional Resources
+## Additional Resources
 
 - [Network ACLs Documentation](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html)
 - [VPC Security Best Practices](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-best-practices.html)

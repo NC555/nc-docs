@@ -89,7 +89,7 @@ To avoid manually managing your object storage tier configurations, you can use 
 - Periodic logs: If you upload periodic logs to a bucket, your application might need them for a week or a month.
 - Data that changes in access frequency: Some documents are frequently accessed for a limited period of time. After that, they are infrequently accessed. At some point, you might not need real-time access to them.
 
-### Additional Resources
+## Additional Resources
 
 - [Amazon S3 Storage Classes Documentation](https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-class-intro.html)
 - [S3 Storage Classes Pricing](https://aws.amazon.com/s3/pricing/)

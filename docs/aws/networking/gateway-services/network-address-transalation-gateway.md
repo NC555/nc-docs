@@ -40,6 +40,6 @@ Use case: You can use a NAT gateway so that instances in a private subnet can co
 <img style={{ background: '#f6f9fd', width: '300px', overflowX: 'auto' }} src="/img/aws/nat-gateway-concept.png" alt="NAT Gateway Architecture" />
 </div>
 
-### Additional Resources
+## Additional Resources
 
 - [Connect to the internet or other networks using NAT devices](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat.html)

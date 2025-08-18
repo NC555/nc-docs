@@ -93,7 +93,7 @@ The AWS shared responsibility model groups storage services into three categorie
 
 Understanding these responsibility boundaries helps ensure proper security, compliance, and operational practices when implementing AWS storage solutions.
 
-### Additional Resources
+## Additional Resources
 
 - [AWS Storage Services Documentation](https://docs.aws.amazon.com/storage/)
 - [AWS Storage Best Practices](https://aws.amazon.com/architecture/storage/)

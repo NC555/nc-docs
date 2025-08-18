@@ -36,6 +36,6 @@ You can use Direct Connect to link your AWS and on-premises networks to build ap
 <img style={{ background: '#f6f9fd', width: '500px', overflowX: 'auto' }} src="/img/aws/networking-direct-connect-concept.png" alt="VPN Connection" />
 </div>
 
-### Additional Resources
+## Additional Resources
 
 - [AWS Direct Connect](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/aws-direct-connect.html)

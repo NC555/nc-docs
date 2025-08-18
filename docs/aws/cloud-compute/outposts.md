@@ -19,6 +19,6 @@ AWS Outposts is a fully managed hybrid cloud solution that extends AWS infrastru
 
 ---
 
-### Additional Resources
+## Additional Resources
 
 - [What is AWS Outposts?](https://docs.aws.amazon.com/outposts/latest/server-userguide/what-is-outposts.html)

@@ -19,6 +19,6 @@ AWS Batch is a fully managed service that you can use to run batch computing wor
 
 ---
 
-### Additional Resources
+## Additional Resources
 
 - [AWS Batch](https://aws.amazon.com/batch/)

@@ -26,6 +26,6 @@ This is great for teams wanting Kubernetes flexibility without managing servers.
 
 ---
 
-### Additional Resources
+## Additional Resources
 
 - [Amazon Elastic Kubernetes Service](https://aws.amazon.com/eks/)

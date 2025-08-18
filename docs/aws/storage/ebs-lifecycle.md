@@ -79,6 +79,6 @@ Amazon Data Lifecycle Manager automates EBS snapshot creation, retention, and de
 
 Use case: Essential for production workloads requiring regular backups, disaster recovery capabilities, and compliance with data retention policies.
 
-### Additional Resources
+## Additional Resources
 - [EBS Snapshots Documentation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSSnapshots.html)
 - [Amazon Data Lifecycle Manager](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/snapshot-lifecycle.html)

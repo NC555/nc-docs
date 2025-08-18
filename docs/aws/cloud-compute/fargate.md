@@ -18,6 +18,6 @@ When using Fargate, you do not need to provision or manage servers. Fargate mana
 
 ---
 
-### Additional Resources
+## Additional Resources
 
 - [AWS Fargate](https://aws.amazon.com/fargate/)

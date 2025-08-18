@@ -88,7 +88,7 @@ Replaces physical tape infrastructure with a virtual tape library (VTL) backed b
 
 Use case: Ideal for businesses looking to leverage cloud storage for backup, archiving, disaster recovery, and capacity extension while maintaining on-premises application performance.
 
-### Additional Resources
+## Additional Resources
 - [AWS Storage Gateway Documentation](https://docs.aws.amazon.com/storagegateway/)
 - [Choosing the Right Storage Gateway](https://aws.amazon.com/storagegateway/resources/)
 

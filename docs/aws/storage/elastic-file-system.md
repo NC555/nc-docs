@@ -80,6 +80,6 @@ EFS automatically optimizes storage costs through lifecycle policies that move d
 
 Use case: Ideal for content repositories, web serving, data analytics, container storage, and any application requiring shared file access across multiple instances.
 
-### Additional Resources
+## Additional Resources
 - [Amazon EFS Documentation](https://docs.aws.amazon.com/efs/)
 - [EFS Performance and Optimization](https://docs.aws.amazon.com/efs/latest/ug/performance.html)

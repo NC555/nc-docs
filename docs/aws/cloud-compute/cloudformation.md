@@ -17,6 +17,6 @@ With CloudFormation, you can define your infrastructure as code. You create a te
 
 ---
 
-### Additional Resources
+## Additional Resources
 
 - [CloudFormation](https://aws.amazon.com/cloudformation)

@@ -65,6 +65,11 @@ const sidebars: SidebarsConfig = {
               id: "aws/storage/storage-gateway",
               label: "Storage Gateway",
             },
+            {
+              type: "doc",
+              id: "aws/storage/elastic-disaster-recovery",
+              label: "Elastic Disaster Recovery DRS",
+            },
           ],
         },
         {

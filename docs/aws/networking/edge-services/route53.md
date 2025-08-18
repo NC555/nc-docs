@@ -80,7 +80,7 @@ Route 53 seamlessly integrates with other AWS services, particularly edge networ
 
 The service works as the foundation for DNS resolution in complex AWS architectures, supporting multi-region deployments, load balancer integration, and sophisticated traffic management strategies.
 
-### Additional Resources
+## Additional Resources
 
 - [Route 53 Documentation](https://docs.aws.amazon.com/route53/)
 - [DNS Concepts and Route 53](https://docs.aws.amazon.com/route53/latest/developerguide/route-53-concepts.html)

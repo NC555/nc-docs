@@ -43,6 +43,6 @@ To allow public traffic from the internet to access your [**VPC**](./vpc.md), yo
   - Route 53
   - SES, SNS, SQS (via internet APIs)
 
-### Additional Resources
+## Additional Resources
 
 - [VPC Internet Gateway](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Internet_Gateway.html)

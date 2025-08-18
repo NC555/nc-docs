@@ -39,6 +39,6 @@ Use case: It can be used to quickly scale remote-worker access.
 <img style={{ background: '#f6f9fd', width: '500px', overflowX: 'auto' }} src="/img/aws/client-vpn-connection.png" alt="Client VPN Connection" />
 </div>
 
-### Additional Resources
+## Additional Resources
 
 - [AWS Direct Connect Locations](https://aws.amazon.com/directconnect/locations)

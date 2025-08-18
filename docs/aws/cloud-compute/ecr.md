@@ -16,6 +16,6 @@ Amazon Elastic Container Registry (Amazon ECR) is where you can store, manage, a
 
 ---
 
-### Additional Resources
+## Additional Resources
 
 - [Amazon Elastic Container Registry](https://aws.amazon.com/ecr/?c=cn&sec=srvm)

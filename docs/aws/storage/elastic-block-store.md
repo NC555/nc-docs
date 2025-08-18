@@ -71,6 +71,6 @@ Amazon EBS provides persistent block-level storage volumes for EC2 instances, ac
 
 Use case: EBS is ideal for databases, file systems, enterprise applications, and any workload requiring data persistence beyond the EC2 instance lifecycle.
 
-### Additional Resources
+## Additional Resources
 - [Amazon EBS Documentation](https://docs.aws.amazon.com/ebs/)
 - [EBS Volume Types](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html)

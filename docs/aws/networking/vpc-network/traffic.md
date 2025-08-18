@@ -67,7 +67,7 @@ With both network ACLs and security groups, you can configure custom rules for t
 <img style={{ background: '#f6f9fd', width: '700px', overflowX: 'auto' }} src="/img/aws/vpc-trafficing-shared-responsibility-model.png" alt="VPC Network Traffic Flow" />
 </div>
 
-### Additional Resources
+## Additional Resources
 
 - [Amazon VPC User Guide](https://docs.aws.amazon.com/vpc/latest/userguide/)
 - [Network ACLs Documentation](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html)

@@ -39,6 +39,6 @@ Use case: It can be used to connect multiple VPCs across different AWS accounts 
 <img style={{ background: '#f6f9fd', width: '300px', overflowX: 'auto' }} src="/img/aws/transit-gateway-overview.png" alt="Transit Gateway Architecture" />
 </div>
 
-### Additional Resources
+## Additional Resources
 
 - [AWS Transit Gateway Documentation](https://docs.aws.amazon.com/vpc/latest/tgw/)

@@ -85,7 +85,7 @@ CloudFront works seamlessly with Amazon Route 53 to provide comprehensive conten
 
 **SSL/TLS Support:** Native support for SSL/TLS encryption ensures secure content delivery, with options for custom SSL certificates and automatic certificate management.
 
-### Additional Resources
+## Additional Resources
 
 - [CloudFront Documentation](https://docs.aws.amazon.com/cloudfront/)
 - [CloudFront Developer Guide](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/)

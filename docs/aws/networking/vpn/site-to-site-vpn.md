@@ -32,6 +32,6 @@ Site-to-Site VPN creates a secure connection between your data center or branch 
 src="/img/aws/networking-vpn-site-to-site-connection.png" alt="VPN Connection" />
 </div>
 
-### Additional Resources
+## Additional Resources
 
 - [AWS Site-to-Site VPN](https://docs.aws.amazon.com/vpn/latest/s2svpn/VPC_VPN.html)

@@ -1,4 +1,3 @@
-```markdown
 ---
 title: "Amazon Simple Storage Service (S3)"
 description: "Amazon S3 is a fully managed, highly-available object storage service offering 99.999999999% durability for storing and retrieving any amount of data as objects in buckets."
@@ -68,7 +67,6 @@ Everything stored in Amazon S3 is private by default, requiring explicit permiss
 
 Use case: Essential for web applications, content distribution, backup and archiving, data analytics, and building data lakes for modern cloud architectures.
 
-### Additional Resources
+## Additional Resources
 - [Amazon S3 Documentation](https://docs.aws.amazon.com/s3/)
 - [S3 Security Best Practices](https://docs.aws.amazon.com/AmazonS3/latest/userguide/security-best-practices.html)
-```

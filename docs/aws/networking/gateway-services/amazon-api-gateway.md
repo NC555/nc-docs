@@ -41,6 +41,6 @@ Use case: An API defines how different software systems can interact and communi
 <img style={{ background: '#f6f9fd', width: '500px', overflowX: 'auto' }} src="/img/aws/api-gateway-architecture.png" alt="API Gateway Architecture" />
 </div>
 
-### Additional Resources
+## Additional Resources
 
 - [What is Amazon API Gateway?](https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html#api-gateway-overview-aws-backbone)

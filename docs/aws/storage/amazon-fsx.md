@@ -101,6 +101,6 @@ Choose Amazon FSx when you need:
 
 Use case: Essential for migrating existing file server workloads, high-performance computing, machine learning, and applications requiring specific file system protocols beyond standard NFS.
 
-### Additional Resources
+## Additional Resources
 - [Amazon FSx Documentation](https://docs.aws.amazon.com/fsx/)
 - [FSx Performance and Pricing Comparison](https://aws.amazon.com/fsx/pricing/)
