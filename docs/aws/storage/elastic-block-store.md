@@ -24,30 +24,30 @@ Amazon EBS provides persistent block-level storage volumes for EC2 instances, ac
 
 ## Key EBS Characteristics
 
-• **Persistent Storage:** Data survives instance stops, starts, and termination unlike instance store
-• **Independent Lifecycle:** EBS volumes exist independently of EC2 instances
-• **Attachable/Detachable:** Volumes can be attached to different instances as needed
-• **Backup Capable:** Supports point-in-time snapshots for data protection
-• **Scalable:** Volume size and performance can be modified without downtime
+- **Persistent Storage:** Data survives instance stops, starts, and termination unlike instance store
+- **Independent Lifecycle:** EBS volumes exist independently of EC2 instances
+- **Attachable/Detachable:** Volumes can be attached to different instances as needed
+- **Backup Capable:** Supports point-in-time snapshots for data protection
+- **Scalable:** Volume size and performance can be modified without downtime
 
 ## Persistent vs Instance Store Comparison
 
 
 **EC2 Instance Store:**
-• Temporary storage physically attached to host computer
-• Data lost when instance stops or terminates
-• No additional cost but no persistence
-• High performance for temporary data
+- Temporary storage physically attached to host computer
+- Data lost when instance stops or terminates
+- No additional cost but no persistence
+- High performance for temporary data
 
 <div class="aws__ImageStart" >
 <img style={{ background: '#f6f9fd', width: '600px', overflowX: 'auto', marginTop:'0'  }} src="/img/aws/ebs-ec2-instance-store.png" alt="EC2 Instance Store Architecture" />
 </div>
 
 **EBS Volumes:**
-• Network-attached persistent storage
-• Data persists independently of instance state
-• Additional cost but provides data durability
-• Consistent performance with various volume types
+- Network-attached persistent storage
+- Data persists independently of instance state
+- Additional cost but provides data durability
+- Consistent performance with various volume types
 
 <div class="aws__ImageStart" >
 <img style={{ background: '#f6f9fd', width: '600px', overflowX: 'auto', marginTop:'0'  }} src="/img/aws/ebs-ec2-persistant-store-volume.png" alt="EC2 with EBS Volumes Architecture" />
@@ -61,11 +61,11 @@ Amazon EBS provides persistent block-level storage volumes for EC2 instances, ac
 
 ## Core Benefits
 
-• **Data Migration:** Easy movement between Availability Zones using snapshots
-• **Instance Flexibility:** Attach volumes to different instance types without data loss
-• **Disaster Recovery:** Automated snapshots enable reliable backup and restore
-• **Cost Optimization:** Modify volume types and sizes to match usage patterns
-• **Performance Tuning:** Various volume types (gp3, io2, etc.) for different IOPS requirements
+- **Data Migration:** Easy movement between Availability Zones using snapshots
+- **Instance Flexibility:** Attach volumes to different instance types without data loss
+- **Disaster Recovery:** Automated snapshots enable reliable backup and restore
+- **Cost Optimization:** Modify volume types and sizes to match usage patterns
+- **Performance Tuning:** Various volume types (gp3, io2, etc.) for different IOPS requirements
 
 > Benefits: EBS provides enterprise-grade persistent storage with snapshot backup, cross-AZ portability, and performance flexibility for mission-critical applications.
 

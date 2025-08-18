@@ -32,13 +32,33 @@ const sidebars: SidebarsConfig = {
             },
             {
               type: "doc",
+              id: "aws/storage/ebs-lifecycle",
+              label: "EBS Lifecycle",
+            },
+            {
+              type: "doc",
+              id: "aws/storage/ebs-lifecycle",
+              label: "EBS Lifecycle",
+            },
+            {
+              type: "doc",
               id: "aws/storage/simple-storage-service",
-              label: "Simple Storage Service S3",
+              label: "Simple Storage Service",
             },
             {
               type: "doc",
               id: "aws/storage/s3-classes",
               label: "S3 Storage Classes",
+            },
+            {
+              type: "doc",
+              id: "aws/storage/elastic-file-system",
+              label: "Elastic File System (EFS)",
+            },
+            {
+              type: "doc",
+              id: "aws/storage/amazon-fsx",
+              label: "Amazon FSx",
             },
           ],
         },
@@ -150,21 +170,6 @@ const sidebars: SidebarsConfig = {
                   type: "doc",
                   id: "aws/networking/edge-services/global-accelerator",
                   label: "Access Control List",
-                },
-              ],
-            },
-            {
-              type: "category",
-              label: "Storage",
-              link: {
-                type: "doc",
-                id: "aws/storage/index",
-              },
-              items: [
-                {
-                  type: "doc",
-                  id: "aws/storage/s3-classes",
-                  label: "S3 Classes",
                 },
               ],
             },
