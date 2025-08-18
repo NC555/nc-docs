@@ -6,7 +6,7 @@ author: "Nati Cabti"
 date: "2025-08-11"
 ---
 
-# Amazon EKS
+# Amazon Elastic Kubernetes Service (Amazon EKS)
 
 <div class="aws__ImageCentered">
 <img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/logo/eks.png" alt="AWS EKS LOGO" />

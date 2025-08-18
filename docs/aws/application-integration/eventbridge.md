@@ -1,12 +1,12 @@
 ---
 title: "Event Bridge"
-description: "EventBridge is a serverless service that helps connect different parts of an application using events, helping to build scalable, event-driven systems"
-tags: ["aws", "event_bridge", "messaging", "queues", "microservices"]
+description: "Amazon EventBridge is a serverless service that helps connect different parts of an application using events, helping to build scalable, event-driven systems"
+tags: ["aws", "aws_service","event_bridge", "messaging", "queues", "microservices"]
 author: "Nati Cabti"
 date: "2025-08-11"
 ---
 
-## EventBridge
+## Amazon EventBridge
 
 <div class="aws__ImageCentered">
 <img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/logo/event-bridge.png" alt="AWS EventBridge LOGO" />

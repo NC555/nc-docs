@@ -17,6 +17,81 @@ const sidebars: SidebarsConfig = {
         id: "aws/index",
       },
       items: [
+        //compute
+        {
+          type: "category",
+          label: "Compute",
+          items: [
+            {
+              type: "doc",
+              id: "aws/compute/ec2",
+              label: "Amazon EC2",
+            },
+            {
+              type: "doc",
+              id: "aws/compute/lambda",
+              label: "AWS Lambda",
+            },
+            {
+              type: "doc",
+              id: "aws/compute/elastic-load-balancing",
+              label: "Elastic Load Balancing",
+            },
+            {
+              type: "doc",
+              id: "aws/compute/ami",
+              label: "AMI",
+            },
+            {
+              type: "doc",
+              id: "aws/compute/elastic-beanstalk",
+              label: "Elastic Beanstalk",
+            },
+            {
+              type: "doc",
+              id: "aws/compute/batch",
+              label: "AWS Batch",
+            },
+            {
+              type: "doc",
+              id: "aws/compute/lightsail",
+              label: "Lightsail",
+            },
+            {
+              type: "doc",
+              id: "aws/compute/outposts",
+              label: "Outposts",
+            },
+          ],
+        },
+        //containers
+        {
+          type: "category",
+          label: "Containers",
+          items: [
+            {
+              type: "doc",
+              id: "aws/containers/elasctic-container-service",
+              label: "Elastic Container Service",
+            },
+            {
+              type: "doc",
+              id: "aws/containers/fargate",
+              label: "AWS Fargate",
+            },
+            {
+              type: "doc",
+              id: "aws/containers/elastic-kubernetes-service",
+              label: "Elastic Kubernetes Service",
+            },
+            {
+              type: "doc",
+              id: "aws/containers/elastic-container-registry",
+              label: "Elastic Container Registry",
+            },
+          ],
+        },
+        //storage
         {
           type: "category",
           label: "Storage",
@@ -72,21 +147,76 @@ const sidebars: SidebarsConfig = {
             },
             {
               type: "doc",
-              id: "aws/storage/relational-database-service",
-              label: "Relational Database Service",
+              id: "aws/storage/aws-backup",
+              label: "AWS Backup",
+            },
+          ],
+        },
+        //database
+        {
+          type: "category",
+          label: "Database",
+          items: [
+            {
+              type: "doc",
+              id: "aws/database/relational-database-service",
+              label: "Amazon RDS",
             },
             {
               type: "doc",
-              id: "aws/storage/amazon-aurora",
+              id: "aws/database/aurora",
               label: "Amazon Aurora",
             },
             {
               type: "doc",
-              id: "aws/storage/amazon-dynamodb",
+              id: "aws/database/dynamodb",
               label: "Amazon DynamoDB",
+            },
+            {
+              type: "doc",
+              id: "aws/database/documentdb",
+              label: "Amazon DocumentDB",
+            },
+            {
+              type: "doc",
+              id: "aws/database/neptune",
+              label: "Amazon Neptune",
+            },
+            {
+              type: "doc",
+              id: "aws/database/elasticache",
+              label: "Amazon ElastiCache",
             },
           ],
         },
+        //application-integration
+        {
+          type: "category",
+          label: "Application Intergration",
+          items: [
+            {
+              type: "doc",
+              id: "aws/application-integration/eventbridge",
+              label: "Amazon EventBridge",
+            },
+            {
+              type: "doc",
+              id: "aws/application-integration/simple-notification-service",
+              label: "Simple Notification Service",
+            },
+            {
+              type: "doc",
+              id: "aws/application-integration/simple-queue-service",
+              label: "Simple Queue Service",
+            },
+            {
+              type: "doc",
+              id: "aws/application-integration/messaging-and-queuing",
+              label: "EventBridge Vs SQS Vs SNS",
+            },
+          ],
+        },
+        //networking
         {
           type: "category",
           label: "Networking",
@@ -188,11 +318,6 @@ const sidebars: SidebarsConfig = {
                 },
                 {
                   type: "doc",
-                  id: "aws/networking/edge-services/cloudfront",
-                  label: "CloudFront",
-                },
-                {
-                  type: "doc",
                   id: "aws/networking/edge-services/global-accelerator",
                   label: "Access Control List",
                 },
@@ -210,6 +335,86 @@ const sidebars: SidebarsConfig = {
             },
           ],
         },
+        // management-governance
+        {
+          type: "category",
+          label: "Management & Governance",
+          items: [
+            {
+              type: "doc",
+              id: "aws/management/cloudformation",
+              label: "CloudFormation",
+            },
+          ],
+        },
+        //Machine Learning
+        {
+          type: "category",
+          label: "Machine Learning",
+          items: [
+            {
+              type: "doc",
+              id: "aws/machine-learning/amazon-sagemaker",
+              label: "Amazon SageMaker AI",
+            },
+            {
+              type: "doc",
+              id: "aws/machine-learning/amazon-comprehend",
+              label: "Amazon Comprehend",
+            },
+            {
+              type: "doc",
+              id: "aws/machine-learning/amazon-kendra",
+              label: "Amazon Kendra",
+            },
+            {
+              type: "doc",
+              id: "aws/machine-learning/amazon-personalize",
+              label: "Amazon Personalize",
+            },
+            {
+              type: "doc",
+              id: "aws/machine-learning/amazon-polly",
+              label: "Amazon Polly",
+            },
+            {
+              type: "doc",
+              id: "aws/machine-learning/amazon-rekognition",
+              label: "Amazon Rekognition",
+            },
+            {
+              type: "doc",
+              id: "aws/machine-learning/amazon-textract",
+              label: "Amazon Textract",
+            },
+            {
+              type: "doc",
+              id: "aws/machine-learning/amazon-transcribe",
+              label: "Amazon Transcribe",
+            },
+            {
+              type: "doc",
+              id: "aws/machine-learning/amazon-translate",
+              label: "Amazon Translate",
+            },
+            {
+              type: "doc",
+              id: "aws/machine-learning/amazon-lex",
+              label: "Amazon Lex",
+            },
+            {
+              type: "doc",
+              id: "aws/machine-learning/amazon-qbussiness",
+              label: "Amazon Q Business",
+            },
+            {
+              type: "doc",
+              id: "aws/machine-learning/amazon-qdeveloper",
+              label: "Amazon Q Developer",
+            },
+          ],
+        },
+        //global-infrastructure
         {
           type: "category",
           label: "Global Infrastructure",
@@ -231,102 +436,7 @@ const sidebars: SidebarsConfig = {
             },
           ],
         },
-        {
-          type: "category",
-          label: "Cloud Compute",
-          items: [
-            {
-              type: "doc",
-              id: "aws/cloud-compute/ec2",
-              label: "Amazon EC2",
-            },
-            {
-              type: "doc",
-              id: "aws/cloud-compute/lambda",
-              label: "AWS Lambda",
-            },
-            {
-              type: "doc",
-              id: "aws/cloud-compute/elb",
-              label: "ELB",
-            },
-            {
-              type: "doc",
-              id: "aws/cloud-compute/ami",
-              label: "AMI",
-            },
-            {
-              type: "doc",
-              id: "aws/cloud-compute/ecs",
-              label: "Amazon ECS",
-            },
-            {
-              type: "doc",
-              id: "aws/cloud-compute/eks",
-              label: "Amazon EKS",
-            },
-            {
-              type: "doc",
-              id: "aws/cloud-compute/ecr",
-              label: "Amazon ECR",
-            },
-            {
-              type: "doc",
-              id: "aws/cloud-compute/fargate",
-              label: "Fargate",
-            },
-            {
-              type: "doc",
-              id: "aws/cloud-compute/elastic-beanstalk",
-              label: "Elastic Beanstalk",
-            },
-            {
-              type: "doc",
-              id: "aws/cloud-compute/batch",
-              label: "AWS Batch",
-            },
-            {
-              type: "doc",
-              id: "aws/cloud-compute/lightsail",
-              label: "Lightsail",
-            },
-            {
-              type: "doc",
-              id: "aws/cloud-compute/outposts",
-              label: "Outposts",
-            },
-            {
-              type: "doc",
-              id: "aws/cloud-compute/sns",
-              label: "Amazon SNS",
-            },
-            {
-              type: "doc",
-              id: "aws/cloud-compute/cloudformation",
-              label: "CloudFormation",
-            },
-            {
-              type: "doc",
-              id: "aws/cloud-compute/cloudfront",
-              label: "CloudFront",
-            },
-            {
-              type: "doc",
-              id: "aws/cloud-compute/event-bridge",
-              label: "Amazon EventBridge",
-            },
-            {
-              type: "doc",
-              id: "aws/cloud-compute/messaging-and-queuing",
-              label: "EventBridge Vs SQS Vs SNS",
-            },
-            {
-              type: "doc",
-              id: "aws/cloud-compute/vms-containers-challenges",
-              label: "VMs & Containers challenges",
-            },
-          ],
-        },
+        //fundamentals
         {
           type: "category",
           label: "Fundamentals",
@@ -408,6 +518,7 @@ const sidebars: SidebarsConfig = {
             },
           ],
         },
+        //architecture
         {
           type: "category",
           label: "Architecture",

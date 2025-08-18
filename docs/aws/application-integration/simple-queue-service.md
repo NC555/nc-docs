@@ -1,18 +1,18 @@
 ---
-title: "AWS SQS"
+title: "Amazon Simple Queue Service"
 description: "AWS SQS, or Amazon Simple Queue Service, is a fully managed message queuing service that decouples applications, allowing them to communicate and process messages asynchronously"
-tags: ["aws", "sqs", "messaging", "queues", "microservices"]
+tags: ["aws_service", "aws", "sqs", "messaging", "queues", "microservices"]
 author: "Nati Cabti"
 date: "2025-08-11"
 ---
 
-# Amazon SQS
+# Amazon Simple Queue Service
 
 <div class="aws__ImageCentered">
 <img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/logo/sqs.png" alt="Amazon SQS LOGO" />
 </div>
 
-AWS SQS, or Amazon Simple Queue Service, is a fully managed message queuing service that decouples applications, allowing them to communicate and process messages asynchronously. It acts as a buffer, enabling producers to send messages and consumers to retrieve them at their own pace, improving fault tolerance and scalability
+Amazon Simple Queue Service (SQS), is a fully managed message queuing service that decouples applications, allowing them to communicate and process messages asynchronously. It acts as a buffer, enabling producers to send messages and consumers to retrieve them at their own pace, improving fault tolerance and scalability
 
 ## Amazon SQS Use Case Scenario
 

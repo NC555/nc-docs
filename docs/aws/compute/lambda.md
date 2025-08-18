@@ -1,7 +1,7 @@
 ---
 title: "AWS Lambda"
 description: "AWS SQS, or Amazon Simple Queue Service, is a fully managed message queuing service that decouples applications, allowing them to communicate and process messages asynchronously"
-tags: ["aws", "compute", "lambda", "serverless"]
+tags: ["aws","aws_service","compute", "lambda", "serverless"]
 author: "Nati Cabti"
 date: "2025-08-11"
 ---

@@ -1,12 +1,12 @@
 ---
 title: "AWS Batch"
-description: "Elastic Beanstalk is a fully managed service that streamlines the deployment, management, and scaling of web applications"
-tags: ["aws", "compute"]
+description: "AWS Batch is a fully managed service that you can use to run batch computing workloads on AWS. It automatically schedules, manages, and scales compute resources for batch jobs, optimizing resource allocation based on job requirements."
+tags: ["aws", "aws_service" ,"compute"]
 author: "Nati Cabti"
 date: "2025-08-11"
 ---
 
-# Elastic Beanstalk
+# AWS Batch
 
 <div class="aws__ImageCentered">
 <img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/logo/batch.png" alt="AWS Batch LOGO" />

@@ -1,7 +1,7 @@
 ---
 title: "AWS Outposts"
 description: "AWS Outposts is a fully managed hybrid cloud solution that extends AWS infrastructure and services to on-premises data centers."
-tags: ["aws", "compute"]
+tags: ["aws", "aws_service" ,"compute"]
 author: "Nati Cabti"
 date: "2025-08-11"
 ---

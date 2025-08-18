@@ -1,12 +1,12 @@
 ---
-title: "Amazon SNS"
-description: "Amazon SNS is a publish-subscribe service that publishers use to send messages to subscribers through SNS topics"
-tags: ["sns", "event_bridge", "messaging", "queues", "microservices"]
+title: "AWS Simple Notification Service (SNS)"
+description: "AWS Simple Notification Service (SNS) is a publish-subscribe service that publishers use to send messages to subscribers through SNS topics"
+tags: ["aws_service", "sns", "event_bridge", "messaging", "queues", "microservices"]
 author: "Nati Cabti"
 date: "2025-08-11"
 ---
 
-# Amazon SNS
+# AWS Simple Notification Service (SNS)
 
 <div class="aws__ImageCentered">
 <img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/logo/sns.png" alt="Amazon SNS LOGO" />

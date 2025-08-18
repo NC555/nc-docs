@@ -1,7 +1,7 @@
 ---
 title: "Amazon Lightsail"
 description: "Amazon Lightsail is a cloud service offering virtual private servers (VPSs), storage, databases, and networking at a predictable monthly price."
-tags: ["aws", "compute"]
+tags: ["aws", "aws_service", "compute"]
 author: "Nati Cabti"
 date: "2025-08-11"
 ---

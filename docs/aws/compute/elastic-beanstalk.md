@@ -1,7 +1,7 @@
 ---
 title: "Elastic Beanstalk"
 description: "Elastic Beanstalk is a fully managed service that streamlines the deployment, management, and scaling of web applications."
-tags: ["aws", "compute"]
+tags: ["aws","aws_service","compute"]
 author: "Nati Cabti"
 date: "2025-08-11"
 ---
