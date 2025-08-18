@@ -60,6 +60,11 @@ const sidebars: SidebarsConfig = {
               id: "aws/storage/amazon-fsx",
               label: "Amazon FSx",
             },
+            {
+              type: "doc",
+              id: "aws/storage/storage-gateway",
+              label: "Storage Gateway",
+            },
           ],
         },
         {
