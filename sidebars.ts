@@ -112,11 +112,6 @@ const sidebars: SidebarsConfig = {
             },
             {
               type: "doc",
-              id: "aws/storage/ebs-lifecycle",
-              label: "EBS Lifecycle",
-            },
-            {
-              type: "doc",
               id: "aws/storage/simple-storage-service",
               label: "Simple Storage Service",
             },
@@ -411,6 +406,72 @@ const sidebars: SidebarsConfig = {
               type: "doc",
               id: "aws/machine-learning/amazon-qdeveloper",
               label: "Amazon Q Developer",
+            },
+          ],
+        },
+        //Analytics
+        {
+          type: "category",
+          label: "Analytics",
+          items: [
+            {
+              type: "doc",
+              id: "aws/analytics/athena",
+              label: "Amazon Athena",
+            },
+            {
+              type: "doc",
+              id: "aws/analytics/redshift",
+              label: "Amazon Redshift",
+            },
+            {
+              type: "category",
+              label: "Pipelines",
+              link: {
+                type: "doc",
+                id: "aws/analytics/pipelines/index",
+              },
+              items: [],
+            },
+            {
+              type: "doc",
+              id: "aws/analytics/kinesis-data-streams",
+              label: "Amazon Kinesis Data Streams",
+            },
+            {
+              type: "doc",
+              id: "aws/analytics/data-firehouse",
+              label: "Amazon Data Firehose",
+            },
+            {
+              type: "doc",
+              id: "aws/analytics/redshift",
+              label: "Amazon Redshift",
+            },
+            {
+              type: "doc",
+              id: "aws/analytics/glue-data-catalog",
+              label: "Glue Data Catalog",
+            },
+            {
+              type: "doc",
+              id: "aws/analytics/aws-glue",
+              label: "AWS Glue",
+            },
+            {
+              type: "doc",
+              id: "aws/analytics/opensearch-service",
+              label: "OpenSearch",
+            },
+            {
+              type: "doc",
+              id: "aws/analytics/quicksight",
+              label: "Amazon QuickSight",
+            },
+            {
+              type: "doc",
+              id: "aws/analytics/amazon-emr",
+              label: "Amazon EMR",
             },
           ],
         },

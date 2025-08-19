@@ -20,7 +20,7 @@ date: "2025-08-19"
 # Amazon SageMaker
 
 <div class="aws__ImageCentered">
-<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/logo/sagemaker.png" alt="Amazon SageMaker" />
+<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/logo/ai-sagemaker.png" alt="Amazon SageMaker" />
 </div>
 
 Amazon SageMaker is a fully managed service that enables you to build, train, and deploy machine learning models without worrying about infrastructure. Its integrated development environment (IDE) provides simplified access control, transparency, and a full suite of MLOps tools to streamline the entire ML lifecycle.
