@@ -20,7 +20,7 @@ const sidebars: SidebarsConfig = {
         //security
         {
           type: "category",
-          label: "Security",
+          label: "Security, Identity, & Compliance",
           link: {
             type: "doc",
             id: "aws/security/index",
