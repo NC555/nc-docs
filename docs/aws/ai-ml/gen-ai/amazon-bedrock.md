@@ -27,7 +27,16 @@ Amazon Bedrock is a fully managed service designed for building generative AI ap
 
 ## Core Benefits
 
-**Model Choice and Flexibility:** Access a diverse set of leading foundation models from AI21 Labs, Anthropic, Cohere, Meta, Stability AI, and Amazon through one API, allowing you to choose the best model for your specific task.
+**Model Choice and Flexibility:** Access a diverse set of leading foundation models
+
+- **AI21 Labs**
+- **Anthropic**
+- **Cohere**
+- **Meta**
+- **Stability AI**
+- **Amazon**
+
+  through one API, allowing you to choose the best model for your specific task.
 
 **Simplified Development:** Eliminates the complexity of hosting and managing large models, enabling you to focus on building applications rather than managing infrastructure.
 
@@ -38,12 +47,15 @@ Amazon Bedrock is a fully managed service designed for building generative AI ap
 ## Use Cases
 
 ### Enterprise-Grade Generative AI
+
 Build production-ready generative AI applications for content summarization, text generation, and question-answering with enterprise-level security, privacy, and scalability, all within your secure AWS environment.
 
 ### Multimodal Content Generation
+
 Create applications that can generate multiple content types, such as generating marketing copy with a text model and then creating a corresponding image with a model like Stable Diffusion, all through the same Bedrock API.
 
 ### Advanced Conversational AI
+
 Develop sophisticated conversational agents and chatbots that connect to your enterprise data using Retrieval Augmented Generation (RAG). These agents can provide accurate, context-aware responses to user queries.
 
 ## Shared Responsibility Model
@@ -59,5 +71,6 @@ Amazon Bedrock simplifies access to powerful foundation models, allowing develop
 **Use case:** Ideal for businesses looking to build generative AI applications for text and image creation, conversational agents, and search, while maintaining full control over data privacy.
 
 ## Additional Resources
+
 - [Amazon Bedrock Documentation](https://docs.aws.amazon.com/bedrock/)
 - [Choosing the Right Foundation Model in Bedrock](https://aws.amazon.com/bedrock/foundation-models/)

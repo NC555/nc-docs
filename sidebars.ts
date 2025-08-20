@@ -17,6 +17,106 @@ const sidebars: SidebarsConfig = {
         id: "aws/index",
       },
       items: [
+        //security
+        {
+          type: "category",
+          label: "Security",
+          link: {
+            type: "doc",
+            id: "aws/security/index",
+          },
+          items: [
+            {
+              type: "category",
+              label: "Network Security",
+              link: { type: "doc", id: "aws/security/network/index" },
+              items: [
+                {
+                  type: "doc",
+                  id: "aws/security/network/waf",
+                  label: "AWS WAF",
+                },
+                {
+                  type: "doc",
+                  id: "aws/security/network/shield",
+                  label: "AWS Shield",
+                },
+              ],
+            },
+            {
+              type: "category",
+              label: "Identity & Access Management",
+              link: { type: "doc", id: "aws/security/identity/index" },
+              items: [
+                {
+                  type: "doc",
+                  id: "aws/security/identity/iam",
+                  label: "AWS IAM",
+                },
+                {
+                  type: "doc",
+                  id: "aws/security/identity/iam-identity-center",
+                  label: "IAM Identity Center",
+                },
+                {
+                  type: "doc",
+                  id: "aws/security/identity/secrets-manager",
+                  label: "Secrets Manager",
+                },
+              ],
+            },
+            {
+              type: "category",
+              label: "Data Protection",
+              link: { type: "doc", id: "aws/security/data/index" },
+              items: [
+                {
+                  type: "doc",
+                  id: "aws/security/data/key-management-service",
+                  label: "Key Management Service (KMS)",
+                },
+                {
+                  type: "doc",
+                  id: "aws/security/data/macie",
+                  label: "Amazon Macie",
+                },
+                {
+                  type: "doc",
+                  id: "aws/security/data/certificate-manager",
+                  label: "Certificate Manager (ACM)",
+                },
+              ],
+            },
+            {
+              type: "category",
+              label: "Detection & Response",
+              link: { type: "doc", id: "aws/security/detection/index" },
+              items: [
+                {
+                  type: "doc",
+                  id: "aws/security/detection/inspector",
+                  label: "Amazon Inspector",
+                },
+                {
+                  type: "doc",
+                  id: "aws/security/detection/guardDuty",
+                  label: "Amazon GuardDuty",
+                },
+                {
+                  type: "doc",
+                  id: "aws/security/detection/detective",
+                  label: "Amazon Detective",
+                },
+                {
+                  type: "doc",
+                  id: "aws/security/detection/security-hub",
+                  label: "AWS Security Hub",
+                },
+              ],
+            },
+          ],
+        },
+
         //compute
         {
           type: "category",
@@ -346,66 +446,81 @@ const sidebars: SidebarsConfig = {
         {
           type: "category",
           label: "Machine Learning",
+          link: {
+            type: "doc",
+            id: "aws/ai-ml/index",
+          },
           items: [
             {
-              type: "doc",
-              id: "aws/machine-learning/amazon-sagemaker",
-              label: "Amazon SageMaker AI",
+              type: "category",
+              label: "Pre-built AI",
+              link: {
+                type: "doc",
+                id: "aws/ai-ml/pre-built-ai/index",
+              },
+              items: [
+                {
+                  type: "category",
+                  label: "Language Services",
+                  items: [
+                    "aws/ai-ml/pre-built-ai/language-services/amazon-comprehend",
+                    "aws/ai-ml/pre-built-ai/language-services/amazon-polly",
+                    "aws/ai-ml/pre-built-ai/language-services/amazon-transcribe",
+                    "aws/ai-ml/pre-built-ai/language-services/amazon-translate",
+                  ],
+                },
+                {
+                  type: "category",
+                  label: "Vision Services",
+                  items: [
+                    "aws/ai-ml/pre-built-ai/vision-services/amazon-rekognition",
+                    "aws/ai-ml/pre-built-ai/vision-services/amazon-textract",
+                  ],
+                },
+                {
+                  type: "category",
+                  label: "Search Services",
+                  items: [
+                    "aws/ai-ml/pre-built-ai/search-services/amazon-kendra",
+                  ],
+                },
+                {
+                  type: "category",
+                  label: "Conversational AI Services",
+                  items: [
+                    "aws/ai-ml/pre-built-ai/conversational-services/amazon-lex",
+                  ],
+                },
+                {
+                  type: "category",
+                  label: "Personalization Services",
+                  items: [
+                    "aws/ai-ml/pre-built-ai/personalization-services/amazon-personalize",
+                  ],
+                },
+              ],
             },
             {
-              type: "doc",
-              id: "aws/machine-learning/amazon-comprehend",
-              label: "Amazon Comprehend",
+              type: "category",
+              label: "Generative AI",
+              link: {
+                type: "doc",
+                id: "aws/ai-ml/gen-ai/index",
+              },
+              items: [
+                "aws/ai-ml/gen-ai/amazon-bedrock",
+                "aws/ai-ml/gen-ai/amazon-qbussiness",
+                "aws/ai-ml/gen-ai/amazon-qdeveloper",
+              ],
             },
             {
-              type: "doc",
-              id: "aws/machine-learning/amazon-kendra",
-              label: "Amazon Kendra",
-            },
-            {
-              type: "doc",
-              id: "aws/machine-learning/amazon-personalize",
-              label: "Amazon Personalize",
-            },
-            {
-              type: "doc",
-              id: "aws/machine-learning/amazon-polly",
-              label: "Amazon Polly",
-            },
-            {
-              type: "doc",
-              id: "aws/machine-learning/amazon-rekognition",
-              label: "Amazon Rekognition",
-            },
-            {
-              type: "doc",
-              id: "aws/machine-learning/amazon-textract",
-              label: "Amazon Textract",
-            },
-            {
-              type: "doc",
-              id: "aws/machine-learning/amazon-transcribe",
-              label: "Amazon Transcribe",
-            },
-            {
-              type: "doc",
-              id: "aws/machine-learning/amazon-translate",
-              label: "Amazon Translate",
-            },
-            {
-              type: "doc",
-              id: "aws/machine-learning/amazon-lex",
-              label: "Amazon Lex",
-            },
-            {
-              type: "doc",
-              id: "aws/machine-learning/amazon-qbussiness",
-              label: "Amazon Q Business",
-            },
-            {
-              type: "doc",
-              id: "aws/machine-learning/amazon-qdeveloper",
-              label: "Amazon Q Developer",
+              type: "category",
+              label: "ML Services ",
+              link: {
+                type: "doc",
+                id: "aws/ai-ml/machine-learning/index",
+              },
+              items: ["aws/ai-ml/machine-learning/amazon-sagemaker"],
             },
           ],
         },
@@ -415,63 +530,64 @@ const sidebars: SidebarsConfig = {
           label: "Analytics",
           items: [
             {
-              type: "doc",
-              id: "aws/analytics/athena",
-              label: "Amazon Athena",
-            },
-            {
-              type: "doc",
-              id: "aws/analytics/redshift",
-              label: "Amazon Redshift",
-            },
-            {
               type: "category",
               label: "Pipelines",
               link: {
                 type: "doc",
                 id: "aws/analytics/pipelines/index",
               },
-              items: [],
-            },
-            {
-              type: "doc",
-              id: "aws/analytics/kinesis-data-streams",
-              label: "Amazon Kinesis Data Streams",
-            },
-            {
-              type: "doc",
-              id: "aws/analytics/data-firehouse",
-              label: "Amazon Data Firehose",
-            },
-            {
-              type: "doc",
-              id: "aws/analytics/redshift",
-              label: "Amazon Redshift",
-            },
-            {
-              type: "doc",
-              id: "aws/analytics/glue-data-catalog",
-              label: "Glue Data Catalog",
-            },
-            {
-              type: "doc",
-              id: "aws/analytics/aws-glue",
-              label: "AWS Glue",
-            },
-            {
-              type: "doc",
-              id: "aws/analytics/opensearch-service",
-              label: "OpenSearch",
-            },
-            {
-              type: "doc",
-              id: "aws/analytics/quicksight",
-              label: "Amazon QuickSight",
-            },
-            {
-              type: "doc",
-              id: "aws/analytics/amazon-emr",
-              label: "Amazon EMR",
+              items: [
+                {
+                  type: "doc",
+                  id: "aws/analytics/pipelines/kinesis-data-streams",
+                  label: "Amazon Kinesis Data Streams",
+                },
+                {
+                  type: "doc",
+                  id: "aws/analytics/pipelines/data-firehouse",
+                  label: "Amazon Data Firehose",
+                },
+                {
+                  type: "doc",
+                  id: "aws/analytics/pipelines/redshift",
+                  label: "Amazon Redshift",
+                },
+                {
+                  type: "doc",
+                  id: "aws/analytics/pipelines/glue-data-catalog",
+                  label: "Glue Data Catalog",
+                },
+                {
+                  type: "doc",
+                  id: "aws/analytics/pipelines/aws-glue",
+                  label: "AWS Glue",
+                },
+                {
+                  type: "doc",
+                  id: "aws/analytics/pipelines/amazon-emr",
+                  label: "Amazon EMR",
+                },
+                {
+                  type: "doc",
+                  id: "aws/analytics/pipelines/athena",
+                  label: "Amazon Athena",
+                },
+                {
+                  type: "doc",
+                  id: "aws/analytics/pipelines/redshift",
+                  label: "Amazon Redshift",
+                },
+                {
+                  type: "doc",
+                  id: "aws/analytics/pipelines/quicksight",
+                  label: "Amazon QuickSight",
+                },
+                {
+                  type: "doc",
+                  id: "aws/analytics/pipelines/opensearch-service",
+                  label: "OpenSearch",
+                },
+              ],
             },
           ],
         },
@@ -978,6 +1094,11 @@ const sidebars: SidebarsConfig = {
         id: "heap-knowledge-base/index",
       },
       items: [
+        {
+          type: "doc",
+          id: "heap-knowledge-base/data-lake-wh-compaersion",
+          label: "Data Lake vs Data Warehouse",
+        },
         {
           type: "doc",
           id: "heap-knowledge-base/api-gateways",

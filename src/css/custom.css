@@ -1851,7 +1851,7 @@ main[class*="docMainContainer"] {
 
 .theme-doc-markdown table {
   width: 100%;
-  max-width: 80vw;
+  max-width: 90vw;
   margin: 2rem 0;
   border-collapse: separate;
   border-spacing: 0;
@@ -1876,6 +1876,7 @@ main[class*="docMainContainer"] {
 }
 
 .theme-doc-markdown td {
+  font-size: 14px;
   padding: 0.75rem 1rem;
   border-bottom: 1px solid hsl(var(--border) / 0.3);
   color: hsl(var(--foreground) / 0.9);

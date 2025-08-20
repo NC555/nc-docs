@@ -19,7 +19,7 @@ date: "2025-08-20"
 # Amazon Athena
 
 <div class="aws__ImageCentered">
-<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/logo/analytics-athena.png" alt="Amazon Athena" />
+<img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/logo/analytics-athena.png" alt="Amazon Athena"/>
 </div>
 
 With Amazon Athena, you can run standard SQL queries to analyze data in relational, non-relational, object, and custom data sources without an ETL process. This fully managed serverless service can access data hosted on Amazon S3, on-premises, or even in multi-cloud environments.
@@ -46,4 +46,5 @@ Amazon Athena provides the fastest way to run ad-hoc SQL queries on your data la
 **Use case:** Ideal for interactive, ad-hoc data analysis directly on S3 and other data sources without managing infrastructure.
 
 ## Additional Resources
+
 - [Amazon Athena Documentation](https://docs.aws.amazon.com/athena/latest/ug/what-is.html)s

@@ -14,7 +14,7 @@ tags:
 author: "Nati Cabti"
 date: "2025-08-20"
 ---
-AWS Glue
+
 # Amazon Kinesis Data Streams
 
 <div class="aws__ImageCentered">
@@ -53,4 +53,5 @@ Kinesis Data Streams is the foundation for real-time data ingestion pipelines, e
 **Use case:** Ideal for applications that require immediate data processing, such as real-time analytics, log aggregation, and IoT data capture.
 
 ## Additional Resources
+
 - [Amazon Kinesis Data Streams Documentation](https://docs.aws.amazon.com/streams/latest/dev/introduction.html)

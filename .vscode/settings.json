@@ -8,7 +8,7 @@
     "**/docs/ansible/**": true,
     "**/docs/cyber-security/**": true,
     "**/docs/git/**": true,
-    "**/docs/heap-knowledge-base/**": true,
+    "**/docs/heap-knowledge-base/**": false,
     "**/docs/kubernetes/**": true,
     "**/docs/landing-zone-concepts/**": true,
     "**/docs/ms-windows/**": true,
