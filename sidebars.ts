@@ -614,87 +614,87 @@ const sidebars: SidebarsConfig = {
           ],
         },
         //fundamentals
-        {
-          type: "category",
-          label: "Fundamentals",
-          items: [
-            {
-              type: "doc",
-              id: "aws/fundamentals/fundamentals-global-infrastructure",
-              label: "Fundamentals Global Infrastructure",
-            },
-            {
-              type: "doc",
-              id: "aws/fundamentals/identity-access-management-iam",
-              label: "Identity Access Management Iam",
-            },
-            {
-              type: "doc",
-              id: "aws/fundamentals/network-security-architecture",
-              label: "Network Security Architecture",
-            },
-            {
-              type: "doc",
-              id: "aws/fundamentals/data-protection-encryption",
-              label: "Data Protection Encryption",
-            },
-            {
-              type: "doc",
-              id: "aws/fundamentals/compute-application-security",
-              label: "Compute Application Security",
-            },
-            {
-              type: "doc",
-              id: "aws/fundamentals/management-governance",
-              label: "Management Governance",
-            },
-            {
-              type: "doc",
-              id: "aws/fundamentals/compliance-regulatory-adherence",
-              label: "Compliance Regulatory Adherence",
-            },
-            {
-              type: "doc",
-              id: "aws/fundamentals/hybrid-cloud-connectivity",
-              label: "Hybrid Cloud Connectivity",
-            },
-            {
-              type: "doc",
-              id: "aws/fundamentals/disaster-recovery-business-continuity",
-              label: "Disaster Recovery Business Continuity",
-            },
-            {
-              type: "doc",
-              id: "aws/fundamentals/devsecops-automation",
-              label: "Devsecops Automation",
-            },
-            {
-              type: "doc",
-              id: "aws/fundamentals/cost-management-optimization",
-              label: "Cost Management Optimization",
-            },
-            {
-              type: "doc",
-              id: "aws/fundamentals/monitoring-detection-response",
-              label: "Monitoring Detection Response",
-            },
-            {
-              type: "doc",
-              id: "aws/fundamentals/architecture-systems_engineering-principles",
-              label: "Architecture Systems Engineering Principles",
-            },
-            {
-              type: "doc",
-              id: "aws/fundamentals/government-specific-aws-project-aspects",
-              label: "Government Specific Aws Project Aspects",
-            },
-            {
-              type: "doc",
-              id: "aws/fundamentals/advanced-aws-topics-emerging-technologies",
-              label: "Advanced Aws Topics Emerging Technologies",
-            },
-          ],
-        },
+        // {
+        //   type: "category",
+        //   label: "Fundamentals",
+        //   items: [
+        //     {
+        //       type: "doc",
+        //       id: "aws/fundamentals/fundamentals-global-infrastructure",
+        //       label: "Fundamentals Global Infrastructure",
+        //     },
+        //     {
+        //       type: "doc",
+        //       id: "aws/fundamentals/identity-access-management-iam",
+        //       label: "Identity Access Management Iam",
+        //     },
+        //     {
+        //       type: "doc",
+        //       id: "aws/fundamentals/network-security-architecture",
+        //       label: "Network Security Architecture",
+        //     },
+        //     {
+        //       type: "doc",
+        //       id: "aws/fundamentals/data-protection-encryption",
+        //       label: "Data Protection Encryption",
+        //     },
+        //     {
+        //       type: "doc",
+        //       id: "aws/fundamentals/compute-application-security",
+        //       label: "Compute Application Security",
+        //     },
+        //     {
+        //       type: "doc",
+        //       id: "aws/fundamentals/management-governance",
+        //       label: "Management Governance",
+        //     },
+        //     {
+        //       type: "doc",
+        //       id: "aws/fundamentals/compliance-regulatory-adherence",
+        //       label: "Compliance Regulatory Adherence",
+        //     },
+        //     {
+        //       type: "doc",
+        //       id: "aws/fundamentals/hybrid-cloud-connectivity",
+        //       label: "Hybrid Cloud Connectivity",
+        //     },
+        //     {
+        //       type: "doc",
+        //       id: "aws/fundamentals/disaster-recovery-business-continuity",
+        //       label: "Disaster Recovery Business Continuity",
+        //     },
+        //     {
+        //       type: "doc",
+        //       id: "aws/fundamentals/devsecops-automation",
+        //       label: "Devsecops Automation",
+        //     },
+        //     {
+        //       type: "doc",
+        //       id: "aws/fundamentals/cost-management-optimization",
+        //       label: "Cost Management Optimization",
+        //     },
+        //     {
+        //       type: "doc",
+        //       id: "aws/fundamentals/monitoring-detection-response",
+        //       label: "Monitoring Detection Response",
+        //     },
+        //     {
+        //       type: "doc",
+        //       id: "aws/fundamentals/architecture-systems_engineering-principles",
+        //       label: "Architecture Systems Engineering Principles",
+        //     },
+        //     {
+        //       type: "doc",
+        //       id: "aws/fundamentals/government-specific-aws-project-aspects",
+        //       label: "Government Specific Aws Project Aspects",
+        //     },
+        //     {
+        //       type: "doc",
+        //       id: "aws/fundamentals/advanced-aws-topics-emerging-technologies",
+        //       label: "Advanced Aws Topics Emerging Technologies",
+        //     },
+        //   ],
+        // },
         //architecture
         {
           type: "category",

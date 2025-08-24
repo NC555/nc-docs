@@ -16,6 +16,8 @@ date: "2025-08-19"
 
 # AWS Identity and Access Management
 
+**todo: iam-access-analyzer.md**
+
 Identity and access management forms the foundation of AWS security. It's essential to securely manage identities and access to AWS services and resources, ensuring that only authorized users and systems can access your resources.
 
 ## Core Principle: Least Privilege

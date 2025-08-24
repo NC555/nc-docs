@@ -16,6 +16,8 @@ date: "2025-08-19"
 
 # AWS Security Detection and Response
 
+**todo: trusted-advisor.md**
+
 Preventing and protecting against security threats are important methods for securing your AWS resources, but you should also be prepared to detect and respond to security incidents that might occur. AWS offers a variety of services you can use to detect and respond to security incidents, providing comprehensive visibility into your security posture and enabling rapid response to threats.
 
 ## Detection and Response Strategy

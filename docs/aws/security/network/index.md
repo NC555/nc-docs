@@ -16,7 +16,7 @@ date: "2025-08-19"
 
 # AWS Network and Application Security
 
-Network and application protection is a vital component of a secure environment on AWS. AWS provides multiple layers of defense to protect against various types of attacks, particularly denial of service attacks that can overwhelm your applications.
+AWS provides multiple layers of defense to protect against various types of attacks, particularly denial of service attacks that can overwhelm your applications.
 
 ## Understanding Network Attacks
 
@@ -47,9 +47,11 @@ AWS provides several built-in mechanisms that help protect against network attac
 
 ## Regional Protection Architecture
 
-AWS's regional architecture provides inherent protection against large-scale attacks. The distributed nature of AWS infrastructure, combined with the massive capacity of each Region, creates a robust defense against even sophisticated DDoS attacks.
+The distributed nature of AWS's regional infrastructure, combined with the massive capacity of each Region, creates a robust defense against even sophisticated DDoS attacks.
 
+:::tip
 When you deploy applications across multiple Availability Zones within a Region, you benefit from this distributed protection while maintaining high availability for legitimate traffic.
+:::
 
 ## Best Practices
 

@@ -21,13 +21,14 @@ date: "2025-08-19"
 <img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/logo/security-identity-compliance.png" alt="AWS Security" />
 </div>
 
-Security is foundational to everything AWS does. AWS provides a comprehensive set of security services and features to help you protect your data, applications, and infrastructure in the cloud. This overview covers the four core concepts of AWS security and the services that support them.
+AWS provides a comprehensive set of security services and features to protect data, applications, and infrastructure in the cloud. This overview covers the four core concepts of AWS security and the services that support them.
 
 ## Authentication and Authorization
 
-Authentication and authorization are two mechanisms that play a big role in data privacy and system protection. Authentication is the process of verifying the identity of a user or entity through credentials like a username and password combination. Authorization grants users certain access rights and permissions that determine which actions they can perform in a system or application.
+- Authentication is the process of verifying the identity of a user or entity through credentials like a username and password combination.
+- Authorization grants users certain access rights and permissions that determine which actions they can perform in a system or application.
 
-For example, an employee logs in to an employee portal (authentication) and can only access their own employee records inside the portal (authorization).
+> For example, an employee logs in to an employee portal (authentication) and can only access their own employee records inside the portal (authorization).
 
 ## AWS Shared Responsibility Model
 
