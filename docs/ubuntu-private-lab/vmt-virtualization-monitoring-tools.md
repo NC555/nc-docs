@@ -37,6 +37,7 @@ The VMT (Virtualization Monitoring Tools) setup is a comprehensive monitoring an
 
 ### File Structure Setup
 
+```
 /data/vmt-setup/
 ├── .env
 ├── docker-compose.yml
@@ -48,16 +49,18 @@ The VMT (Virtualization Monitoring Tools) setup is a comprehensive monitoring an
 │ └── alert_rules.yml
 └── promtail/
 └── promtail-config.yml
-
 ```
+
 ### Metrics Exporters
 
 **cAdvisor (vmt-cadvisor)**
+
 - **Objective**: Container resource usage and performance metrics
 - **Purpose**: Provides detailed metrics about Docker containers including CPU, memory, network, and disk usage
 - **Monitoring Scope**: All running containers on the host system
 
 **Node Exporter (vmt-node-exporter)**
+
 - **Objective**: System-level metrics collection
 - **Purpose**: Exports hardware and OS metrics like CPU usage, memory, disk space, and network statistics
 - **Configuration**: Configured to exclude virtual filesystems and focus on relevant mount points
@@ -65,21 +68,21 @@ The VMT (Virtualization Monitoring Tools) setup is a comprehensive monitoring an
 ## Network Architecture
 
 The entire stack operates on a bridge network `vmt-network` that must be created externally, allowing for:
+
 - Internal service communication
 - Isolation from other Docker networks
 - Consistent service discovery using container names
 
 ```
-
 # Create Docker network
 
 docker network create vmt-network
-
-````
+```
 
 ## Storage Configuration
 
 **Persistent Volumes:**
+
 - **Prometheus Data**: Bind mount to `/opt/prometheus/data` for metrics storage
 - **Grafana Data**: Docker volume for dashboard configurations and user data
 - **Loki Data**: Bind mount to `/opt/loki/data` for log storage
@@ -89,6 +92,7 @@ docker network create vmt-network
 ### Prerequisites
 
 1. **System Requirements**
+
    - Docker and Docker Compose installed
    - Minimum 4GB RAM available for containers
    - At least 100GB free disk space for data storage
@@ -100,6 +104,8 @@ docker network create vmt-network
    sudo mkdir -p /opt/loki/data
    sudo chown -R 472:472 /opt/prometheus/data  # Prometheus user
    sudo chown -R 10001:10001 /opt/loki/data    # Loki user
+   ```
+
 ````
 
 3. **Create External Network**
@@ -797,3 +803,4 @@ scrape_configs:
 This comprehensive monitoring stack provides enterprise-grade observability for containerized environments with proper configuration, deployment, and maintenance procedures.
 
 ---
+````

@@ -12,7 +12,7 @@
     "**/docs/kubernetes/**": true,
     "**/docs/landing-zone-concepts/**": true,
     "**/docs/ms-windows/**": true,
-    "**/docs/ubuntu-private-lab/**": true,
+    "**/docs/ubuntu-private-lab/**": false,
     "**/docs/linux/**": true,
     "**/.rooignore/**": true,
     "**/.roomodes/**": true,

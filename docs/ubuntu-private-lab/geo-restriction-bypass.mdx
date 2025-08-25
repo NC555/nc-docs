@@ -1,0 +1,253 @@
+---
+title: "Bypassing Geo-Restrictions with Personal VPN"
+description: "A complete Docker-based solution for accessing geo-restricted streaming content"
+---
+
+import VPNSlideshow from "./geo-restriction-bypass";
+
+# Bypassing Geo-Restrictions with Personal VPN
+
+## Overview
+
+This tutorial demonstrates how to set up a personal VPN server to bypass geo-restrictions on streaming services. The solution allows users in one country to access streaming content libraries and services from another country by routing their internet traffic through a server located in the target region.
+
+### What This Solution Provides
+
+- **Geo-restriction bypass**: Access streaming content as if you're in a different country
+- **Secure remote management**: Manage your VPN server securely without exposing your home network
+- **Easy user management**: Web-based interface for adding and managing VPN clients
+- **Dynamic IP handling**: Automatic updates when your home IP address changes
+- **Professional security**: Enterprise-grade tunneling and encryption
+
+## Interactive Architecture Overview
+
+<VPNSlideshow />
+## Prerequisites
+
+- Ubuntu Server (20.04 or newer) in your target country
+- Domain name (for custom DNS setup)
+- Cloudflare account (free tier is sufficient)
+- Docker and Docker Compose installed
+
+## Step-by-Step Implementation
+
+### Step 1: Initial Server Setup
+
+Update your Ubuntu server and install required packages:
+
+```bash
+# Update system
+sudo apt update && sudo apt upgrade -y
+
+# Install Docker
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+
+# Install Docker Compose
+sudo apt install docker-compose -y
+
+# Add user to docker group
+sudo usermod -aG docker $USER
+newgrp docker
+
+# Create project directory
+mkdir ~/vpn-stack
+cd ~/vpn-stack
+```
+
+### Step 2: Configure Cloudflare Domain
+
+1. Log into your Cloudflare dashboard
+2. Add your domain to Cloudflare
+3. Update your domain's nameservers to Cloudflare's
+4. Create an A record: `vpn.yourdomain.com` pointing to your current public IP
+5. Create another A record: `admin.yourdomain.com` (IP doesn't matter, will be managed by tunnel)
+
+### Step 3: Deploy the Complete Stack
+
+Create the following `docker-compose.yml` file:
+
+```yaml
+version: "3.8"
+services:
+  # WireGuard VPN with web UI
+  wg-easy:
+    image: ghcr.io/wg-easy/wg-easy:latest
+    container_name: wg-easy
+    environment:
+      - LANG=en
+      - WG_HOST=vpn.yourdomain.com
+      - PASSWORD=your-secure-admin-password
+      - WG_PORT=51820
+      - WG_DEFAULT_ADDRESS=10.8.0.x
+      - WG_DEFAULT_DNS=1.1.1.1,8.8.8.8
+      - WG_ALLOWED_IPS=0.0.0.0/0
+      - WG_PERSISTENT_KEEPALIVE=25
+    volumes:
+      - ./wg-easy:/etc/wireguard
+    ports:
+      - "51820:51820/udp"
+      - "51821:51821/tcp"
+    cap_add:
+      - NET_ADMIN
+      - SYS_MODULE
+    sysctls:
+      - net.ipv4.ip_forward=1
+      - net.ipv4.conf.all.src_valid_mark=1
+    restart: unless-stopped
+    networks:
+      - vpn-network
+
+  # Cloudflare Tunnel for secure admin access
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    container_name: cloudflared
+    command: tunnel --no-autoupdate run --token YOUR_TUNNEL_TOKEN
+    environment:
+      - TUNNEL_TOKEN=YOUR_TUNNEL_TOKEN
+    restart: unless-stopped
+    networks:
+      - vpn-network
+
+  # Dynamic DNS updater for Cloudflare
+  cloudflare-ddns:
+    image: oznu/cloudflare-ddns:latest
+    container_name: cloudflare-ddns
+    environment:
+      - API_KEY=your-cloudflare-api-key
+      - ZONE=yourdomain.com
+      - SUBDOMAIN=vpn
+      - PROXIED=false
+    restart: unless-stopped
+    networks:
+      - vpn-network
+
+networks:
+  vpn-network:
+    driver: bridge
+```
+
+### Step 4: Configure Environment Variables
+
+Create a `.env` file with your specific values:
+
+```bash
+# Create .env file
+cat > .env << 'EOF'
+# Domain Configuration
+DOMAIN=yourdomain.com
+VPN_SUBDOMAIN=vpn
+ADMIN_SUBDOMAIN=admin
+
+# WireGuard Configuration
+WG_ADMIN_PASSWORD=your-very-secure-password-here
+WG_PORT=51820
+
+# Cloudflare Configuration
+CLOUDFLARE_API_KEY=your-cloudflare-global-api-key
+CLOUDFLARE_ZONE_ID=your-zone-id
+TUNNEL_TOKEN=your-cloudflare-tunnel-token
+
+# Timezone
+TZ=Your/Timezone
+EOF
+```
+
+### Step 5: Set Up Cloudflare Tunnel
+
+1. Install cloudflared on your local machine or server:
+
+```bash
+# Download cloudflared
+wget `https://github.com/cloudflare/
+cloudflared/releases/latest/download/
+cloudflared-linux-amd64.deb`
+# install
+sudo dpkg -i cloudflared-linux-amd64.deb
+```
+
+2. Authenticate with Cloudflare:
+
+```bash
+cloudflared tunnel login
+```
+
+3. Create a tunnel:
+
+```bash
+cloudflared tunnel create vpn-admin
+```
+
+4. Configure the tunnel by creating `~/.cloudflared/config.yml`:
+
+```yaml
+tunnel: vpn-admin
+credentials-file: ~/.cloudflared/your-tunnel-id.json
+
+ingress:
+  - hostname: admin.yourdomain.com
+    service: http://wg-easy:51821
+  - service: http_status:404
+```
+
+5. Get your tunnel token:
+
+```bash
+cloudflared tunnel token vpn-admin
+```
+
+6. Update the `TUNNEL_TOKEN` in your `.env` file with the output.
+
+### Step 6: Deploy the Stack
+
+```bash
+# Make sure you're in the project directory
+cd ~/vpn-stack
+
+# Start the services
+docker-compose up -d
+
+# Check status
+docker-compose ps
+
+# View logs if needed
+docker-compose logs -f
+```
+
+### Step 7: Configure Firewall
+
+```bash
+# Allow SSH (if using UFW)
+sudo ufw allow ssh
+
+# Allow WireGuard port
+sudo ufw allow 51820/udp
+
+# Enable firewall
+sudo ufw enable
+```
+
+### Step 8: Access Admin Interface
+
+1. Navigate to `https://admin.yourdomain.com`
+2. Log in with the password you set in the environment variables
+3. Create client configurations for your devices
+
+### Step 9: Configure Client Devices
+
+1. In the wg-easy admin interface, click "Add Client"
+2. Download the configuration file or scan the QR code
+3. Install WireGuard on your client device
+4. Import the configuration
+5. Connect to the VPN
+
+## Security Best Practices
+
+- Use strong passwords for admin interfaces
+- Keep Docker images updated regularly
+- Monitor VPN access logs
+- Only open necessary ports
+- Regular backup of WireGuard configurations
+- Ensure Cloudflare certificates are valid
+
+This setup provides a robust, secure, and manageable solution for bypassing geo-restrictions while maintaining security and ease of use.

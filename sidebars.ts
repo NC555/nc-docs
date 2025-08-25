@@ -9,6 +9,8 @@ function truncateTitle(title: string, maxLength: number = 40): string {
 const sidebars: SidebarsConfig = {
   tutorialSidebar: [
     "index",
+    //
+
     //system design concepts
     {
       type: "category",
@@ -740,12 +742,17 @@ const sidebars: SidebarsConfig = {
     //private lab
     {
       type: "category",
-      label: "Ubuntu Private Lab",
+      label: "Private Lab",
       link: {
         type: "doc",
         id: "ubuntu-private-lab/index",
       },
       items: [
+        {
+          type: "doc",
+          id: "ubuntu-private-lab/geo-restriction-bypass",
+          label: "Bypassing Geo-Restrictions",
+        },
         {
           type: "doc",
           id: "ubuntu-private-lab/code-server",
