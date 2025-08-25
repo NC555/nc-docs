@@ -22,7 +22,7 @@ author: "Nati Cabti"
 date: "2025-04-16"
 ---
 
-# Identity and Access Management Protocols
+# Identity and Access Management (IAM)
 
 <div class="aws__ImageCentered">
 <!-- No specific image provided in the prompt for general IAM/SSO topics. -->
