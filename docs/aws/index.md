@@ -8,7 +8,7 @@ author: Nati Cabti
 # Welcome to the AWS Documentation
 
 <div class="aws__ImageCentered">
-<img style={{ width: '140px', overflowX: 'auto' }} src="/img/aws/logo.png" alt="Edge Locations" />
+<img style={{ width: '140px', overflowX: 'auto' }} src="/img/aws/logo/aws-logo.png" alt="Edge Locations" />
 </div>
 This section provides a comprehensive overview of Amazon Web Services (AWS), the world's most comprehensive and broadly adopted cloud platform. AWS offers a vast array of services that enable organizations of all sizes to build scalable, reliable, and secure applications.
 
@@ -63,8 +63,6 @@ Throughout this documentation, you'll find:
 - Practical, step-by-step guides for common AWS tasks.
 - Insights into best practices for security, cost optimization, and operational efficiency.
 - Real-world examples and considerations for enterprise-grade deployments.
-
----
 
 _This documentation is continuously updated to reflect the latest AWS services, features, and best practices. We aim to provide actionable insights to help you leverage the full power of the AWS cloud._
 

@@ -59,6 +59,38 @@ const sidebars: SidebarsConfig = {
         id: "aws/index",
       },
       items: [
+        // management-governance
+        {
+          type: "category",
+          label: "Management & Governance",
+          items: [
+            {
+              type: "doc",
+              id: "aws/management/organizations",
+              label: "AWS Organizations",
+            },
+            {
+              type: "doc",
+              id: "aws/management/cloudwatch",
+              label: "AWS CloudWatch",
+            },
+            {
+              type: "doc",
+              id: "aws/management/cloudtrail",
+              label: "AWS CloudTrail",
+            },
+            {
+              type: "doc",
+              id: "aws/management/cloudformation",
+              label: "CloudFormation",
+            },
+            {
+              type: "doc",
+              id: "aws/management/aws-config",
+              label: "AWS Config",
+            },
+          ],
+        },
         //security
         {
           type: "category",
@@ -156,9 +188,25 @@ const sidebars: SidebarsConfig = {
                 },
               ],
             },
+            //complaiance
+            {
+              type: "category",
+              label: "Compliance",
+              items: [
+                {
+                  type: "doc",
+                  id: "aws/security/compliance/audit-manager",
+                  label: "AWS Audit Manager",
+                },
+                {
+                  type: "doc",
+                  id: "aws/security/compliance/artifact",
+                  label: "AWS Artifact",
+                },
+              ],
+            },
           ],
         },
-
         //compute
         {
           type: "category",
@@ -472,18 +520,6 @@ const sidebars: SidebarsConfig = {
             },
           ],
         },
-        // management-governance
-        {
-          type: "category",
-          label: "Management & Governance",
-          items: [
-            {
-              type: "doc",
-              id: "aws/management/cloudformation",
-              label: "CloudFormation",
-            },
-          ],
-        },
         //Machine Learning
         {
           type: "category",
@@ -655,7 +691,7 @@ const sidebars: SidebarsConfig = {
             },
           ],
         },
-
+        //Architecture
         {
           type: "category",
           label: "Architecture",
