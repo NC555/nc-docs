@@ -9,6 +9,48 @@ function truncateTitle(title: string, maxLength: number = 40): string {
 const sidebars: SidebarsConfig = {
   tutorialSidebar: [
     "index",
+    //system design concepts
+    {
+      type: "category",
+      label: "System Desgin Concepts",
+      link: {
+        type: "doc",
+        id: "system-desgin-concepts/index",
+      },
+      items: [
+        {
+          type: "doc",
+          id: "system-desgin-concepts/computer-architecture",
+          label: "Computer Architecture",
+        },
+        {
+          type: "doc",
+          id: "system-desgin-concepts/infrustructure-design",
+          label: "Infrustructure Design",
+        },
+        {
+          type: "doc",
+          id: "system-desgin-concepts/networking",
+          label: "Networking",
+        },
+        {
+          type: "doc",
+          id: "system-desgin-concepts/app-layer-protocols",
+          label: "Application Layer Protocols",
+        },
+        {
+          type: "doc",
+          id: "system-desgin-concepts/proxy-servers",
+          label: "Proxy Servers",
+        },
+        {
+          type: "doc",
+          id: "system-desgin-concepts/load-balancers",
+          label: "Load Balancers",
+        },
+      ],
+    },
+    //aws
     {
       type: "category",
       label: "AWS",
@@ -613,89 +655,7 @@ const sidebars: SidebarsConfig = {
             },
           ],
         },
-        //fundamentals
-        // {
-        //   type: "category",
-        //   label: "Fundamentals",
-        //   items: [
-        //     {
-        //       type: "doc",
-        //       id: "aws/fundamentals/fundamentals-global-infrastructure",
-        //       label: "Fundamentals Global Infrastructure",
-        //     },
-        //     {
-        //       type: "doc",
-        //       id: "aws/fundamentals/identity-access-management-iam",
-        //       label: "Identity Access Management Iam",
-        //     },
-        //     {
-        //       type: "doc",
-        //       id: "aws/fundamentals/network-security-architecture",
-        //       label: "Network Security Architecture",
-        //     },
-        //     {
-        //       type: "doc",
-        //       id: "aws/fundamentals/data-protection-encryption",
-        //       label: "Data Protection Encryption",
-        //     },
-        //     {
-        //       type: "doc",
-        //       id: "aws/fundamentals/compute-application-security",
-        //       label: "Compute Application Security",
-        //     },
-        //     {
-        //       type: "doc",
-        //       id: "aws/fundamentals/management-governance",
-        //       label: "Management Governance",
-        //     },
-        //     {
-        //       type: "doc",
-        //       id: "aws/fundamentals/compliance-regulatory-adherence",
-        //       label: "Compliance Regulatory Adherence",
-        //     },
-        //     {
-        //       type: "doc",
-        //       id: "aws/fundamentals/hybrid-cloud-connectivity",
-        //       label: "Hybrid Cloud Connectivity",
-        //     },
-        //     {
-        //       type: "doc",
-        //       id: "aws/fundamentals/disaster-recovery-business-continuity",
-        //       label: "Disaster Recovery Business Continuity",
-        //     },
-        //     {
-        //       type: "doc",
-        //       id: "aws/fundamentals/devsecops-automation",
-        //       label: "Devsecops Automation",
-        //     },
-        //     {
-        //       type: "doc",
-        //       id: "aws/fundamentals/cost-management-optimization",
-        //       label: "Cost Management Optimization",
-        //     },
-        //     {
-        //       type: "doc",
-        //       id: "aws/fundamentals/monitoring-detection-response",
-        //       label: "Monitoring Detection Response",
-        //     },
-        //     {
-        //       type: "doc",
-        //       id: "aws/fundamentals/architecture-systems_engineering-principles",
-        //       label: "Architecture Systems Engineering Principles",
-        //     },
-        //     {
-        //       type: "doc",
-        //       id: "aws/fundamentals/government-specific-aws-project-aspects",
-        //       label: "Government Specific Aws Project Aspects",
-        //     },
-        //     {
-        //       type: "doc",
-        //       id: "aws/fundamentals/advanced-aws-topics-emerging-technologies",
-        //       label: "Advanced Aws Topics Emerging Technologies",
-        //     },
-        //   ],
-        // },
-        //architecture
+
         {
           type: "category",
           label: "Architecture",
@@ -719,6 +679,7 @@ const sidebars: SidebarsConfig = {
         },
       ],
     },
+    //linux
     {
       type: "category",
       label: "Linux",
@@ -750,6 +711,7 @@ const sidebars: SidebarsConfig = {
         },
       ],
     },
+    //private lab
     {
       type: "category",
       label: "Ubuntu Private Lab",
@@ -871,6 +833,7 @@ const sidebars: SidebarsConfig = {
         },
       ],
     },
+    // landing zone
     {
       type: "category",
       label: "Landing Zone Concepts",
@@ -913,6 +876,7 @@ const sidebars: SidebarsConfig = {
         },
       ],
     },
+    //ms windows
     {
       type: "category",
       label: "MS Windows",
@@ -995,6 +959,7 @@ const sidebars: SidebarsConfig = {
         },
       ],
     },
+    // kuberenetes
     {
       type: "category",
       label: "Kubernetes",
@@ -1041,6 +1006,7 @@ const sidebars: SidebarsConfig = {
         },
       ],
     },
+    //ansible
     {
       type: "category",
       label: "Ansible",
@@ -1066,6 +1032,7 @@ const sidebars: SidebarsConfig = {
         },
       ],
     },
+    //git
     {
       type: "category",
       label: "Git",
@@ -1086,6 +1053,7 @@ const sidebars: SidebarsConfig = {
         },
       ],
     },
+    //knowledge Base
     {
       type: "category",
       label: "Knowledge Base",
@@ -1326,6 +1294,7 @@ const sidebars: SidebarsConfig = {
         },
       ],
     },
+    //cyber security
     {
       type: "category",
       label: "Cyber Security",
