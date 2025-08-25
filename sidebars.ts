@@ -35,18 +35,8 @@ const sidebars: SidebarsConfig = {
         },
         {
           type: "doc",
-          id: "system-desgin-concepts/app-layer-protocols",
-          label: "Application Layer Protocols",
-        },
-        {
-          type: "doc",
-          id: "system-desgin-concepts/proxy-servers",
-          label: "Proxy Servers",
-        },
-        {
-          type: "doc",
-          id: "system-desgin-concepts/load-balancers",
-          label: "Load Balancers",
+          id: "system-desgin-concepts/identity-access-management",
+          label: "Identity and Access Management",
         },
       ],
     },
