@@ -17,27 +17,27 @@ const sidebars: SidebarsConfig = {
       label: "System Desgin Concepts",
       link: {
         type: "doc",
-        id: "system-desgin-concepts/index",
+        id: "system-design-concepts/index",
       },
       items: [
         {
           type: "doc",
-          id: "system-desgin-concepts/computer-architecture",
+          id: "system-design-concepts/computer-architecture",
           label: "Computer Architecture",
         },
         {
           type: "doc",
-          id: "system-desgin-concepts/infrustructure-design",
+          id: "system-design-concepts/infrustructure-design",
           label: "Infrustructure Design",
         },
         {
           type: "doc",
-          id: "system-desgin-concepts/networking",
+          id: "system-design-concepts/networking",
           label: "Networking",
         },
         {
           type: "doc",
-          id: "system-desgin-concepts/identity-access-management",
+          id: "system-design-concepts/identity-access-management",
           label: "Identity and Access Management",
         },
       ],
@@ -51,6 +51,38 @@ const sidebars: SidebarsConfig = {
         id: "aws/index",
       },
       items: [
+        //Architecture
+        {
+          type: "category",
+          label: "Architecture",
+          items: [
+            {
+              type: "doc",
+              id: "aws/architecture/disaster-recovery-strategies",
+              label: `Disaster Recovery Strategies`,
+            },
+            {
+              type: "doc",
+              id: "aws/architecture/scaled-load-balanced-application",
+              label: `Scaled and Load-balanced Application`,
+            },
+            {
+              type: "doc",
+              id: "aws/architecture/multi-azs-secured-networking-hybrid",
+              label: `Multi Azs Secured\n Networking Hybrid`,
+            },
+            {
+              type: "doc",
+              id: "aws/architecture/cloudfront-edge-network-architecture",
+              label: "CloudFront Edge Network Architecture",
+            },
+            {
+              type: "doc",
+              id: "aws/architecture/advance-pass-architecture",
+              label: "Advance Pass Architecture",
+            },
+          ],
+        },
         // management-governance
         {
           type: "category",
@@ -477,6 +509,11 @@ const sidebars: SidebarsConfig = {
                   id: "aws/networking/vpc-network/security-groups",
                   label: "Security Groups",
                 },
+                {
+                  type: "doc",
+                  id: "aws/networking/vpc-network/peering",
+                  label: "VPC Peering",
+                },
               ],
             },
 
@@ -680,28 +717,6 @@ const sidebars: SidebarsConfig = {
               type: "doc",
               id: "aws/global-infrastructure/edge-locations",
               label: "Edge Locations",
-            },
-          ],
-        },
-        //Architecture
-        {
-          type: "category",
-          label: "Architecture",
-          items: [
-            {
-              type: "doc",
-              id: "aws/architecture/multi-azs-secured-networking-hybrid",
-              label: `Multi Azs Secured\n Networking Hybrid`,
-            },
-            {
-              type: "doc",
-              id: "aws/architecture/cloudfront-edge-network-architecture",
-              label: "CloudFront Edge Network Architecture",
-            },
-            {
-              type: "doc",
-              id: "aws/architecture/advance-pass-architecture",
-              label: "Advance Pass Architecture",
             },
           ],
         },

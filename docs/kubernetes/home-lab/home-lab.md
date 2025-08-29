@@ -141,6 +141,52 @@ This diagram visualizes the complete High-Availability setup, including the flow
     hcloud context create my-homelab
     # Paste your API token when prompted.
     ```
+To check the Hetzner Cloud connection status, you can use several approaches:
+
+## 1. Test API connectivity with a simple command
+```bash
+hcloud server list
+```
+This will show you all servers in your project. If it works, your connection is good. If you get a 401 error (like you did earlier), there's an authentication issue.
+
+## 2. Check your current authentication status
+```bash
+hcloud config get token --allow-sensitive
+```
+This shows if a token is configured (it will show `[redacted]` if set).
+
+## 3. Test with a read-only command
+```bash
+hcloud location list
+```
+This is a simple read-only operation that doesn't require special permissions.
+
+## 4. Verify your context and token
+```bash
+hcloud config list
+hcloud context list
+```
+
+## Troubleshooting your 401 error
+
+Looking at your session, you got a 401 error even though you have a token configured. This could be because:
+
+1. **Wrong context**: You're using the "landing-zone" context, but your `TF_VAR_hcloud_token` environment variable might be for a different project.
+
+2. **Token mismatch**: Try setting the token directly in hcloud:
+```bash
+hcloud config set token "<hcloud-api-token>"
+```
+
+3. **Environment variable not being used**: The `HCLOUD_TOKEN` environment variable takes precedence:
+```bash
+export HCLOUD_TOKEN="<hcloud-api-token>"
+```
+
+4. **Invalid or expired token**: Double-check the token in your Hetzner Cloud console.
+
+Try the `hcloud server list` command again after setting the token properly - that's the most reliable way to test your connection status.
+
 
 ### Step 1: Create Project Structure
 
@@ -162,13 +208,13 @@ home-lab/
 ##### Create `TF_VAR_hcloud_token`
 
 ```bash
-export TF_VAR_hcloud_token="YOUR_HETZNER_API_TOKEN"
+export TF_VAR_hcloud_token="<hcloud-api-token>"
 ```
 
 ##### Copy the following code into the corresponding files
 
 ```bash
-# FILE: homelab/extra-manifests/cozy-stack-namespace.yaml
+# FILE: home-lab/extra-manifests/cozy-stack-namespace.yaml
 
 apiVersion: v1
 kind: Namespace
@@ -178,7 +224,7 @@ metadata:
 #############################################################
 #############################################################
 
-# FILE: homelab/extra-manifests/cozystack-helmchart.yaml.tpl
+# FILE: home-lab/extra-manifests/cozystack-helmchart.yaml.tpl
 
 apiVersion: helm.cattle.io/v1
 kind: HelmChart
@@ -195,7 +241,7 @@ ${cozystack_rendered_values}
 #############################################################
 #############################################################
 
-# FILE: homelab/extra-manifests/cozystack-values.yaml.tpl
+# FILE: home-lab/extra-manifests/cozystack-values.yaml.tpl
 
 ingress:
   enabled: true
@@ -210,7 +256,7 @@ ingress:
 #############################################################
 #############################################################
 
-# FILE: homelab/extra-manifests/kustomization.yaml.tpl
+# FILE: home-lab/extra-manifests/kustomization.yaml.tpl
 
 resources:
 - letsencrypt-issuer.yaml
@@ -229,7 +275,7 @@ patches:
 #############################################################
 #############################################################
 
-# FILE: homelab/extra-manifests/letsencrypt-issuer.yaml.tpl
+# FILE: home-lab/extra-manifests/letsencrypt-issuer.yaml.tpl
 
 apiVersion: cert-manager.io/v1
 kind: ClusterIssuer
@@ -248,11 +294,11 @@ spec:
 #############################################################
 #############################################################
 
-# FILE: homelab/kube.tf
+# FILE: home-lab/kube.tf
 
 locals {
   hcloud_token = ""
-  cluster_name           = "homelab"
+  cluster_name           = "k8s"
   domain                 = "nc555.online"
   admin_email            = "naticabti@gmail.com"
   rancher_bootstrap_password = "*HJCo*yhZkhjZnb2n7KbAiJ7*P8Ec9PyngmBVLo.tWp8wNL6N_"
@@ -411,7 +457,8 @@ output "kubeconfig_content" {
 
 ### Step 3: Deploy the Cluster
 
-1.  **Create MicroOS Snapshot:** The first time you use Kube-Hetzner, you must create a base OS image snapshot. Navigate to your `home-lab` directory and run the official creation script.
+###### 1.  **Create MicroOS Snapshot:** 
+The first time you use Kube-Hetzner, you must create a base OS image snapshot. Navigate to your `home-lab` directory and run the official creation script.
 
 ```bash
 # This downloads and runs a script that creates required files and builds the Packer image.
@@ -420,7 +467,8 @@ tmp_script=$(mktemp) && curl -sSL -o "${tmp_script}" https://raw.githubuserconte
 
 Follow the prompts. You will need to provide your Hetzner API token again. This step can take 5-10 minutes.
 
-2.  **Run Terraform:** Once the snapshot is created, deploy the cluster using the standard Terraform workflow.
+###### 2.  **Run Terraform:** 
+Once the snapshot is created, deploy the cluster using the standard Terraform workflow.
 
 ```bash
 # 🏠 Navigate to your home-lab directory
@@ -462,10 +510,36 @@ terraform show tfplan > tfplan.txt
 terraform apply "tfplan"
 
 # ⚡ Apply directly with auto-approval (use with caution)
-terraform apply -auto-approve
+terraform apply "tfplan" -auto-approve
+
+terraform apply "tfplan"
 
 # take down the cluster
 terraform destroy -auto-approve
+
+
+
+#### Debuggin and Logging
+
+export TF_LOG=DEBUG
+
+TF_LOG=DEBUG terraform apply "tfplan"
+
+# Capture both stdout and stderr
+terraform apply "tfplan" 2>&1 | tee terraform-apply.log
+
+# Or with detailed logging
+TF_LOG=DEBUG terraform apply "tfplan" 2>&1 | tee terraform-apply-debug.log
+
+
+#
+# terraform apply [FLAGS] [PLAN_FILE] [REDIRECTION]
+# [ENV_VARS] terraform apply [terraform-flags] "tfplan" [shell-redirection]
+
+
+TF_LOG=DEBUG terraform apply -auto-approve -parallelism=1 "tfplan" 2>&1 | tee terraform-apply-debug.log
+
+
 ```
 
 ### Step 4: Access Your Services
