@@ -1,24 +1,20 @@
 ---
-
 title: "DR Architecture Strategies on AWS"
 description: "A guide to the four main disaster recovery (DR) strategies on AWS, explaining how to choose the right approach based on your application's RTO and RPO requirements."
 tags:
-[
-aws,
-disaster_recovery,
-dr,
-rto,
-rpo,
-high_availability,
-multi_region,
-backup_and_restore,
-pilot_light,
-warm_standby,
-active_active,
-]
+  - aws
+  - disaster_recovery
+  - dr
+  - rto
+  - rpo
+  - high_availability
+  - multi_region
+  - backup_and_restore
+  - pilot_light
+  - warm_standby
+  - active_active
 author: "Nati Cabti"
 date: 2025-08-12
-
 ---
 
 # Disaster Recovery Architecture Strategies on AWS
@@ -42,9 +38,9 @@ AWS outlines four primary DR strategies, each offering a different balance betwe
 For applications with the most stringent RTO and RPO requirements, the Multi-Site Active/Active strategy provides the highest level of availability and resilience. Let's explore a concrete example, as described in the transcript, that achieves this using managed AWS services.
 
 <img
-  style={{ overflowX: "scroll" }}
-  src="/img/aws/architecture/dr/dr-architecture.png"
-  alt="Disaster Recovery Strategies Spectrum"
+style={{ overflowX: "scroll" }}
+src="/img/aws/architecture/dr/dr-architecture.png"
+alt="Disaster Recovery Strategies Spectrum"
 />
 
 ### Overall Architecture Components
