@@ -10,7 +10,6 @@ const sidebars: SidebarsConfig = {
   tutorialSidebar: [
     "index",
     //
-
     //system design concepts
     {
       type: "category",
@@ -240,6 +239,11 @@ const sidebars: SidebarsConfig = {
               type: "doc",
               id: "aws/compute/ec2",
               label: "Amazon EC2",
+            },
+            {
+              type: "doc",
+              id: "aws/compute/ec2-instance-types",
+              label: "EC2 Types",
             },
             {
               type: "doc",
@@ -754,129 +758,129 @@ const sidebars: SidebarsConfig = {
         },
       ],
     },
-    //private lab
+    //home lab
     {
       type: "category",
-      label: "Private Lab",
+      label: "Home Lab",
       link: {
         type: "doc",
-        id: "ubuntu-private-lab/index",
+        id: "home-lab/index",
       },
       items: [
         {
           type: "doc",
-          id: "ubuntu-private-lab/geo-restriction-bypass",
+          id: "home-lab/geo-restriction-bypass",
           label: "Bypassing Geo-Restrictions",
         },
         {
           type: "doc",
-          id: "ubuntu-private-lab/code-server",
+          id: "home-lab/code-server",
           label: "Code Server",
         },
         {
           type: "doc",
-          id: "ubuntu-private-lab/coolify-paas",
+          id: "home-lab/coolify-paas",
           label: "Coolify Paas",
         },
         {
           type: "doc",
-          id: "ubuntu-private-lab/custom-commands-library",
+          id: "home-lab/custom-commands-library",
           label: "Custom Commands Library",
         },
         {
           type: "doc",
-          id: "ubuntu-private-lab/docker-management",
+          id: "home-lab/docker-management",
           label: "Docker Management",
         },
         {
           type: "doc",
-          id: "ubuntu-private-lab/docker-setup",
+          id: "home-lab/docker-setup",
           label: "Docker Setup",
         },
         {
           type: "doc",
-          id: "ubuntu-private-lab/executable-shell-scripts",
+          id: "home-lab/executable-shell-scripts",
           label: "Executable Shell Scripts",
         },
         {
           type: "doc",
-          id: "ubuntu-private-lab/file-directory-management",
+          id: "home-lab/file-directory-management",
           label: "File Directory Management",
         },
         {
           type: "doc",
-          id: "ubuntu-private-lab/ha-proxy-load-balancer",
+          id: "home-lab/ha-proxy-load-balancer",
           label: "Ha Proxy Load Balancer",
         },
         {
           type: "doc",
-          id: "ubuntu-private-lab/initial-hardening-setup",
+          id: "home-lab/initial-hardening-setup",
           label: "Initial Hardening Setup",
         },
         {
           type: "doc",
-          id: "ubuntu-private-lab/initial-utilities-setup",
+          id: "home-lab/initial-utilities-setup",
           label: "Initial Utilities Setup",
         },
         {
           type: "doc",
-          id: "ubuntu-private-lab/linux-ssh-key-generation",
+          id: "home-lab/linux-ssh-key-generation",
           label: "Linux Ssh Key Generation",
         },
         {
           type: "doc",
-          id: "ubuntu-private-lab/linux-timezone-management",
+          id: "home-lab/linux-timezone-management",
           label: "Linux Timezone Management",
         },
         {
           type: "doc",
-          id: "ubuntu-private-lab/mapping-sftp-connection",
+          id: "home-lab/mapping-sftp-connection",
           label: "Mapping Sftp Connection",
         },
         {
           type: "doc",
-          id: "ubuntu-private-lab/memory-swap-space",
+          id: "home-lab/memory-swap-space",
           label: "Memory Swap Space",
         },
         {
           type: "doc",
-          id: "ubuntu-private-lab/monitoring-resource-performance",
+          id: "home-lab/monitoring-resource-performance",
           label: "Monitoring Resource Performance",
         },
         {
           type: "doc",
-          id: "ubuntu-private-lab/nginx-proxy-manager",
+          id: "home-lab/nginx-proxy-manager",
           label: "Nginx Proxy Manager",
         },
-        { type: "doc", id: "ubuntu-private-lab/nvm-node", label: "Nvm Node" },
+        { type: "doc", id: "home-lab/nvm-node", label: "Nvm Node" },
         {
           type: "doc",
-          id: "ubuntu-private-lab/ollama-container-interaction",
+          id: "home-lab/ollama-container-interaction",
           label: "Ollama Container Interaction",
         },
         {
           type: "doc",
-          id: "ubuntu-private-lab/tcp-udp-ports-allocated",
+          id: "home-lab/tcp-udp-ports-allocated",
           label: "Tcp Udp Ports Allocated",
         },
         {
           type: "doc",
-          id: "ubuntu-private-lab/tree-view-in-linux",
+          id: "home-lab/tree-view-in-linux",
           label: "Tree View In Linux",
         },
         {
           type: "doc",
-          id: "ubuntu-private-lab/ubuntu-user-account",
+          id: "home-lab/ubuntu-user-account",
           label: "Ubuntu User Account",
         },
         {
           type: "doc",
-          id: "ubuntu-private-lab/user-account-management-guide",
+          id: "home-lab/user-account-management-guide",
           label: "User Account Management Guide",
         },
         {
           type: "doc",
-          id: "ubuntu-private-lab/vmt-virtualization-monitoring-tools",
+          id: "home-lab/vmt-virtualization-monitoring-tools",
           label: "Vmt Virtualization Monitoring Tools",
         },
       ],
@@ -1040,11 +1044,6 @@ const sidebars: SidebarsConfig = {
           type: "category",
           label: "Home Lab",
           items: [
-            {
-              type: "doc",
-              id: "kubernetes/home-lab/getting-started-home-lab",
-              label: "Getting Started Home Lab",
-            },
             {
               type: "doc",
               id: "kubernetes/home-lab/home-lab",
@@ -1342,89 +1341,133 @@ const sidebars: SidebarsConfig = {
         },
       ],
     },
-    //cyber security
+    //cyber-security
     {
       type: "category",
       label: "Cyber Security",
       link: {
         type: "doc",
-        id: "cyber-security/index",
+        id: "cyber-security/fundementals/index",
       },
+      items: [
+        /* --------------  Fundamentals sub-category -------------- */
+        {
+          type: "category",
+          label: "Fundamentals",
+          link: {
+            type: "doc",
+            id: "cyber-security/fundementals/index",
+          },
+          items: [
+            {
+              type: "doc",
+              id: "cyber-security/fundementals/information-security-and-cyber-fundamentals",
+              label: "Information Security And Cyber Fundamentals",
+            },
+            {
+              type: "doc",
+              id: "cyber-security/fundementals/information-security-architecture",
+              label: "Information Security Architecture",
+            },
+            {
+              type: "doc",
+              id: "cyber-security/fundementals/critical-infrastructure-security",
+              label: "Critical Infrastructure Security",
+            },
+            {
+              type: "doc",
+              id: "cyber-security/fundementals/cyber-protection-in-cloud-and-hybrid-environments",
+              label: "Cyber Protection In Cloud And Hybrid Environments",
+            },
+            {
+              type: "doc",
+              id: "cyber-security/fundementals/identity-and-authorization-management-iam",
+              label: "Identity And Authorization Management (IAM)",
+            },
+            {
+              type: "doc",
+              id: "cyber-security/fundementals/communication-and-network-security",
+              label: "Communication And Network Security",
+            },
+            {
+              type: "doc",
+              id: "cyber-security/fundementals/information-security-and-privacy",
+              label: "Information Security And Privacy",
+            },
+            {
+              type: "doc",
+              id: "cyber-security/fundementals/application-security-and-secure-development",
+              label: "Application Security And Secure Development",
+            },
+            {
+              type: "doc",
+              id: "cyber-security/fundementals/monitoring,-detection-and-response-to-events",
+              label: "Monitoring, Detection And Response To Events",
+            },
+            {
+              type: "doc",
+              id: "cyber-security/fundementals/compliance-and-regulatory-management",
+              label: "Compliance And Regulatory Management",
+            },
+            {
+              type: "doc",
+              id: "cyber-security/fundementals/architecture-and-systems-engineering-skills",
+              label: "Architecture And Systems Engineering Skills",
+            },
+            {
+              type: "doc",
+              id: "cyber-security/fundementals/cloud-security",
+              label: "Cloud Security",
+            },
+            {
+              type: "doc",
+              id: "cyber-security/fundementals/enterprise-security-architecture",
+              label: "Enterprise Security Architecture",
+            },
+            {
+              type: "doc",
+              id: "cyber-security/fundementals/incident-response-and-forensics",
+              label: "Incident Response And Forensics",
+            },
+            {
+              type: "doc",
+              id: "cyber-security/fundementals/security-leadership-and-communication",
+              label: "Security Leadership And Communication",
+            },
+          ],
+        },
+        {
+          type: "category",
+          label: "Cloud Security",
+          items: [
+            {
+              type: "doc",
+              id: "cyber-security/cloud/secure-access-service-edge",
+              label: "Secure Access Service Edge",
+            },
+            {
+              type: "doc",
+              id: "cyber-security/cloud/sase-architecture",
+              label: "SASE Architecture",
+            },
+          ],
+        },
+      ],
+    },
+    //sap
+    {
+      type: "category",
+      label: "SAP",
       items: [
         {
           type: "doc",
-          id: "cyber-security/information-security-and-cyber-fundamentals",
-          label: "Information Security And Cyber Fundamentals",
+          id: "sap/technologies-comprehensive-reference",
+          label: "Technologies Comprehensive Reference",
         },
         {
           type: "doc",
-          id: "cyber-security/information-security-architecture",
-          label: "Information Security Architecture",
-        },
-        {
-          type: "doc",
-          id: "cyber-security/critical-infrastructure-security",
-          label: "Critical Infrastructure Security",
-        },
-        {
-          type: "doc",
-          id: "cyber-security/cyber-protection-in-cloud-and-hybrid-environments",
-          label: "Cyber Protection In Cloud And Hybrid Environments",
-        },
-        {
-          type: "doc",
-          id: "cyber-security/identity-and-authorization-management-(iam)",
-          label: "Identity And Authorization Management (Iam)",
-        },
-        {
-          type: "doc",
-          id: "cyber-security/communication-and-network-security",
-          label: "Communication And Network Security",
-        },
-        {
-          type: "doc",
-          id: "cyber-security/information-security-and-privacy",
-          label: "Information Security And Privacy",
-        },
-        {
-          type: "doc",
-          id: "cyber-security/application-security-and-secure-development",
-          label: "Application Security And Secure Development",
-        },
-        {
-          type: "doc",
-          id: "cyber-security/monitoring,-detection-and-response-to-events",
-          label: "Monitoring, Detection And Response To Events",
-        },
-        {
-          type: "doc",
-          id: "cyber-security/compliance-and-regulatory-management",
-          label: "Compliance And Regulatory Management",
-        },
-        {
-          type: "doc",
-          id: "cyber-security/architecture-and-systems-engineering-skills",
-          label: "Architecture And Systems Engineering Skills",
-        },
-        {
-          type: "doc",
-          id: "cyber-security/cloud-security",
-          label: "Cloud Security",
-        },
-        {
-          type: "doc",
-          id: "cyber-security/enterprise-security-architecture",
-          label: "Enterprise Security Architecture",
-        },
-        {
-          type: "doc",
-          id: "cyber-security/incident-response-and-forensics",
-          label: "Incident Response And Forensics",
-        },
-        {
-          type: "doc",
-          id: "cyber-security/security-leadership-and-communication",
-          label: "Security Leadership And Communication",
+          id: "sap/sql-vs-hana",
+          label: "SQL Type DB vs HANA Type DB",
         },
       ],
     },

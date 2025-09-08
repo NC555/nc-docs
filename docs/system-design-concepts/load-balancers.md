@@ -1,1 +1,1 @@
-# [Load Balancers](load-balancers.md)
+# [[load-balancers|Load Balancers]]

@@ -4,7 +4,6 @@ description: Your comprehensive guide to modern infrastructure, cloud platforms,
 slug: /
 author: Nati Cabti
 ---
-
 # Welcome to the NC Docs
 
 Your one-stop resource for modern infrastructure management, cloud architecture, cybersecurity, and development best practices. This documentation covers everything from setting up local development environments to deploying enterprise-grade cloud solutions.
@@ -44,7 +43,7 @@ Whether you're a system administrator, DevOps engineer, security professional, o
 Start with our foundational guides:
 
 1. [Ubuntu Private Lab Setup](ubuntu-private-lab/) - Build your first lab environment
-2. [Docker Basics](ubuntu-private-lab/docker-setup) - Learn containerization fundamentals
+2. [[docker-setup|Docker Basics]] - Learn containerization fundamentals
 3. [Git Essentials](git/) - Master version control workflows
 
 ### Cloud Journey?
@@ -53,23 +52,23 @@ Follow our cloud adoption path:
 
 1. [AWS Fundamentals](aws/fundamentals/) - Understand cloud infrastructure basics
 2. [Landing Zone Concepts](landing-zone-concepts) - Plan your cloud architecture
-3. [Multi-Cloud Setup](ms-windows/terraform-multi-cloud-setup) - Implement infrastructure as code
+3. [[terraform-multi-cloud-setup|Multi-Cloud Setup]] - Implement infrastructure as code
 
 ### Security Focus?
 
 Strengthen your security posture:
 
-1. [Information Security Fundamentals](cyber-security/information-security-and-cyber-fundamentals)
-2. [System Hardening](ubuntu-private-lab/initial-hardening-setup) - Secure your infrastructure
-3. [Cloud Security](cyber-security/cloud-security) - Protect cloud workloads
+1. [[information-security-and-cyber-fundamentals|Information Security Fundamentals]]
+2. [[initial-hardening-setup|System Hardening]] - Secure your infrastructure
+3. [[cloud-security|Cloud Security]] - Protect cloud workloads
 
 ### Kubernetes Learning?
 
 Master container orchestration:
 
-1. [Kubernetes Architecture](kubernetes/architecture-components) - Understand the fundamentals
+1. [[architecture-components|Kubernetes Architecture]] - Understand the fundamentals
 2. [Home Lab Setup](kubernetes/home-lab/) - Practice in a safe environment
-3. [Deployment Strategies](kubernetes/deployment-guide) - Deploy applications effectively
+3. [[deployment-guide|Deployment Strategies]] - Deploy applications effectively
 
 ## 🛠️ Practical Lab Environments
 
@@ -150,18 +149,18 @@ Join our growing community of infrastructure professionals:
 
 Ready to dive in? Choose your path:
 
-- **Beginners**: Start with [Ubuntu Private Lab](./ubuntu-private-lab/index.md) basics
+- **Beginners**: Start with [[treasury-architect/docs/ubuntu-private-lab/index|Ubuntu Private Lab]] basics
 - **Cloud & AWS**:
   - Explore [AWS Fundamentals](./aws/fundamentals/index.md)
   - Understand [AWS Architecture](./aws/architecture/index.md)
-  - Plan your [Landing Zone Concepts](./landing-zone-concepts/index.md)
-- **Security Professionals**: Begin with [Cybersecurity Frameworks](./cyber-security/index.md)
+  - Plan your [[treasury-architect/docs/landing-zone-concepts/index|Landing Zone Concepts]]
+- **Security Professionals**: Begin with [[treasury-architect/docs/cyber-security/index|Cybersecurity Frameworks]]
 - **Automation & DevOps**:
-  - Jump into [Ansible](./ansible/index.md)
-  - Explore [Kubernetes](kubernetes/index.md)
-- **Windows Users**: Check out [PowerShell](ms-windows/powershell/index.md) and [WSL](./ms-windows/wsl/index.md)
-- **Version Control**: Master [Git Workflows](./git/index.md)
-- **Knowledge Base**: Dive into the [Heap Knowledge Base](./heap-knowledge-base/index.md)
+  - Jump into [[treasury-architect/docs/ansible/index|Ansible]]
+  - Explore [[treasury-architect/docs/kubernetes/index|Kubernetes]]
+- **Windows Users**: Check out [PowerShell](ms-windows/powershell/index.md) and [[treasury-architect/docs/ms-windows/wsl/index|WSL]]
+- **Version Control**: Master [[treasury-architect/docs/git/index|Git Workflows]]
+- **Knowledge Base**: Dive into the [[treasury-architect/docs/heap-knowledge-base/index|Heap Knowledge Base]]
 
 ---
 

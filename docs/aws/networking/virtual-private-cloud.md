@@ -18,7 +18,7 @@ Amazon Virtual Private Cloud VPC lets you provision a logically isolated section
 
 The **AWS Cloud** is the outermost box in most diagrams.
 
-[**AWS Region**](../global-infrastructure/regions.md) is the next box. AWS Regions are separate geographic areas. You choose your Region based on your users' geographic location for lower latency, compliance and data residency requirements, available services, and cost.
+[[regions]] is the next box. AWS Regions are separate geographic areas. You choose your Region based on your users' geographic location for lower latency, compliance and data residency requirements, available services, and cost.
 
 **Amazon VPC** is a solid box, and it represents your isolated, logically segmented network within AWS. A VPC helps you to control your network resources and security.
 
@@ -26,7 +26,7 @@ The **AWS Cloud** is the outermost box in most diagrams.
 <img style={{ background: '#f6f9fd', width: '500px', overflowX: 'auto' }} src="/img/aws/networking-vpc-diagram.png" alt="Amazon VPC" />
 </div>
 
-[**Availability Zones**](../global-infrastructure/availability-zones.md) are shown as separate boxes across a region. AZs consist of one or more discrete data centers, each with redundant power, networking, and connectivity, and housed in separate facilities. Using multiple AZs can protect your applications from the failure of a single location in the Region.
+[[availability-zones]] are shown as separate boxes across a region. AZs consist of one or more discrete data centers, each with redundant power, networking, and connectivity, and housed in separate facilities. Using multiple AZs can protect your applications from the failure of a single location in the Region.
 
 <div class="aws__ImageCentered">
 <img style={{ background: '#f6f9fd', width: '500px', overflowX: 'auto' }} src="/img/aws/networking-subnet-diagram.png" alt="Availability Zones" />

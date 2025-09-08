@@ -18,6 +18,8 @@
     "**/.roomodes/**": true,
     "**/node_modules/**": true,
     "**/static/downloads/**": true,
+    "**/.obsidian/**": true,
+    "**/.stfolder*/**": true,
   },
   "markdown.copyFiles.destination": {
     "**/*": "/static/img/${documentBaseName}/${documentBaseName}.${fileName/(.*)\\.(.*)/$2/}"

@@ -21,6 +21,11 @@ date: "2025-08-20"
 <img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/logo/analytics-aws-glue.png" alt="AWS Glue" />
 </div>
 
+
+<div class="aws__ImageCentered">
+<img src="static/img/aws/logo/analytics-aws-glue.png" alt="AWS Glue" />
+</div>
+
 AWS Glue is a fully managed ETL (extract, transform, and load) service that makes data preparation simpler, faster, and more cost-effective. It automatically discovers your data, generates transformation code, and runs ETL jobs on a serverless platform.
 
 ## Core Benefits

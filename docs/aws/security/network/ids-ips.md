@@ -20,17 +20,17 @@ date: "2025-08-19"
 - **IPS :** >Intrusion Prevention System
   These are security technologies that monitor network traffic and system activities for malicious behavior and policy violations.
 
-[IDP & ICS Concepts](../../../system-design-concepts/security/idp-ics)
+[[idp-ics|IDP & ICS Concepts]]
 
 ## **AWS IDS/IPS Services**
 
 | Service                                                                    | Type    | Function                                                                                                    |
 | -------------------------------------------------------------------------- | ------- | ----------------------------------------------------------------------------------------------------------- |
-| [**VPC Security groups**](../../networking/vpc-network/security-groups.md) | IPS     | Controls the traffic that is allowed to reach and leave the resources                                       |
-| [**VPC ACLs**](../../networking/vpc-network/access-control-list.md)        | IPS     | network access control list (ACL) allows or denies specific inbound or outbound traffic at the subnet level |
-| [**AWS GuardDuty**](../detection/guardDuty.md)                             | IDS     | Threat detection using ML, monitors DNS queries, VPC Flow Logs                                              |
+| [[security-groups]] | IPS     | Controls the traffic that is allowed to reach and leave the resources                                       |
+| [[access-control-list]]        | IPS     | network access control list (ACL) allows or denies specific inbound or outbound traffic at the subnet level |
+| [[guardDuty]]                             | IDS     | Threat detection using ML, monitors DNS queries, VPC Flow Logs                                              |
 | **AWS Network Firewall**                                                   | IDS/IPS | Both detection and prevention with custom Suricata rules                                                    |
-| [**AWS WAF**](../network/waf.md)                                           | IPS     | Blocks malicious web requests at application layer                                                          |
+| [[waf]]                                           | IPS     | Blocks malicious web requests at application layer                                                          |
 
 ## **Real-World Examples**
 

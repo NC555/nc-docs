@@ -20,4 +20,4 @@ Amazon CloudFront (CDN) seamlessly integrates with other AWS services like Amazo
 
 - **Dynamic Content Delivery:** CloudFront also supports dynamic content delivery through features like Lambda@Edge.
 
-- [CloudFront Use Case](../architecture/cloudfront-edge-network-architecture.md)
+- [[cloudfront-edge-network-architecture|CloudFront Use Case]]

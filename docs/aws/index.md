@@ -34,7 +34,7 @@ Explore best practices and design patterns for building robust, scalable, and hi
 - **Multi-AZ Secured Networking**: Implementing secure and redundant network designs.
 - **Hybrid Cloud Connectivity**: Integrating on-premises environments with AWS.
 
-### [AWS Global Infrastructure](./global-infrastructure/regions.md)
+### [[regions|AWS Global Infrastructure]]
 
 A detailed look at the physical infrastructure that powers AWS, including:
 

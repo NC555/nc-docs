@@ -8,7 +8,7 @@ date: "2025-08-11"
 
 # Availability Zones
 
-Availability Zones are distinct locations within a [**Region**](../global-infrastructure/regions.md), each designed as an independent zone with its own power, networking, and connectivity.
+Availability Zones are distinct locations within a [[regions]], each designed as an independent zone with its own power, networking, and connectivity.
 
 <div class="aws__ImageCentered">
 <img style={{ background: '#00040b', width: '50%', overflowX: 'auto' }} src="/img/aws/infrastructure-region-cloudgov.png" alt="AWS Region" />

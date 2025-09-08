@@ -16,3 +16,6 @@ Amazon Lightsail is a cloud service offering virtual private servers (VPSs), sto
 
 > **Good for:**
 > Basic web applications, low-traffic websites, development and testing environments, small business websites, blogs, and learning cloud services
+
+
+- [Getting started with virtual private servers on Lightsail](https://docs.aws.amazon.com/lightsail/latest/userguide/getting-started.html)

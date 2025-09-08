@@ -47,3 +47,23 @@ temp.ps1
 system-design-101-main
 labs
 docs/aws/core-basics
+
+
+# Exclude Obsidian Vault Directories
+docs/000 Obsidian Help
+docs/800 Technical Services
+docs/900 Job Finder
+
+
+
+# Ignore Smart Environment folder
+.smart-env
+.space
+.makemd
+.stfolder
+.trash
+.stignore
+.obsidian
+.stfolder.*
+storage*
+job-search*

@@ -1,31 +1,31 @@
-## [Computer Architecture](computer-architecture.md)
+## [[computer-architecture|Computer Architecture]]
 
 - Disk Storage
 - RAM
 - Cache
 - CPU
 
-## [Infrustructure Design](infrustructure-design.md)
+## [[infrustructure-design|Infrustructure Design]]
 
 - CAP Theorem
 - Throughput
 - Latency
 - SLOs and SLAs
 
-## [Networking](networking.md)
+## [[networking]]
 
 - TCP
 - UDP
 - DNS
 - IP Addresses & IP Headers
 
-## [Application Layer Protocols](app-layer-protocols.md)
+## [[app-layer-protocols|Application Layer Protocols]]
 
-## [Proxy Servers](proxy-servers.md)
+## [[proxy-servers|Proxy Servers]]
 
-## [Load Balancers](load-balancers.md)
+## [[load-balancers|Load Balancers]]
 
-## [Databases](databases.md)
+## [[databases]]
 
 - Sharding
 - Replication

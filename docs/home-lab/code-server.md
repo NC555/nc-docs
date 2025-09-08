@@ -11,14 +11,14 @@ This guide covers the installation and configuration of code-server with nginx-p
 
 ## Table of Contents
 
-- [Prerequisites](#prerequisites)
-- [1. Installing Code-Server](#1.%20Installing%20Code-server)
-- [2. Docker Daemon Configuration](#2-docker-daemon-configuration)
-- [3. Nginx Proxy Manager Setup](#3-nginx-proxy-manager-setup)
-- [4. Code-Server Network Configuration](#4-code-server-network-configuration)
-- [5. Nginx Proxy Host Configuration](#5-nginx-proxy-host-configuration)
-- [6. Troubleshooting](#6-troubleshooting)
-- [7. References](#7-references)
+- [[#prerequisites|Prerequisites]]
+- [[#1. Installing Code-server|1. Installing Code-Server]]
+- [[#2-docker-daemon-configuration|2. Docker Daemon Configuration]]
+- [[#3-nginx-proxy-manager-setup|3. Nginx Proxy Manager Setup]]
+- [[#4-code-server-network-configuration|4. Code-Server Network Configuration]]
+- [[#5-nginx-proxy-host-configuration|5. Nginx Proxy Host Configuration]]
+- [[#6-troubleshooting|6. Troubleshooting]]
+- [[#7-references|7. References]]
 
 ## Prerequisites
 

@@ -26,9 +26,9 @@ To allow public traffic from the internet to access your [**VPC**](./vpc.md), yo
 
 - Services with Public IP addresses in Public Subnets:
 
-  - [EC2](../compute/ec2.md) instances with public IPs
-  - [ELB](../compute/elastic-load-balancing.md) Elastic Load Balancing
-  - [NAT](./gateway-services/network-address-transalation-gateway.md) Gateways
+  - [[ec2]] instances with public IPs
+  - [[elastic-load-balancing|ELB]] Elastic Load Balancing
+  - [[network-address-transalation-gateway|NAT]] Gateways
   - Application Load Balancers (ALB)
   - Network Load Balancers (NLB)
   - Classic Load Balancers

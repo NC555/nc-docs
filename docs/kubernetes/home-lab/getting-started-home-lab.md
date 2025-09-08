@@ -1,3 +1,4 @@
+
 # Getting Started with Kube-Hetzner
 
 Welcome to the Kube-Hetzner project! This guide is designed to help new team members, especially those new to Terraform and Kubernetes, quickly understand the project's infrastructure and get started with deployment and management.
@@ -20,7 +21,7 @@ Welcome to the Kube-Hetzner project! This guide is designed to help new team mem
 
 #### openSUSE MicroOS
 
-- Optimized container OS, mostly read-only filesystem for security.
+-  Optimized container OS, mostly read-only filesystem for security.
 - Hardened by default (e.g., automatic IP ban for SSH).
 - Evergreen release, leveraging OpenSUSE Tumbleweed's rolling release.
 - Automatic updates and rollbacks using BTRFS snapshots.
@@ -33,10 +34,12 @@ Welcome to the Kube-Hetzner project! This guide is designed to help new team mem
 - Batteries-included with in-cluster helm-controller.
 - Easy automatic updates via the system-upgrade-controller.
 
-### 1.2 Project Diagram
 
-<div id="architecture-diagram" style={{ width: '100%', maxWidth: '900px', margin: '0 auto', fontFamily: 'Arial, sans-serif' }}>
-  <svg width="100%" viewBox="0 0 900 750" style={{ border: '1px solid #eee', borderRadius: '5px' }}>
+
+
+### 1.2 Project Diagram
+<div id="architecture-diagram" style="width: 100%; max-width: 900px; margin: 0 auto; font-family: Arial, sans-serif;">
+  <svg width="100%" viewBox="0 0 900 750" style="border: 1px solid #eee; border-radius: 5px;">
     <!-- Background -->
     <rect width="900" height="900" fill="#f8f9fa" rx="10" ry="10"/>
     
@@ -144,8 +147,8 @@ Welcome to the Kube-Hetzner project! This guide is designed to help new team mem
     <polygon points="400,400 392,393 398,388" fill="#666"/>
   </svg>
   
-  <div style={{ marginTop: '20px', padding: '10px', border: '1px solid #ccc', borderRadius: '5px', backgroundColor: '#f8f9fa', color: '#010101' }}>
-    <h3 style={{ marginTop: '0' }}>Home Lab Kubernetes Architecture</h3>
+  <div style="margin-top: 20px; padding: 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #f8f9fa; color:#010101;">
+    <h3 style="margin-top: 0;">Home Lab Kubernetes Architecture</h3>
     <p><strong>Infrastructure:</strong></p>
     <ul>
       <li>1 Control Plane Node (cx21 - 2vCPU, 4GB RAM)</li>
@@ -165,17 +168,18 @@ Welcome to the Kube-Hetzner project! This guide is designed to help new team mem
   </div>
 </div>
 
+
 ## 2. Prerequisites
 
 Before you begin, ensure you have the following:
 
 1.  **Hetzner Cloud Account:** Sign up for free [here](https://hetzner.com/cloud/).
 2.  **API Token:** Create a Read & Write API token in your Hetzner Cloud Console (`Project > Security > API Tokens`). Keep this key secure.
-3.  **SSH Key Pair:**
-    1.  Generate a passphrase-less `ed25519` SSH key pair, refer to [[Linux SSH Key Generation]]
-    2.  Note the paths to your private and public keys (e.g., `~/.ssh/id_ed25519` and `~/.ssh/id_ed25519.pub`).
-    3.  For more details on SSH options, refer to `docs/ssh.md`.
-4.
+3.  **SSH Key Pair:** 
+	1. Generate a passphrase-less `ed25519` SSH key pair, refer to [[Linux SSH Key Generation]]
+	2. Note the paths to your private and public keys (e.g., `~/.ssh/id_ed25519` and `~/.ssh/id_ed25519.pub`). 
+	3. For more details on SSH options, refer to [`docs/ssh.md`](docs/ssh.md).
+4. 
 5.  **CLI Tools:** Install the following command-line tools. The easiest way is using [Homebrew](https://brew.sh/) (available on Linux, Mac, and Windows Subsystem for Linux):
 
     ```sh
@@ -187,8 +191,7 @@ Before you begin, ensure you have the following:
     brew install coreutils               # Provides 'timeout' command on MacOS
     ```
 
-6.  create hetzner context
-
+6. create hetzner context 
 ```bash
 # create a hcloud-cli context
 hcloud context create landing-zone
@@ -199,23 +202,21 @@ hcloud context create landing-zone
 hcloud context list
 ```
 
-## 3. Update `kube.tf` File and OpenSUSE MicroOS Snapshot
+## 3. Update  `kube.tf` File and OpenSUSE MicroOS Snapshot
 
 ### 3.1 Initialize Project
-
 Navigate to the directory where you want your project to live and execute the following command. This script will create a new folder, download the `kube.tf.example` and `hcloud-microos-snapshots.pkr.hcl` files, and guide you through creating the initial MicroOS snapshot.
 
 ```bash
 tmp_script=$(mktemp) && curl -sSL -o "${tmp_script}" https://raw.githubusercontent.com/kube-hetzner/terraform-hcloud-kube-hetzner/master/scripts/create.sh && chmod +x "${tmp_script}" && "${tmp_script}" && rm "${tmp_script}"
 ```
 
-create TF_VAR_hcloud_token
-
+create TF_VAR_hcloud_token 
 ```bash
 export TF_VAR_hcloud_token="YOUR_HETZNER_API_TOKEN"
 ```
 
-update the `kube.tf` file
+update the `kube.tf` file 
 
 ```bash
 # home-lab/kube.tf
@@ -225,15 +226,15 @@ update the `kube.tf` file
 locals {
   # Your Hetzner token - consider using environment variables for security
   hcloud_token = "" # Leave empty if using TF_VAR_hcloud_token environment variable
-
+  
   # Home lab specific settings
   lab_name = "homelab"
-  domain   = "homelab.local"
+  domain   = "homelab.local" 
 }
 
 module "kube-hetzner" {
   source = "github.com/kube-hetzner/terraform-hcloud-kube-hetzner"
-
+  
   # Pass the provider configuration to the module
   providers = {
     hcloud = hcloud
@@ -244,19 +245,19 @@ module "kube-hetzner" {
 
   # Basic cluster configuration
   cluster_name = local.lab_name
-
+  
   # Replace with your SSH keys or generate them if needed
-  ssh_public_key = file("~/.ssh/id_rsa.pub")
+  ssh_public_key = file("~/.ssh/id_rsa.pub") 
   ssh_private_key = file("~/.ssh/id_rsa")
-
+  
   # Home lab networking
   network_region = "eu-central" # Change to your preferred region
-
+  
   # Control plane - using a single smaller node for home lab
   control_plane_nodepools = [
     {
       name        = "control-plane"
-      server_type = "cpx11"
+      server_type = "cpx11" 
       location    = "nbg1"
       labels      = []
       taints      = []
@@ -268,7 +269,7 @@ module "kube-hetzner" {
   agent_nodepools = [
     {
       name        = "worker"
-      server_type = "cpx11"
+      server_type = "cpx11" 
       location    = "nbg1"
       labels      = []
       taints      = []
@@ -282,17 +283,17 @@ module "kube-hetzner" {
 
   # Enable longhorn for storage
   enable_longhorn = true
-
+  
   # Configure cert-manager
   enable_cert_manager = true
-
+  
   # Use Nginx ingress controller
   ingress_controller = "nginx"
-
+  
   # Automatically create a kustomization for all the services you want to deploy
   automatically_upgrade_k3s = true
   initial_k3s_channel = "stable"
-
+  
   # Enable metrics server for basic monitoring
   enable_metrics_server = true
 }
@@ -323,11 +324,9 @@ variable "hcloud_token" {
 
 
 ```
-
 ## 4. Installation
 
-### 4.1 Provisioning
-
+### 4.1 Provisioning 
 Once your `kube.tf` file is customized and the MicroOS snapshot is created in your Hetzner project, you can proceed with the installation:
 
 ```sh
@@ -374,17 +373,19 @@ terraform apply -auto-approve
 
 ```
 
+
+
 ### 4.2 Deliverables after `terraform init`
 
 Based on the configuration we've created, here's what will be installed automatically after running `terraform apply`:
 
 | Service                      | Included? |                                       | Notes                                                  |
 | ---------------------------- | --------- | ------------------------------------- | ------------------------------------------------------ |
-| **Nginx Ingress Controller** | ✅ Yes    | manage external access to K8s cluster | Included because we set `ingress_controller = "nginx"` |
-| **Cert-Manager**             | ✅ Yes    |                                       | Included because we set `enable_cert_manager = true`   |
-| **Longhorn**                 | ✅ Yes    | Distributed block storage for K8s     | Included because we set `enable_longhorn = true`       |
-| **ArgoCD**                   | ❌ No     | GitOps continuous delivery            | Not included in our simplified configuration           |
-| **Prometheus & Grafana**     | ❌ No     |                                       | Not included in our simplified configuration           |
+| **Nginx Ingress Controller** | ✅ Yes     | manage external access to K8s cluster | Included because we set `ingress_controller = "nginx"` |
+| **Cert-Manager**             | ✅ Yes     |                                       | Included because we set `enable_cert_manager = true`   |
+| **Longhorn**                 | ✅ Yes     | Distributed block storage for K8s     | Included because we set `enable_longhorn = true`       |
+| **ArgoCD**                   | ❌ No      | GitOps continuous delivery            | Not included in our simplified configuration           |
+| **Prometheus & Grafana**     | ❌ No      |                                       | Not included in our simplified configuration           |
 
 The configuration we ended up with (after fixing compatibility issues) includes:
 
@@ -403,7 +404,6 @@ After your cluster is deployed, you can interact with it using `kubectl`.
 The module generates a `homelab_kubeconfig.yaml` file in your project directory after installation.
 
 - **Directly with `kubectl`:**
-
 ```bash
 kubectl --kubeconfig homelab_kubeconfig.yaml get nodes
 NAME                        STATUS   ROLES                       AGE   VERSION
@@ -412,21 +412,20 @@ homelab-worker-mpz          Ready    <none>                      38m   v1.33.3+k
 homelab-worker-zky          Ready    <none>                      38m   v1.33.3+k3s1
 ```
 
-- \*\*Add the `homelab_kubeconfig.yaml` path to your `KUBECONFIG` `env` variable :
-
+- **Add the `homelab_kubeconfig.yaml`  path to your `KUBECONFIG` `env` variable :
 ```bash
 export KUBECONFIG=/<path-to-your-project-folder>/homelab_kubeconfig.yaml
 ```
 
-- Generate `homelab_kubeconfig.yaml` file manually
-  If you set `create_kubeconfig = false` in your `kube.tf` (a good security practice), you can generate the file manually:
-  ```sh
-  terraform output --raw kubeconfig > clustername_kubeconfig.yaml
-  ```
+- Generate `homelab_kubeconfig.yaml`  file manually
+	If you set `create_kubeconfig = false` in your `kube.tf` (a good security practice), you can generate the file manually:
+	```sh
+	terraform output --raw kubeconfig > clustername_kubeconfig.yaml
+	```
 
-### 5.2 Get the Nodes IP's
+### 5.2 Get the Nodes  IP's
 
-```bash
+```bash 
 
 # If set KUBECONFIG environment variable
 kubectl get nodes -o wide
@@ -438,6 +437,7 @@ kubectl --kubeconfig homelab_kubeconfig.yaml get nodes -o wide
 kubectl --kubeconfig homelab_kubeconfig.yaml get nodes -o custom-columns="NAME:.metadata.name,STATUS:.status.conditions[?(@.type=='Ready')].status,ROLE:.metadata.labels.node-role\.kubernetes\.io/control-plane,INTERNAL-IP:.status.addresses[?(@.type=='InternalIP')].address,EXTERNAL-IP:.status.addresses[?(@.type=='ExternalIP')].address,VERSION:.status.nodeInfo.kubeletVersion"
 
 ```
+
 
 ### Connecting via SSH
 
@@ -465,7 +465,7 @@ This project offers extensive customization. Here are some key areas to explore 
 - **SELinux:** Learn how to work with SELinux using `udica` for container-specific policies instead of disabling it globally.
 - **Rancher Integration:** Optionally deploy Rancher Manager for multi-cluster management.
 
-For a deep dive into every configuration option, refer to the `LLMs and Kubernetes` file, which provides a line-by-line explanation of the `kube.tf` configuration.
+For a deep dive into every configuration option, refer to the [`docs/llms.md`](docs/llms.md) file, which provides a line-by-line explanation of the `kube.tf` configuration.
 
 ## 7. Takedown
 
@@ -484,3 +484,10 @@ tmp_script=$(mktemp) && curl -sSL -o "${tmp_script}" https://raw.githubuserconte
 **Caution:** These commands will delete all resources, including volumes. Use the dry run option if available (`cleanup.sh` offers this) before a full destroy.
 
 This guide should provide a solid foundation for your journey with Kube-Hetzner. Feel free to explore the codebase and other documentation for more advanced topics.
+
+
+
+
+
+
+

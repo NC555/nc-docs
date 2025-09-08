@@ -1,19 +1,17 @@
 ---
-title: "Amazon Athena"
-description: "Amazon Athena is a serverless, interactive query service that enables you to analyze data directly in Amazon S3 and other sources using standard SQL, paying only for the queries you run."
+title: Amazon Athena
+description: Amazon Athena is a serverless, interactive query service that enables you to analyze data directly in Amazon S3 and other sources using standard SQL, paying only for the queries you run.
 tags:
-  [
-    "aws",
-    "analytics",
-    "athena",
-    "serverless",
-    "sql",
-    "data_analysis",
-    "interactive_query",
-    "data_pipeline",
-  ]
-author: "Nati Cabti"
-date: "2025-08-20"
+  - aws
+  - analytics
+  - athena
+  - serverless
+  - sql
+  - data_analysis
+  - interactive_query
+  - data_pipeline
+author: Nati Cabti
+date: 2025-08-20
 ---
 
 # Amazon Athena

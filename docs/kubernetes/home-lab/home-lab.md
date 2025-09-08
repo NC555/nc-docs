@@ -478,8 +478,6 @@ cd home-lab
 # 🧹 Clean up previous Terraform state files
 rm -rf .terraform .terraform.lock.hcl
 
-
-####################################################
 ################🚀 Initialization Options ##########
 # -----------------------
 # 🔰 First-time initialization
@@ -491,8 +489,6 @@ terraform init -reconfigure
 # ⬆️ Upgrade modules to latest versions
 terraform init --upgrade
 
-
-####################################################
 ############ 📝 Plan Creation Options ##############
 # Create and save plan file
 terraform plan -out=tfplan
@@ -503,14 +499,12 @@ terraform show -json tfplan > tfplan.json
 # Export plan as text for review
 terraform show tfplan > tfplan.txt
 
-
-#####################################################
 ############## ⚙️ Apply Options #####################
 # ✅ Apply using saved plan file (safest)
 terraform apply "tfplan"
 
 # ⚡ Apply directly with auto-approval (use with caution)
-terraform apply "tfplan" -auto-approve
+terraform apply  -auto-approve
 
 terraform apply "tfplan"
 
@@ -519,7 +513,7 @@ terraform destroy -auto-approve
 
 
 
-#### Debuggin and Logging
+############## ⚙️⚙️⚙️ Debuggin and Logging
 
 export TF_LOG=DEBUG
 
@@ -571,23 +565,24 @@ _ `cozy.your-domain.com` -> `LOAD_BALANCER_IP`
 
 2.  **Configure `kubectl`:** \* The `kubeconfig` file will be saved in your project directory. To use it easily, set the `KUBECONFIG` environment variable:
 
-    ````bash
-    export KUBECONFIG=$(terraform output -raw kubeconfig_local_path) # Test the connection
+    ```bash
+    export KUBECONFIG=$(terraform output -raw k3s-lab_kubeconfig.yaml) 
+    
+    # Test the connection
     kubectl get nodes # If set KUBECONFIG environment variable
     kubectl get nodes -o wide # If you did not set KUBECONFIG environment variable
-    kubectl --kubeconfig homelab_kubeconfig.yaml get nodes -o wide
+    kubectl --kubeconfig k3s-lab_kubeconfig.yaml get nodes -o wide
 
         # most important columns for your nodes
 
-    kubectl --kubeconfig homelab_kubeconfig.yaml get nodes -o custom-columns="NAME:.metadata.name,STATUS:.status.conditions[?(@.type=='Ready')].status,ROLE:.metadata.labels.node-role\.kubernetes\.io/control-plane,INTERNAL-IP:.status.addresses[?(@.type=='InternalIP')].address,EXTERNAL-IP:.status.addresses[?(@.type=='ExternalIP')].address,VERSION:.status.nodeInfo.kubeletVersion"
-
-        ```
-
-    ````
+    kubectl --kubeconfig k3s-lab_kubeconfig.yaml get nodes -o custom-columns="NAME:.metadata.name,STATUS:.status.conditions[?(@.type=='Ready')].status,ROLE:.metadata.labels.node-role\.kubernetes\.io/control-plane,INTERNAL-IP:.status.addresses[?(@.type=='InternalIP')].address,EXTERNAL-IP:.status.addresses[?(@.type=='ExternalIP')].address,VERSION:.status.nodeInfo.kubeletVersion"
+    
+    ```
+ 
 
 3.  SSH into any control plane node to manage your workloads directly
 
-    ```sh
+ ```sh
     ssh root@<control-plane-ip> -i /path/to/private_key -o StrictHostKeyChecking=no
     ```
 

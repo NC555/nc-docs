@@ -2,16 +2,16 @@
 
 ## Table of Contents
 
-1. [Introduction](#Introduction)
-2. [Accessing the Container Shell](#Accessing%20the%20Container%20Shell)
-3. [Listing Local Models](#Listing%20Local%20Models)
+1. [[#Introduction|Introduction]]
+2. [[#Accessing the Container Shell|Accessing the Container Shell]]
+3. [[#Listing Local Models|Listing Local Models]]
 4. [[#Browsing & Downloading Official Models]]
-5. [Updating Ollama and Models](#Updating%20Ollama%20and%20Models)
-6. [Running and Interacting with Models](#Running%20and%20Interacting%20with%20Models)
-7. [Tweaking and Extending Models](#Tweaking%20and%20Extending%20Models)
-8. [Training Fine-tuning Models](#Training%20Fine-tuning%20Models)
-9. [Extending with Custom Models](#Extending%20with%20Custom%20Models)
-10. [Useful Resources](#Useful%20Resources)
+5. [[#Updating Ollama and Models|Updating Ollama and Models]]
+6. [[#Running and Interacting with Models|Running and Interacting with Models]]
+7. [[#Tweaking and Extending Models|Tweaking and Extending Models]]
+8. [[#Training Fine-tuning Models|Training Fine-tuning Models]]
+9. [[#Extending with Custom Models|Extending with Custom Models]]
+10. [[#Useful Resources|Useful Resources]]
 
 ---
 

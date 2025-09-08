@@ -2,7 +2,6 @@
 title: Getting started with Ubuntu
 description: This documentation series guides you through the process of setting up a secure, efficient, and versatile Ubuntu Virtual Private Server (VPS)
 ---
-
 # Getting started with Ubuntu
 
 ## Introduction
@@ -19,12 +18,12 @@ main objectives of this project
 
 ## Todo List
 
-1. [Linux Initial Hardening Setup](./initial-hardening-setup)
-2. [Linux Initial Utilities Setup](./initial-utilities-setup)
-3. [Mapping Sftp Connection](./mapping-sftp-connection)
-4. [Linux Memory Swap Space](./memory-swap-space)
-5. [Docker Setup](./docker-setup)
-6. [Nginx Proxy Manager](./nginx-proxy-manager)
-7. [Deploy Coolify PAAS](./coolify-paas)
+1. [[initial-hardening-setup|Linux Initial Hardening Setup]]
+2. [[initial-utilities-setup|Linux Initial Utilities Setup]]
+3. [[mapping-sftp-connection|Mapping Sftp Connection]]
+4. [[memory-swap-space|Linux Memory Swap Space]]
+5. [[docker-setup|Docker Setup]]
+6. [[nginx-proxy-manager|Nginx Proxy Manager]]
+7. [[coolify-paas|Deploy Coolify PAAS]]
 
 This guide is structured to be followed sequentially, but feel free to navigate to specific sections as needed once you have a foundational setup.

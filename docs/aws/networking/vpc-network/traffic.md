@@ -41,13 +41,13 @@ Use case: Network traffic management is essential for securing applications, con
 
 ## Key Components in VPC Traffic Flow
 
-**[Internet Gateway:](../internet-gateway.md)** The entry and exit point for internet traffic to and from your VPC
+**[[internet-gateway|Internet Gateway:]]** The entry and exit point for internet traffic to and from your VPC
 
-**[Network ACL:](./access-control-list.md)** The VPC component that checks packet permissions for subnets, acting as a subnet-level firewall
+**[[access-control-list|Network ACL:]]** The VPC component that checks packet permissions for subnets, acting as a subnet-level firewall
 
-**[Subnets:](../subnet.md)** Logical divisions within your VPC where resources are deployed and traffic is routed
+**[[subnet|Subnets:]]** Logical divisions within your VPC where resources are deployed and traffic is routed
 
-**[Security Groups:](./security-groups.md)** Instance-level firewalls that control traffic to and from individual EC2 instances
+**[[security-groups|Security Groups:]]** Instance-level firewalls that control traffic to and from individual EC2 instances
 
 ### Configuring VPC Traffic
 

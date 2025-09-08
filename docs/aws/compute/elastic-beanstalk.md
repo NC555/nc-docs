@@ -22,3 +22,4 @@ Elastic Beanstalk is a fully managed service that streamlines the deployment, ma
 ## Additional Resources
 
 - [AWS Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/)
+- [queues](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html)
