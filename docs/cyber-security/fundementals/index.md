@@ -3,7 +3,7 @@ title: Cyber Security
 description: This section covers fundamental concepts, best practices, and advanced topics in cyber security to help protect systems and data
 ---
 
-# Cyber Security Fun Fundamentals
+# Cyber Security Fundamentals
 
 - [Section 01: Information Security and Cyber Fundamentals](./information-security-and-cyber-fundamentals.md)
 - [Section 02: Information Security Architecture](./information-security-architecture)
