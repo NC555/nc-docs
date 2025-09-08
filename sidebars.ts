@@ -57,6 +57,11 @@ const sidebars: SidebarsConfig = {
           items: [
             {
               type: "doc",
+              id: "aws/architecture/ml-dev-enviornment",
+              label: `ML Development Environment`,
+            },
+            {
+              type: "doc",
               id: "aws/architecture/disaster-recovery-strategies",
               label: `Disaster Recovery Strategies`,
             },
