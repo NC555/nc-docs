@@ -19,7 +19,7 @@ date: "2025-08-11"
     </div>
 </div>
 
-AWS Subnets are essentially segments of your [VPC](./vpc.md), allowing you to divide your VPC into smaller, manageable sections. A subnet is a range of IP addresses in your VPC.
+AWS Subnets are essentially segments of your [VPC](./virtual-private-cloud.md), allowing you to divide your VPC into smaller, manageable sections. A subnet is a range of IP addresses in your VPC.
 
 :::tip
 Subnet is a section of a VPC for grouping resources based on security or operational needs

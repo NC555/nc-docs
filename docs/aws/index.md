@@ -16,7 +16,7 @@ Our AWS documentation is structured to guide you through various aspects of the 
 
 ## ☁️ Key Areas Covered
 
-### [AWS Fundamentals](./fundamentals/index.md)
+### [AWS Fundamentals]
 
 Dive into the core principles and essential building blocks of AWS. This section covers:
 
@@ -26,7 +26,7 @@ Dive into the core principles and essential building blocks of AWS. This section
 - **Cost Management and Optimization**: Strategies for efficient cloud spending.
 - **Compliance and Regulatory Adherence**: Ensuring your AWS deployments meet industry standards.
 
-### [AWS Architecture](./architecture/index.md)
+### AWS Architecture
 
 Explore best practices and design patterns for building robust, scalable, and highly available solutions on AWS. This includes:
 
@@ -42,7 +42,7 @@ A detailed look at the physical infrastructure that powers AWS, including:
 - **Availability Zones**: Isolated locations within regions designed for fault tolerance.
 - **Edge Locations**: Points of presence for content delivery and low-latency services.
 
-### [AWS Services](./services/ec2.md)
+### [AWS Compute Services]
 
 A deep dive into various AWS services, providing practical guidance and use cases for:
 
@@ -54,7 +54,7 @@ A deep dive into various AWS services, providing practical guidance and use case
 
 ## 🚀 Getting Started with AWS
 
-If you're new to AWS, we recommend starting with the [AWS Fundamentals](./fundamentals/index.md) section to build a strong understanding of the platform's core concepts. From there, you can explore specific services or architectural patterns based on your project needs.
+If you're new to AWS, we recommend starting with the AWS Fundamentals section to build a strong understanding of the platform's core concepts. From there, you can explore specific services or architectural patterns based on your project needs.
 
 ## 💡 Best Practices and Real-World Scenarios
 

@@ -21,7 +21,7 @@ date: "2025-08-11"
 <img style={{ width: '96px', overflowX: 'auto' }} src="/img/aws/logo/privatelink.png" alt="AWS PrivateLink Logo" />
 </div>
 
-AWS PrivateLink is a highly available, scalable technology that you can use to privately connect your VPC to services and resources as if they were in your [**VPC**](./vpc.md).
+AWS PrivateLink is a highly available, scalable technology that you can use to privately connect your VPC to services and resources as if they were in your [**VPC**](./virtual-private-cloud.md).
 
 > You do not need to use an internet gateway, NAT device, public IP address, Direct Connect connection, or AWS Site-to-Site VPN connection to allow communication with AWS services or resources from your private subnets.
 

@@ -9,7 +9,7 @@ date: 2025-08-15
 
 # AWS CloudFront Edge Network Architecture
 
-This architecture demonstrates how AWS [CloudFront's](../services/cloudfront.md) globally distributed network of Edge Locations and Regional Edge Caches work together to accelerate content delivery for Government applications. By strategically caching content closer to end-users, this multi-tiered system significantly reduces latency, offloads traffic from the origin, and enhances application resilience and security.
+This architecture demonstrates how AWS [CloudFront's](../networking/cloudfront.md) globally distributed network of Edge Locations and Regional Edge Caches work together to accelerate content delivery for Government applications. By strategically caching content closer to end-users, this multi-tiered system significantly reduces latency, offloads traffic from the origin, and enhances application resilience and security.
 
 ## CloudFront Edge Network Diagram
 
