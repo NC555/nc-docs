@@ -57,9 +57,15 @@ const sidebars: SidebarsConfig = {
           items: [
             {
               type: "doc",
+              id: "aws/architecture/database-secrets-management-architecture",
+              label: `Database Secrets Management Architecture`,
+            },
+            {
+              type: "doc",
               id: "aws/architecture/ml-dev-enviornment",
               label: `ML Development Environment`,
             },
+
             {
               type: "doc",
               id: "aws/architecture/disaster-recovery-strategies",

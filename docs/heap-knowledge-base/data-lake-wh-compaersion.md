@@ -12,7 +12,7 @@ tags:
     "etl",
     "elt",
   ]
-author: "Claude"
+author: "Nati Cabti"
 date: "2025-08-19"
 ---
 
