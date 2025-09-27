@@ -7,22 +7,22 @@ A modern, responsive documentation hub designed to cover a wide range of technic
 [![GitHub Stars](https://img.shields.io/github/stars/NC555/nc-docs?style=for-the-badge&logo=github)](https://github.com/NC555/nc-docs)
 [![Apache 2.0](https://img.shields.io/badge/License-APACHE-lime.svg?style=for-the-badge)](https://github.com/NC555/nc-docs?tab=Apache-2.0-1-ov-file)
 
-## ✨ Features
+## Features
 
-- 📚 **Comprehensive Content Structure**: Organized sections for various technical domains.
-- 📱 **Fully Responsive**: Optimized for a seamless experience on desktop, tablet, and mobile devices.
-- 🔍 **Fast Full-Text Search**: Client-side search powered by `@easyops-cn/docusaurus-search-local`.
-- 🌓 **Dark/Light Mode**: Built-in, user-toggleable theme support.
-- 📝 **MDX Powered**: Write JSX components directly within your Markdown files.
-- 📊 **Diagrams as Code**: Integrated Mermaid.js support for rendering diagrams from text.
-- 🚀 **Optimized for Performance**: Built with Docusaurus for fast load times and a great user experience.
+- **Comprehensive Content Structure**: Organized sections for various technical domains.
+- **Fully Responsive**: Optimized for a seamless experience on desktop, tablet, and mobile devices.
+- **Fast Full-Text Search**: Client-side search powered by `@easyops-cn/docusaurus-search-local`.
+- **Dark/Light Mode**: Built-in, user-toggleable theme support.
+- **MDX Powered**: Write JSX components directly within your Markdown files.
+- **Diagrams as Code**: Integrated Mermaid.js support for rendering diagrams from text.
+- **Optimized for Performance**: Built with Docusaurus for fast load times and a great user experience.
 - 🔍 **SEO-Friendly**: Versioning, i18n, and clear content structure to improve search engine visibility.
 
-## 🛠️ Technologies
+## Technologies
 
 ![Docusaurus](https://img.shields.io/badge/Docusaurus-3578e5?style=for-the-badge&logo=docusaurus&logoColor=white)![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)![MDX](https://img.shields.io/badge/MDX-1B1F24?style=for-the-badge&logo=mdx&logoColor=white)![Mermaid](https://img.shields.io/badge/Mermaid-ff3670?style=for-the-badge&logo=mermaid&logoColor=white)
 
-## 📸 Screenshots
+## Screenshots
 
 <div>
 <h3>Home Page</h3>
@@ -33,7 +33,7 @@ A modern, responsive documentation hub designed to cover a wide range of technic
 <img src="https://raw.githubusercontent.com/NC555/nc-docs/main/assets/readme/diagram.png" alt="Mermaid Diagram in Docs" width="720" style="max-width:90%; margin-bottom: 25px; border: 1px solid #333; border-radius: 5px;"/>
 </div>
 
-## 📚 Documentation Topics
+## Documentation Topics
 
 This template is populated with extensive documentation covering:
 
@@ -47,7 +47,7 @@ This template is populated with extensive documentation covering:
 - **Knowledge Base**: Essential concepts like API design, microservices, databases, and security patterns.
 - **Cyber Security**: Frameworks for critical infrastructure, cloud security, IAM, incident response, and compliance.
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -71,7 +71,7 @@ This template is populated with extensive documentation covering:
     ```
 4.  Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
 
-## 🔄 Deployment
+## Deployment
 
 This Docusaurus template can be easily deployed to any static site hosting service.
 
@@ -80,15 +80,15 @@ This Docusaurus template can be easily deployed to any static site hosting servi
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FNC555%2Fnc-docs)
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/NC555/nc-docs)
 
-## 🤝 Credits
+## Credits
 
 This project is built upon the fantastic [Docusaurus](https://docusaurus.io/) framework for building optimized documentation websites.
 
-## 📝 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/NC555/nc-docs/blob/main/LICENSE) file for details.
 
-## 👨‍💻 Author
+## Author
 
 Created with ❤️ by Nati Cabti
 
@@ -98,4 +98,4 @@ Created with ❤️ by Nati Cabti
 
 If you're using this template, I'd love to see what you create! Feel free to share it.
 
-⭐ Star this repo if you find it useful
+Star this repo if you find it useful
